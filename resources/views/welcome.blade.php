@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>LincolnHack</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -46,7 +46,10 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 3em;
+                width:95%;
+                margin: auto;
+                
             }
 
             .links > a {
@@ -61,6 +64,9 @@
 
             .m-b-md {
                 margin-bottom: 30px;
+            }
+            img{
+                margin-top: 10%;
             }
         </style>
     </head>
@@ -79,6 +85,7 @@
 
             <div class="content">
                 <div class="flex-center">
+
                     <img src="../../images/lincoln-hack-imp.png" alt="lincolnhack" />
 
                 </div>
