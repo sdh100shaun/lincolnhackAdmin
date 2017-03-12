@@ -19,4 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/countdown','CountdownController@index');
-
+Route::resource('attendee', 'AttendeeController', ['except' => [
+    'destroy'
+]]);
