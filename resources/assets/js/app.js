@@ -14,6 +14,7 @@ require('./bootstrap');
  */
 
 Vue.component('tshirt', require('./components/tshirt.vue'));
+Vue.component('countdown',require('./components/countdown.vue'));
 
 const app = new Vue({
     el: '#app'

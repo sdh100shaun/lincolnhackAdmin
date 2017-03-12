@@ -22,7 +22,7 @@ class AttendeeService extends AbstractService
     }
     public function postAttendee(Attendee $attendee)
     {
-        $data = 
+        
         
     }
     
