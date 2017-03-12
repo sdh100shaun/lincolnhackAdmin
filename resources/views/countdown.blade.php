@@ -13,10 +13,12 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background: #BE93C5; /* fallback for old browsers */
+                background: -webkit-linear-gradient(to left, #BE93C5 , #7BC6CC); /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to left, #BE93C5 , #7BC6CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
-                font-weight: 100;
+                font-weight: 300;
                 height: 100vh;
                 margin: 0;
             }
@@ -79,10 +81,9 @@
         <div class="flex-center position-ref full-height" id="app">
 
             <div class="content">
+
                 <div class="flex-center">
-
                     <img src="../../images/lincoln-hack-imp.png" alt="lincolnhack" />
-
                 </div>
                 <div class="title m-b-md">
                     <countdown date="May 21, 2017 12:00 GMT"></countdown>

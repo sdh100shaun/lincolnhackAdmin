@@ -12172,6 +12172,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = {
@@ -12219,7 +12227,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         finished: function finished() {
 
-            return this.seconds < 0;
+            return this.minutes <= 0 && this.seconds <= 0 && this.hours <= 0 && this.days <= 0;
         }
     }
 };
@@ -14693,7 +14701,7 @@ if (typeof jQuery === 'undefined') {
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(36)();
-exports.push([module.i, "\n#clockdiv[data-v-d175d48e]{\n\tfont-family: Raleway;\n\tcolor: #fff;\n\tdisplay: inline-block;\n\tfont-weight: 100;\n\ttext-align: center;\n\tfont-size: 2em;\n\tmargin-top:10px;\n\tpadding-left:5%;\n\twidth:100%;\n}\n#clockdiv > div[data-v-d175d48e]{\n\tpadding: 10px;\n   width:2em;\n\tborder-radius: 3px;\n\tbackground: #9791e1;\n\tdisplay: inline-block;\n}\n#clockdiv div > span[data-v-d175d48e]{\n\tpadding: 15px;\n\twidth:1.5em;\n\tborder-radius: 3px;\n\tbackground: #D0CDF1;\n\tdisplay: inline-block;\n}\n.smalltext[data-v-d175d48e]{\n\tpadding-top: 5px;\n\tfont-size: 26px;\n}\n\n", ""]);
+exports.push([module.i, "\n#clockdiv[data-v-d175d48e]{\n\tfont-family: Raleway;\n\tcolor: #fff;\n\tdisplay: inline-block;\n\tfont-weight: 300;\n\ttext-align: center;\n\tfont-size: 2em;\n\tmargin-top:10px;\n\tpadding-left:5%;\n\twidth:100%;\n}\n#clockdiv > div[data-v-d175d48e]{\n\tpadding: 10px;\n   width:2em;\n\tborder-radius: 3px;\n\tbackground: #9791e1;\n\tdisplay: inline-block;\n\tfont-weight: 300;\n}\n#clockdiv div > span[data-v-d175d48e]{\n\tpadding: 15px;\n\twidth:1.5em;\n\tborder-radius: 3px;\n\tbackground: #D0CDF1;\n\tdisplay: inline-block;\n}\n.smalltext[data-v-d175d48e]{\n\tpadding-top: 5px;\n\tfont-size: 26px;\n}\nh1[data-v-d175d48e]{\n   font-family: Raleway;\n    \tcolor: #fff;\n    \tdisplay: inline-block;\n    \tfont-weight: 300;\n    \ttext-align: center;\n}\n", ""]);
 
 /***/ }),
 /* 36 */

@@ -6,7 +6,7 @@
  	font-family: Raleway;
  	color: #fff;
  	display: inline-block;
- 	font-weight: 100;
+ 	font-weight: 300;
  	text-align: center;
  	font-size: 2em;
  	margin-top:10px;
@@ -20,6 +20,7 @@
  	border-radius: 3px;
  	background: #9791e1;
  	display: inline-block;
+ 	font-weight: 300;
  }
 
  #clockdiv div > span{
@@ -35,6 +36,13 @@
  	font-size: 26px;
  }
 
+ h1{
+    font-family: Raleway;
+     	color: #fff;
+     	display: inline-block;
+     	font-weight: 300;
+     	text-align: center;
+ }
  </style>
 <template>
 <div>
@@ -104,7 +112,7 @@ export default {
           },
         finished(){
 
-            return this.seconds < 0
+            return this.minutes <= 0 && this.seconds <= 0 && this.hours <= 0 && this.days <= 0
 
         }
     },
