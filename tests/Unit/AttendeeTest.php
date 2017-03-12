@@ -47,7 +47,7 @@ class AttendeeTest extends TestCase
     public function testServiceNameCorrect_whenHackBotMethodCalled()
     {
         $expected ="Lincolnhack\Services\AttendeeService";
-        $this->attendee->setClient(new Client());
+        $this->attendee->setClient(TestCase::getMockedClient("goodAttendeeResponse.json"));
         $this->attendee->setBaseUrl("http://example.com");
         $this->attendee->postToHackbot();
         $this->assertEquals($expected,$this->attendee->getServiceClassName());

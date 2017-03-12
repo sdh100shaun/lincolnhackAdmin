@@ -17,11 +17,6 @@ class Attendee extends Model
     
     protected  $service;
     
-    public function __construct(array $attributes = [])
-    {
-        parent::__construct($attributes);
-        
-    }
     
     public function model()
     {
@@ -33,7 +28,7 @@ class Attendee extends Model
         
         $this->setServiceClassName();
         $this->service = $this->getService();
-        
+        return $this->service->postAttendee($this);
         
     }
     
