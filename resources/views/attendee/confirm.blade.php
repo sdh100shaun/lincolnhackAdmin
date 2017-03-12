@@ -9,6 +9,7 @@
                     <div class="panel-heading">Lincoln Hack Attendee</div>
 
                     <div class="panel-body">
+                        <p> Thanks for signing up.</p>
                         <p>Confirmed : {{$attendee->attendeeId}}</p>
                         <p>T-Shirt: {{$attendee->tshirt}}</p>
                         <p>Dietary requirements: {{$attendee->dietaryRequirements}}</p>

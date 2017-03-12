@@ -43,7 +43,7 @@
                                             <option value="{{$tshirt->size}}">{{$tshirt->description}}</option>
                                         @endforeach
                                     </select>
-                                    <span class="help-block">Super snug t-shirts provided by <a href="http://www.digitallincoln.co.uk/">Digital Lincoln</a></span>
+                                    <span class="help-block">Super snug t-shirts provided by <a href="http://www.digitallincoln.co.uk/" target="_blank">Digital Lincoln</a></span>
 
                                 </div>
                             </div>
@@ -59,7 +59,7 @@
                                         <option value="vegan">Vegan</option>
                                         <option value="glutenfree">Gluten Free</option>
                                     </select>
-                                    <span class="help-block">Satisfied by our caterer <a href="http://www.saltedorange.co.uk/">Salted Orange</a></span>
+                                    <span class="help-block">Satisfied by our caterer <a href="http://www.saltedorange.co.uk/" target="_blank">Salted Orange</a></span>
 
                                 </div>
                             </div>
