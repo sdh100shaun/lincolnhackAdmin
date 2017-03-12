@@ -94,7 +94,7 @@ class AttendeeController extends Controller
             }
             
         }
-        return json_encode($this->attendee);
+        return $this->show($this->attendee);
     }
 
     /**
@@ -105,6 +105,10 @@ class AttendeeController extends Controller
      */
     public function show(Attendee $attendee)
     {
+        if(auth()->guest())
+        {
+            return view('attendee.confirm',["attendee"=>$attendee]);
+        }
         return json_encode($attendee);
     }
 
