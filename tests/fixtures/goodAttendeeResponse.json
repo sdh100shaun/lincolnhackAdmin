@@ -1,0 +1,9 @@
+{
+  "links": {
+    "self": "/attendees/shaun%40shaunhare.co.uk"
+  },
+  "data": {
+    "type": "attendees",
+    "id": "shaun@shaunhare.co.uk"
+  }
+}
