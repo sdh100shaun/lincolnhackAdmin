@@ -1,0 +1,58 @@
+
+body{
+  background-image: url(../../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-color: $body-bg;
+
+  .flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .position-ref {
+    position: relative;
+  }
+
+  .top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+
+  header {
+
+
+        h1{
+          font-size: 4rem;
+          padding:1rem;
+          display: block;
+          color: $title-text;
+          text-transform: uppercase;
+          letter-spacing: 0.02em;
+          margin: auto;
+          text-align: center;
+          border: solid 0.25em $title-text;
+          font-weight: 100;
+        }
+
+
+
+      h2{
+        color: $title-text;
+        text-align: center;
+      }
+
+      h3{
+        color: $title-text;
+        font-size: 200%;
+        font-weight: 900;
+        text-align: center;
+      }
+  }
+
+  .no-background{
+    background: transparent;
+  }
+}
