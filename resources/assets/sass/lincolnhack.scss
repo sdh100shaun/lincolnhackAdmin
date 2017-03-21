@@ -21,6 +21,14 @@ body{
     top: 18px;
   }
 
+  p{
+    margin-top: 2em;
+  }
+  h2{
+    &.sectionHeader{
+      border-bottom: #9BA2AB solid 1px;
+    }
+  }
   header {
 
 
@@ -50,8 +58,30 @@ body{
         font-weight: 900;
         text-align: center;
       }
+
   }
 
+  section{
+    min-height: 5em;
+    padding-top: 2em;
+
+    &.light{
+      padding-left:1em;
+      padding-right: 1em;
+
+      margin: auto;
+      background-color: $lightBackground;
+      h2{
+        color: $headingtint;
+        font-size: 200%;
+        font-weight: 900;
+      }
+    }
+
+    &.dark{
+
+    }
+  }
   .no-background{
     background: transparent;
   }
