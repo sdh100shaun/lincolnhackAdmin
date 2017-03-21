@@ -5,7 +5,7 @@
 <section class="light container-fluid">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <h2 class="sectionHeader"> What is Lincolnhack ? </h2>
+            <h2 class="sectionHeader"> A hackathon </h2>
         </div>
     </div>
     <div class="row">
