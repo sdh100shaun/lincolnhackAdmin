@@ -2,7 +2,7 @@
 
 @include('partials.header')
 
-<section class="light">
+<section class="light container-fluid">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <h2 class="sectionHeader"> What is Lincolnhack ? </h2>
@@ -18,14 +18,14 @@
 
 
         <div class="col-md-5">
-            <p>
+            <p class="flex-center">
                 Lincoln Hack is a free 24 hour coding competition where teams of up to four people compete for fantastic
                 prizes. They start with an idea and build it in to something. Hardware hacks, software hacks, API
                 mash-ups, funny things, arty things, noisy things... whatever you decide to create, you’ve got 24 hours
                 to do it!
 
             </p>
-            <p>
+            <p class="flex-center">
                 Lincoln Hack is in it's second year and is still celebrating it's success from last year.
                 This year, it is being held to coincide with Lincolnshire Tech Week, and moves to a new
                 building.
@@ -36,18 +36,33 @@
         </div>
     </div>
 </section>
-<section class="light flex-center position-ref">
-
+<section>
 
     <div class="row">
-        <div class="col-md-5 col-md-offset-1">
+        <div class="col-md-10 col-md-offset-1">
+            <h2 class="sectionHeader"> Set in a great venue  </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 location">
 
 
         </div>
 
+    </div>
+</section>
+<section class="light container-fluid">
 
-        <div class="col-md-5">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h2 class="sectionHeader"> Sponsored by great local companies </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 sponsors">
+
 
         </div>
+
     </div>
 </section>

@@ -27,7 +27,12 @@ body{
   h2{
     &.sectionHeader{
       border-bottom: #9BA2AB solid 1px;
+      font-size: 200%;
+      font-weight: 900;
     }
+  }
+  img{
+    margin:1em;
   }
   header {
 
@@ -64,17 +69,15 @@ body{
   section{
     min-height: 5em;
     padding-top: 2em;
-
+    padding-left:1em;
+    padding-right: 1em;
     &.light{
-      padding-left:1em;
-      padding-right: 1em;
+
 
       margin: auto;
       background-color: $lightBackground;
       h2{
         color: $headingtint;
-        font-size: 200%;
-        font-weight: 900;
       }
     }
 
@@ -84,5 +87,11 @@ body{
   }
   .no-background{
     background: transparent;
+  }
+  .location{
+    min-height:19em;
+    padding: 0;
+    margin: 2em auto;
+    background: url(http://www.lincolnsciencepark.co.uk/assets/images/content/homepage/boole-overview-bg.jpg) no-repeat 50% 50%
   }
 }
