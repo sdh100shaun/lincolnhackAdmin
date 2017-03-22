@@ -96,6 +96,12 @@ body {
       display: inline-flex;
       font-size: 135%;
       font-weight: 900;
+      &:hover{
+        background-color: #5e83dc;
+        opacity: 10;
+        color: #ffffff;
+
+      }
     }
   }
   .no-background {
