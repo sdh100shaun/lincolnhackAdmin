@@ -1,6 +1,6 @@
 @extends('layouts.site')
 @include('partials.header')
-
+<section>
 <div class="container-fluid">
 
     <div class="row">
@@ -53,5 +53,5 @@
 
 
     </div>
-
+</section>
 </div>

@@ -18,7 +18,7 @@
         ]) !!};
     </script>
 </head>
-<body>
+<body id="app">
 <div class="container-fluid">
 
     @yield('content')
