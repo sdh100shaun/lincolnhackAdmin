@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/hackers', 'HackerController@index');
+
 
 Auth::routes();
 
@@ -22,3 +24,4 @@ Route::get('/countdown','CountdownController@index');
 Route::resource('attendee', 'AttendeeController', ['except' => [
     'destroy'
 ]]);
+

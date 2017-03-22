@@ -19,7 +19,7 @@
             <h1>Lincoln<strong>Hack</strong></h1>
         </div>
 
-        <h2>24 Hours Of Amazing Coding Fun! in the capital of Lincolnshire</h2>
+        <h2>24 Hours Of Amazing Coding Fun! in the city centre of Lincolnshire</h2>
         <h3>20th and 21st May 2017</h3>
     </div>
 
