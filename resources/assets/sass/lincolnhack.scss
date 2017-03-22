@@ -83,8 +83,12 @@ body {
       }
     }
 
-    &.dark {
+    .highlight {
 
+      color: #5e83dc;
+      font-size: 125%;
+      font-weight: 900;
+      padding:0.2em;
     }
 
     a.tickets{
