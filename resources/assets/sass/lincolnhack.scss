@@ -1,8 +1,5 @@
 
-body{
-  background-image: url(../../images/header-bg.jpg);
-  background-repeat: no-repeat;
-  background-color: $body-bg;
+body {
 
   .flex-center {
     align-items: center;
@@ -11,6 +8,11 @@ body{
     width: 100%;
   }
 
+  .flex-inline {
+    align-content: space-around;
+    display: flex;
+    width: 70%;
+  }
   .position-ref {
     position: relative;
   }
@@ -21,77 +23,98 @@ body{
     top: 18px;
   }
 
-  p{
+  p {
     margin-top: 2em;
   }
-  h2{
-    &.sectionHeader{
+  h2 {
+    &.sectionHeader {
       border-bottom: #9BA2AB solid 1px;
       font-size: 200%;
       font-weight: 900;
     }
   }
-  img{
-    margin:1em;
+  img {
+    margin: 1em;
   }
+
   header {
+    background: $body-bg url(../../images/header-bg.jpg) no-repeat;
+    background-position: top;
+    background-size: cover;
+    h1 {
+      font-size: 4rem;
+      padding: 1rem;
+      display: block;
+      color: $title-text;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin: auto;
+      text-align: center;
+      border: solid 0.25em $title-text;
+      font-weight: 100;
+    }
 
+    h2 {
+      color: $title-text;
+      text-align: center;
+    }
 
-        h1{
-          font-size: 4rem;
-          padding:1rem;
-          display: block;
-          color: $title-text;
-          text-transform: uppercase;
-          letter-spacing: 0.02em;
-          margin: auto;
-          text-align: center;
-          border: solid 0.25em $title-text;
-          font-weight: 100;
-        }
-
-
-
-      h2{
-        color: $title-text;
-        text-align: center;
-      }
-
-      h3{
-        color: $title-text;
-        font-size: 200%;
-        font-weight: 900;
-        text-align: center;
-      }
+    h3 {
+      color: $title-text;
+      font-size: 200%;
+      font-weight: 900;
+      text-align: center;
+    }
 
   }
 
-  section{
-    min-height: 5em;
+  section {
+    min-height: 7em;
     padding-top: 2em;
-    padding-left:1em;
+    padding-left: 1em;
     padding-right: 1em;
-    &.light{
-
+    z-index: 20;
+    &.light {
 
       margin: auto;
       background-color: $lightBackground;
-      h2{
+      h2 {
         color: $headingtint;
       }
     }
 
-    &.dark{
+    &.dark {
 
     }
+
+    a.tickets{
+      margin:2rem auto;
+      text-align: center;
+      padding:1em;
+      background-color: #5e83dc;
+      color: #ffffff;
+      display: inline-flex;
+      font-size: 135%;
+      font-weight: 900;
+    }
   }
-  .no-background{
+  .no-background {
     background: transparent;
   }
-  .location{
-    min-height:19em;
+  .location {
+    min-height: 19em;
     padding: 0;
     margin: 2em auto;
-    background: url(http://www.lincolnsciencepark.co.uk/assets/images/content/homepage/boole-overview-bg.jpg) no-repeat 50% 50%
+    background: url(http://www.lincolnsciencepark.co.uk/assets/images/content/homepage/boole-overview-bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  footer{
+    min-height: 15em;
+
+    // Tint color
+    background: rgba(100, 151, 202, .5) url(images/footer-bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    background-blend-mode: multiply;
+
   }
 }
