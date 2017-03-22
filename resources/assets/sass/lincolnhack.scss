@@ -102,6 +102,15 @@ body {
         color: #ffffff;
 
       }
+      i{
+        width:auto;
+        height: 1em;
+        svg {
+          width: 35px;
+          height: 35px;
+          padding-left:5px;
+        }
+      }
     }
   }
   .no-background {
