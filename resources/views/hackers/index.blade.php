@@ -45,7 +45,7 @@
                     </tr>
                     <tr>
                         <td>Can I just come and see the presentations</td>
-                        <td>Yes. by all means there will be a small charge for presentation only tickets.</td>
+                        <td>Yes. by all means there will be a separate presentation only ticket for you to select.</td>
                     </tr>
                  </tbody>
              </table>
