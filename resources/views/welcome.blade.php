@@ -148,6 +148,7 @@
     </div>
 </section>
 
-<footer>
-
+<footer class="flex-center">
+    <p>Copyright LincolnHack 2017. &nbsp; LincolnHack is run by members of Digital Lincoln.
+<br />LincolnHack follows the standard code of conduct as written by <a href="https://hackcodeofconduct.org/">hackcodeofconduct.org.</a> LincolnHack is a fun event - help us to keep it fun by behaving appropriately.</p>
 </footer>
