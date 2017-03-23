@@ -151,7 +151,7 @@
             <img src="images/StatusCode.png" width="200px" height="auto" alt="Status code"  />
                 <img src="images/adforesight-logo.jpg" width="200px" height="auto" alt="Adforesight"  />
                 <img src="images/phpminds.svg" width="200px" height="auto" alt="PhpMinds"  />
-
+                <img src="images/digitallincoln.jpg" width="200px" height="auto" alt="Digital Lincoln"  />
 
             </div>
         </div>
