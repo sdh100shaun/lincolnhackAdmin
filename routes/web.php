@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 Route::get('/hackers', 'HackerController@index');
 
-Route::any('/register','HomeController@index');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
