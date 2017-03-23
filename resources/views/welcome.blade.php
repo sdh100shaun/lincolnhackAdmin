@@ -136,7 +136,7 @@
 
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <h2 class="sectionHeader"> Sponsored by great local companies </h2>
+            <h2 class="sectionHeader"> With some great sponsors. </h2>
         </div>
     </div>
     <div class="row">
