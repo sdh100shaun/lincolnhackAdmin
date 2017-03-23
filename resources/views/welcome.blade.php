@@ -140,15 +140,28 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12 sponsors flex-inline">
+        <div class="col-md-12 sponsors">
+            <div class="col-md-offset-1 col-md-11">
+
+            <img src="images/Khaos.svg" width="400px" height="auto" alt="Khaos Control"  />
+            <img src="images/EpixMedia.jpg" width="400px" height="auto" alt="Epix Media"  />
+            <img src="images/lsip.jpg" width="200px" height="auto" alt="Lincoln Science and Innovation Park"  />
+            <img src="images/soc.png" width="200px" height="auto" alt="University of Lincoln"  />
+            <img src="images/Reg_NoStrap_Transparent.png" width="200px" height="auto" alt="Page Tiger"  />
+            <img src="images/StatusCode.png" width="200px" height="auto" alt="Status code"  />
+                <img src="images/adforesight-logo.jpg" width="200px" height="auto" alt="Adforesight"  />
+                <img src="images/phpminds.svg" width="200px" height="auto" alt="PhpMinds"  />
 
 
+            </div>
         </div>
 
     </div>
 </section>
 
-<footer class="flex-center">
-    <p>Copyright LincolnHack 2017. &nbsp; LincolnHack is run by members of Digital Lincoln.
-<br />LincolnHack follows the standard code of conduct as written by <a href="https://hackcodeofconduct.org/">hackcodeofconduct.org.</a> LincolnHack is a fun event - help us to keep it fun by behaving appropriately.</p>
+<footer>
+    <p class="center">Copyright LincolnHack 2017. &nbsp; LincolnHack is run by members of Digital Lincoln.
+<br />LincolnHack follows the standard code of conduct as written by <a href="https://hackcodeofconduct.org/">hackcodeofconduct.org.</a> LincolnHack is a fun event - help us to keep it fun by behaving appropriately.
+    </p>
+   <div class="flex-center"><img src="images/ltech.jpg" alt="Lincolnshire Tech week"></div>
 </footer>
