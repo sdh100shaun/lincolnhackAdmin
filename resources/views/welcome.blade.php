@@ -32,13 +32,12 @@
 
             </p>
             <p>
-                Lincoln Hack is in it's second year and is still celebrating it's success from last year.
+                Lincoln Hack is in it's second year and is still celebrating success from last year.
                 This year, it is being held to coincide with Lincolnshire Tech Week, and moves to a new
                 building.
                 We plan to keep the great atmosphere though and fun and mix of great people, from students to veterans
-                all are welcome as long as your interested in tech, willing to build something and enjoy meeting
-                like-minded
-                people you will enjoy it we are sure.
+                all are welcome as long as, your interested in tech, willing to build something and enjoy meeting
+                like-minded people you will enjoy it we are sure.
             </p>
 
             <p>
@@ -194,5 +193,5 @@
     <p class="center">Copyright LincolnHack 2017. &nbsp; LincolnHack is run by members of Digital Lincoln.
 <br />LincolnHack follows the standard code of conduct as written by <a href="https://hackcodeofconduct.org/">hackcodeofconduct.org.</a> LincolnHack is a fun event - help us to keep it fun by behaving appropriately.
     </p>
-   <div class="flex-center"><img src="images/ltech.jpg" alt="Lincolnshire Tech week"></div>
+   <div class="flex-center"><a href="http://lincolnshire.tech/" title="lincolnshire Tech Week"> <img src="images/ltech.jpg" alt="Lincolnshire Tech week"></a></div>
 </footer>
