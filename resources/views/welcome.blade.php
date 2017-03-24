@@ -44,7 +44,7 @@
             <p>
                 <span class="highlight">And it is a FREE event. </span>
                 There is no excuse not to come along ....
-                <a href="http://eventbrite.com" class="btn btn-default tickets center">GET TICKETS NOW <i class="ticket-link"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve" width="512px" height="512px">
+                <a href="https://www.eventbrite.com/e/lincolnhack-ii-tickets-33165401609" class="btn btn-default tickets center">GET TICKETS NOW <i class="ticket-link"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve" width="512px" height="512px">
 <g>
     <g>
         <path d="M378.473,104.189l-28.348-19.626c-3.791-2.623-8.991-1.678-11.616,2.112c-2.625,3.791-1.678,8.991,2.112,11.616    l28.348,19.626c3.754,2.599,9.018,1.638,11.615-2.111C383.208,112.013,382.263,106.813,378.473,104.189z" fill="#FFFFFF"/>
