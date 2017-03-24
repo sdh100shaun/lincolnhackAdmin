@@ -1,12 +1,3 @@
-@if (Route::has('login'))
-    <div class="top-right links pull-right">
-        @if (Auth::check())
-            <a href="{{ url('/home') }}">Home</a>
-        @else
-            <a href="{{ url('/login') }}">login</a>
-        @endif
-    </div>
-@endif
 <header class="container-fluid">
   <div class="row  col-md-12 container-fluid">
         <div class="jumbotron no-background flex-center position-ref full-height">
