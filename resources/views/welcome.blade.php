@@ -141,19 +141,50 @@
     </div>
     <div class="row">
         <div class="col-md-12 sponsors">
-            <div class="col-md-offset-1 col-md-11">
+            <div class="col-md-12 sponsors">
+                <div class="row">
 
-            <img src="images/Khaos.svg" width="400px" height="auto" alt="Khaos Control"  />
-            <img src="images/EpixMedia.jpg" width="400px" height="auto" alt="Epix Media"  />
-            <img src="images/lsip.jpg" width="200px" height="auto" alt="Lincoln Science and Innovation Park"  />
-            <img src="images/soc.png" width="200px" height="auto" alt="University of Lincoln"  />
-            <img src="images/Reg_NoStrap_Transparent.png" width="200px" height="auto" alt="Page Tiger"  />
-            <img src="images/StatusCode.png" width="200px" height="auto" alt="Status code"  />
-                <img src="images/adforesight-logo.jpg" width="200px" height="auto" alt="Adforesight"  />
-                <img src="images/phpminds.svg" width="200px" height="auto" alt="PhpMinds"  />
-                <img src="images/digitallincoln.jpg" width="200px" height="auto" alt="Digital Lincoln"  />
+                    <div class="col-sm-4">
+                        <div class="sponsor_image sponsor_image--w " style="background-image: url('images/Khaos.svg')"></div>
+                    </div>
 
+                    <div class="col-sm-4">
+                        <div class="sponsor_image sponsor_image--w " style="background-image: url('images/EpixMedia.jpg')"></div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="sponsor_image " style="background-image: url('images/lsip.jpg')"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="sponsor_image " style="background-image: url('images/soc.png')"></div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="sponsor_image sponsor_image--w " style="background-image: url('images/Reg_NoStrap_Transparent.png')"></div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="sponsor_image sponsor_image--w statuscode" style="background-image: url('images/StatusCode.png')"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="sponsor_image sponsor_image--w adforesigh" style="background-image: url('images/adforesight-logo.jpg')"></div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="sponsor_image sponsor_image--w phpminds" style="background-image: url('images/phpminds.svg')"></div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="sponsor_image digitalincoln" style="background-image: url('images/digitallincoln.jpg')"></div>
+                    </div>
+                </div>
             </div>
+
         </div>
 
     </div>
