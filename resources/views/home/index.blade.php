@@ -192,7 +192,7 @@
             <div class="col-md-8 col-md-offset-2 text-xs-center">
 
 
-                <img src="assets/images/ltech.jpg" />
+                <img src="assets/images/ltech.jpg" style="width:320px;height: auto;" alt="Lincolnshire Tech Week"/>
 
             </div>
         </div>
