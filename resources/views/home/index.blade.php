@@ -39,7 +39,7 @@
 
                     </div>
                     <h1 class="mbr-section-title display-1" style="border: .25em solid #f2f2f2; max-width: 600px; margin: 0 auto 100px auto;"><span style="font-weight: normal;">LINCOLN</span>HACK</h1>
-                    <p class="mbr-section-lead lead">24 Hours of Amazing Coding Fun! in Lincolnshire City Centre<br>20th and 21st May 2017<br></p>
+                    <p class="mbr-section-lead lead">24 Hours of Amazing Coding Fun! in Lincolnshire.<br>20th and 21st May 2017<br></p>
 
                 </div>
             </div>
