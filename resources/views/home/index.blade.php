@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Site made with Mobirise Website Builder v3.12.1, https://mobirise.com -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="Mobirise v3.12.1, mobirise.com">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-    <meta name="description" content="">
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Lincoln Hack a 24hr coding competition in Lincoln May 20th 2017">
+    <title>LincolnHack</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
@@ -21,7 +20,7 @@
     <link rel="stylesheet" href="assets/mobirise-gallery/style.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
-
+    <title>LincolnHack</title>
 
 </head>
 <body>
@@ -51,7 +50,7 @@
 
 </section>
 
-<section class="engine"><a rel="external" href="https://mobirise.com">mobirise.com</a></section><section class="mbr-section" id="msg-box7-4" style="background-color: rgb(255, 255, 255); padding-top: 240px; padding-bottom: 240px;">
+<section class="mbr-section" id="msg-box7-4" style="background-color: rgb(255, 255, 255); padding-top: 240px; padding-bottom: 240px;">
 
 
     <div class="container">
@@ -61,14 +60,14 @@
 
 
                 <div class="mbr-table-cell col-md-5 text-xs-center text-md-right content-size">
-                    <h3 class="mbr-section-title display-2">FULL WIDTH INTRO</h3>
+                    <h3 class="mbr-section-title display-2">LincolnHack II</h3>
                     <div class="lead">
 
-                        <p>Lincoln Hack is a free 24 hour coding competition where teams of up to four people compete for fantastic prizes. They start with an idea and build it in to something. Hardware hacks, software hacks, API mash-ups, funny things, arty things, noisy things... whatever you decide to create, you’ve got 24 hours to do it!<br><br>Lincoln Hack is in it's second year and is still celebrating it's success from last year. This year, it is being held to coincide with Lincolnshire Tech Week, and moves to a new building. We plan to keep the great atmosphere though and fun and mix of great people, from students to veterans all are welcome as long as your interested in tech, willing to build something and enjoy meeting like-minded people you will enjoy it we are sure<br><br>And it is a FREE event. There is no excuse not to come along ....&nbsp;<br></p>
+                        <p>LincolnHack is a free 24 hour coding competition where teams of up to four people compete for fantastic prizes. They start with an idea and build it in to something. Hardware hacks, software hacks, API mash-ups, funny things, arty things, noisy things... whatever you decide to create, you’ve got 24 hours to do it!<br><br>LincolnHack is in it's second year and is still celebrating it's success from last year. This year, it is being held to coincide with Lincolnshire Tech Week, and moves to a new building. We plan to keep the great atmosphere though and fun and mix of great people, from students to veterans all are welcome as long as your interested in tech, willing to build something and enjoy meeting like-minded people you will enjoy it we are sure<br><br>And it is a FREE event. There is no excuse not to come along ....&nbsp;<br></p>
 
                     </div>
 
-                    <div><a class="btn btn-info" href="https://mobirise.com">GET TICKETS NOW</a> </div>
+                    <div><a class="btn btn-info" href="https://www.eventbrite.com/e/lincolnhack-ii-tickets-33165401609">GET TICKETS NOW</a> </div>
                 </div>
 
 
@@ -97,10 +96,7 @@
 </section>
 
 <section class="mbr-gallery mbr-section mbr-section-nopadding mbr-slider-carousel" id="gallery3-3" data-filter="false" style="background-color: rgb(255, 255, 255); padding-top: 1.5rem; padding-bottom: 1.5rem;">
-    <!-- Filter -->
 
-
-    <!-- Gallery -->
     <div class="mbr-gallery-row">
         <div class=" mbr-gallery-layout-default">
             <div>
