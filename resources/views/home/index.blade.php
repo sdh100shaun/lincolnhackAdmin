@@ -201,7 +201,7 @@
                         <a href="http://www.lincoln.ac.uk/home/socs/" target="_blank"><img alt="University of Lincoln School of Computer Science" src="images/soc.png"></a>
                     </div>
                     <div class="sponsor big">
-                        <a href="https://www.meetup.com/digitallincoln/" target="_blank"><img alt="Digital Lincoln" src="images/digitallincoln.jpg"></a>
+                        <a href="https://www.meetup.com/digitallincoln/" target="_blank"><img alt="Digital Lincoln" src="images/digitallincoln.png"></a>
                     </div>
                     <div class="sponsor big">
                         <a href="http://lincolnshire.tech/" target="_blank"><img alt="Digital Lincoln" src="images/ltech.jpg"></a>
