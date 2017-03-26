@@ -21,7 +21,7 @@
         body {
             font-size: 16px;
         }
-        
+
         .root {
             background-image: url("images/header-bg-2000x1151.jpg");
             background-size: cover;
@@ -30,12 +30,12 @@
             position: relative;
             color: #fff;
         }
-        
+
         .subtitle {
             font-size: 27px;
             font-style: italic;
         }
-        
+
         .maintitle {
             display: block;
             color: #fff;
@@ -48,60 +48,65 @@
             max-width: 320px;
             font-weight: 100;
         }
-        
+
         .h--1,
         .h--2 {
             font-size: 36px;
         }
-        
+
         .h--3 {
             font-size: 28px;
         }
-        
+
         .h--4,
         .h--5 {
             font-size: 20px;
         }
-        
+
         .h--1 {
             margin-top: 0;
+            margin-bottom: 30px;
+            text-transform: uppercase;
         }
-        
+
         .h--4 {
-            color: #000;
             text-align: center;
             margin: 20px 0;
         }
-        
+
         .xs-center {
             text-align: center;
         }
-        
+
         .btn {
             background: none;
         }
-        
+
         .btn-primary {
             background-color: #5e83dc;
             border-color: #5e83dc;
             color: #ffffff;
         }
-        
+
         .wrapper {
-            padding-top: 30px;
-            padding-bottom: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
-        
+
         .wrapper--grey {
             background-color: rgb(46, 46, 46);
             color: #fff;
         }
-        
+
         .img-promo {
-            margin: 40px auto 0 auto;
+            margin: 40px auto 40px auto;
             width: 500px;
+            border: 1px solid #fff;
         }
-        
+        .img-promo:nth-of-type(2) {
+            margin: 0px auto 40px auto;
+        }
+
         .arrow {
             background: rgba(0, 0, 0, 0.2);
             border-radius: 3px;
@@ -114,16 +119,16 @@
             transition: all .3s ease-in-out;
             width: 46px;
         }
-        
+
         .arrow a {
             color: #fff;
             display: block;
             line-height: 46px;
         }
-        
+
         .parallax {
             background-image: url(images/header-bg-2000x1151.jpg);
-            min-height: 160px;
+            min-height: 100px;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -131,37 +136,50 @@
             color: #fff;
             padding: 35px 0;
         }
-        
+
         .parallax--boole {
             background-image: url(images/boole-overview-bg-2000x1731.jpg);
             color: #000;
         }
-        
+
         .parallax--group {
             background-image: url(images/footer-bg-2000x1334.jpg);
             color: #000;
             padding: 170px;
         }
+
+        .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+    margin: -10px;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    color: #000;
+}
         /* ----------------------------------------------------------------------------
        Sponsors
    ---------------------------------------------------------------------------- */
-        
+
         .sponsors {
             font-size: 0;
             line-height: 0;
+            text-align: center;
         }
-        
+
         .sponsor {
             margin: 15px;
             display: inline-block;
+            background: #fff;
         }
-        
+
         .sponsor:not(.inline) {
             position: relative;
             vertical-align: top;
             border: 2px solid #e9e9e9;
         }
-        
+
         .sponsor:not(.inline) img {
             -webkit-transform: translateX(-50%) translateY(-50%);
             -moz-transform: translateX(-50%) translateY(-50%);
@@ -175,21 +193,21 @@
             max-width: 80%;
             max-height: 80%;
         }
-        
+
         .sponsor:not(.inline):not(.big) {
             width: 160px;
             height: 160px;
         }
-        
+
         .sponsor.big {
             width: 255px;
             height: 255px;
         }
-        
+
         .sponsor.inline {
             vertical-align: middle;
         }
-        
+
         @media (max-width: 1199px) {
             .sponsor:not(.inline):not(.big) {
                 margin: 8px;
@@ -202,7 +220,7 @@
                 height: 205px;
             }
         }
-        
+
         @media (max-width: 991px) {
             .sponsor:not(.inline):not(.big) {
                 margin: 5px;
@@ -211,17 +229,17 @@
             }
             .sponsor.big {
                 margin: 10px;
-                width: 160px;
-                height: 160px;
+                width: 200px;
+                height: 200px;
             }
         }
-        
+
         @media (max-width: 767px) {
             .inline {
                 margin: 10px;
             }
         }
-        
+
         @media (max-width: 480px) {
             .sponsor:not(.inline):not(.big) {
                 margin: 5px;
@@ -230,11 +248,11 @@
             }
             .sponsor.big {
                 margin: 10px;
-                width: 115px;
-                height: 115px;
+                width: 180px;
+                height: 180px;
             }
         }
-        
+
         @media (min-width: 768px) {
             .wrapper {
                 margin: 70px 0;
@@ -253,7 +271,7 @@
 
 </head>
 <body>
-    <div class="root">
+    <div class="root parallax">
         <div class="xs-center">
             <img alt="Hack Imp" src="images/lincoln-hack-imp.png"> <span class="maintitle">Lincoln<strong>Hack</strong></span>
             <p class="subtitle">24 Hours Of Amazing Coding Fun!<br> In Lincolnshire<br> 20TH &amp; 21ST OF MAY 2017</p>
@@ -262,7 +280,7 @@
             </div>
         </div>
     </div>
-    <div class="wrapper">
+    <div class="wrapper wrapper--grey wrapper--no-margin">
         <div class="container">
             <div class="row">
                 <div class="col-sm-5" id="js-what-is-lincolnHack">
@@ -277,7 +295,12 @@
             </div>
         </div>
     </div>
-    <div class="wrapper">
+
+    <div class="parallax parallax--boole">
+
+    </div>
+
+    <div class="wrapper wrapper--grey wrapper--no-margin">
         <div class="container">
             <div class="row">
                 <div class="col-sm-5"><img alt="promo" class="img-responsive img-promo" src="images/promo-img-1400x1403.png"></div>
@@ -291,12 +314,13 @@
         </div>
     </div>
     <div class="parallax parallax--boole">
-        <h1 class="h h--1 xs-center">Boole Technology Centre</h1>
-        <p class="xs-center">How to find us</p>
+
     </div>
     <div class="wrapper wrapper--grey wrapper--no-margin">
         <div class="container">
             <div class="row">
+                <h3 class="h h--1 xs-center">How to find us</h3>
+
                 <div class="col-sm-5">
                     <address>
           Boole Technology Centre,<br>
@@ -306,7 +330,7 @@
         </address>
                     <p>LincolnHack Starts:<br> 10am, May 20th, 2017</p>
                     <p>LincolnHack Ends:<br> 5:30pm (ish), May 21st 2017</p>
-                    <p>Email: <a href="mailto:hello@lincolnhack.org">hello@lincolnhack.org</a>.</p>
+                    <p style="margin-bottom: 50px;">Email: <a href="mailto:hello@lincolnhack.org">hello@lincolnhack.org</a>.</p>
                 </div>
                 <div class="col-sm-5 col-sm-offset-2">
                     <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&q=place_id:ChIJzz20p9BaeEgRC8eKyusvgcQ" style="border: none; width: 100%; height:235px"></iframe>
@@ -315,12 +339,13 @@
         </div>
     </div>
     <div class="parallax">
-        <h1 class="h h--1 xs-center">Schedule</h1>
-        <p class="xs-center">Subject to change...</p>
+
     </div>
-    <div class="wrapper wrapper--no-padding">
+    <div class="wrapper wrapper--grey wrapper--no-margin">
         <div class="container">
             <div class="row">
+                <h3 class="h h--1 xs-center">Schedule</h3>
+                <p class="xs-center">Subject to change...</p>
                 <div class="col-sm-5">
                     <table class="table">
                         <tbody>
@@ -387,14 +412,15 @@
         </div>
     </div>
     <div class="parallax">
-        <h1 class="h h--1 xs-center">Sponsors</h1>
-        <p class="xs-center">LincolnHack would not be possible without the generosity of our sponsors</p>
-    </div>
-    <div class="wrapper">
+            </div>
+    <div class="wrapper wrapper--grey wrapper--no-margin">
         <div class="container">
             <div class="row">
-                <h4 class="h h--4">Gold Sponsors</h4>
-                <div class="sponsors">
+                <h3 class="h h--1 xs-center">Sponsors</h3>
+                <p class="xs-center">LincolnHack would not be possible without the generosity of our sponsors</p>
+
+                    <h4 class="h h--4">Gold Sponsors</h4>
+                <div class="row sponsors">
                     <div class="sponsor big">
                         <a href="https://www.epixmedia.co.uk/" target="_blank"><img alt="EpixMedia" src="images/EpixMedia.jpg"></a>
                     </div>
@@ -403,7 +429,7 @@
                     </div>
                 </div>
                 <h4 class="h h--4">Logo Sponsors</h4>
-                <div class="sponsors">
+                <div class="row sponsors">
                     <div class="sponsor big">
                         <a href="https://phpminds.org/" target="_blank"><img alt="PHP Minds" src="images/phpminds.svg"></a>
                     </div>
@@ -418,7 +444,7 @@
                     </div>
                 </div>
                 <h4 class="h h--4">Partners</h4>
-                <div class="sponsors">
+                <div class="row sponsors">
                     <div class="sponsor big">
                         <a href="http://www.lincolnsciencepark.co.uk/" target="_blank"><img alt="Lincoln Science and Innovation Park" src="images/lsip.jpg"></a>
                     </div>
@@ -436,12 +462,13 @@
         </div>
     </div>
     <div class="parallax parallax--boole">
-        <h1 class="h h--1 xs-center">FAQ's</h1>
     </div>
-    <div class="wrapper wrapper--no-padding">
+    <div class="wrapper wrapper--grey wrapper--no-margin">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
+                    <h3 class="h h--1 xs-center">FAQ's</h3>
+
                     <div class="panel-group" id="accordion" role="tablist">
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab">
