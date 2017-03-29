@@ -17,7 +17,7 @@ add('writable_dirs', []);
 // Servers
 
 server('production', 'lincolnhack.codesho.ws')
-    ->user('rob')
+    ->user('lincolnhack')
     ->identityFile('public key location', 'private key location', 'password')
     ->set('deploy_path', '/sites/lincolnhack')
     ->pty(true);
