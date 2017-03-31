@@ -187,7 +187,12 @@ Sponsors
 .sponsor.inline {
   vertical-align: middle;
 }
-
+.message{
+  padding:0.3em;
+  background: firebrick;
+  color: white;
+  font-size: 135%;
+}
 @media (max-width: 1199px) {
   .sponsor:not(.inline):not(.big) {
     margin: 8px;
@@ -286,4 +291,5 @@ Sponsors
   .img-promo {
     margin: 0;
   }
+
 }

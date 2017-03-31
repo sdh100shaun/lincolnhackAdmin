@@ -20,6 +20,9 @@
 
 </head>
 <body>
+<div class="message xs-center">
+    <p><strong>More tickets get released 12 noon Sunday 2nd April 2017 </strong> </p>
+</div>
     <div class="root parallax">
         <div class="xs-center">
             <img alt="Hack Imp" src="images/lincoln-hack-imp.png"> <span class="maintitle">Lincoln<strong>Hack</strong></span>
