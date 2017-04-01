@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
+
         <style>
             html, body {
                 background: #BE93C5; /* fallback for old browsers */
@@ -22,7 +23,13 @@
                 height: 100vh;
                 margin: 0;
             }
-
+            .message{
+                padding:0.3em;
+                background: firebrick;
+                color: white;
+                font-size: 135%;
+                text-align: center;
+            }
             .full-height {
                 height: 100vh;
             }
@@ -68,7 +75,7 @@
                 margin-bottom: 30px;
             }
             img{
-                margin-top: 10%;
+                margin-top: 3%;
             }
         </style>
         <script>
@@ -78,6 +85,7 @@
         </script>
     </head>
     <body>
+        @include('partials.message');
         <div class="flex-center position-ref full-height" id="app">
 
             <div class="content">

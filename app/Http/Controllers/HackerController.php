@@ -12,6 +12,7 @@ namespace app\Http\Controllers;
 use App\Http\Requests\StoreAttendee;
 use GuzzleHttp\Client;
 use Illuminate\Config\Repository;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Lincolnhack\Model\Attendee;
 use Lincolnhack\Model\Slack;
@@ -34,16 +35,11 @@ class HackerController
         $this->client = $client;
     }
     
-    public function index()
+    public function setMessage(Request $request)
     {
         
-        $slackToken = $this->slack['token'];
-        $slackApi=$this->slack['url'];
-        $slackApi.='/api/users.admin.invite?t=' . time();
-        $slack->setBaseUrl($slackApi);
-        $slack->setClient($this->client);
+      // @todo handle post from the message component
         
-        return $slack->sendSlackInvite($attendee),$slackToken,$slackApi);
         
     }
 }

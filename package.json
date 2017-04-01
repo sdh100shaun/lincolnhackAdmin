@@ -17,6 +17,7 @@
     "vue": "^2.2.2"
   },
   "dependencies": {
+    "element-ui": "^1.2.7",
     "imagemin-webpack-plugin": "^1.4.4"
   }
 }

@@ -17,7 +17,7 @@ class Attendee extends Model
     
     protected  $service;
     
-    protected $fillable = ['attendeeId','firstName','lastName'];
+    
     
     protected $collection = "attendees";
     

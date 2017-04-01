@@ -20,6 +20,7 @@ Route::get('/hackers', 'HackerController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::post('/setMessage','HackerController@setMessage');
 Route::get('/countdown','CountdownController@index');
 Route::resource('attendee', 'AttendeeController', ['except' => [
     'destroy'
