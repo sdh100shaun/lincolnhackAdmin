@@ -9,13 +9,11 @@
 namespace app\Http\Controllers;
 
 
-use App\Http\Requests\StoreAttendee;
+
 use GuzzleHttp\Client;
 use Illuminate\Config\Repository;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Config;
-use Lincolnhack\Model\Attendee;
-use Lincolnhack\Model\Slack;
+
 
 
 class HackerController
