@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreAttendee;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
+use Illuminate\Config\Repository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Log;
 use Lincolnhack\Model\Attendee;
+use Lincolnhack\Model\Slack;
 use Lincolnhack\Model\Tshirt;
 
 class AttendeeController extends Controller
@@ -27,21 +29,35 @@ class AttendeeController extends Controller
     private $tshirt;
     
     private $hackbot;
+    /**
+     * @var Client
+     */
+    private $slackClient;
+    /**
+     * @var Repository
+     */
+    private $config;
     
     /**
      * AttendeeController constructor.
      * @param Attendee $attendee
-     * @param Client $client
      * @param Tshirt $tshirt
+     * @param Client $slackClient
+     * @param Repository $config
+     * @internal param Client $client
      */
-    public function __construct(Attendee $attendee, Tshirt $tshirt)
+    public function __construct(Attendee $attendee, Tshirt $tshirt, Client $slackClient, Repository $config)
     {
-        $this->hackbot = Config::get('hackbot');
+        $this->config = $config;
+        $this->hackbot = $this->config->get('hackbot');
+        $this->slack = $this->config->get('slack');
         $this->attendee = $attendee;
         $this->client = new Client([
             'auth' => [$this->hackbot["username"], $this->hackbot["password"]],
         ]);
         $this->tshirt = $tshirt;
+        $this->slackClient = $slackClient;
+       
     }
     
     /**
@@ -70,7 +86,7 @@ class AttendeeController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreAttendee $request)
+    public function store(StoreAttendee $request, Slack $slack)
     {
         $this->attendee = $this->attendee->add($request->toArray());
         
@@ -87,6 +103,12 @@ class AttendeeController extends Controller
             try{
                 $this->configureForHackbot();
                 $this->attendee->hackbotStatus = json_decode($this->attendee->postToHackbot());
+                $slackToken = $this->slack['token'];
+                $slackApi=$this->slack['url'];
+                $slackApi.='/api/users.admin.invite?t=' . time();
+                $slack->setBaseUrl($slackApi);
+                $slack->setClient($this->client);
+                $this->attendee->slackResponse = $slack->sendSlackInvite($this->attendee,$slackToken,$slackApi);
             }
             catch (ClientException $clientException)
             {
@@ -107,6 +129,7 @@ class AttendeeController extends Controller
     {
         if(auth()->guest())
         {
+            
             return view('attendee.confirm',["attendee"=>$attendee]);
         }
         return json_encode($attendee);

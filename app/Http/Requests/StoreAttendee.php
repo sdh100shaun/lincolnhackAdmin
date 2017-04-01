@@ -27,6 +27,8 @@ class StoreAttendee extends FormRequest
             'attendeeId' => 'required|email',
             'tshirt' => 'required',
             'dietaryRequirements' => 'required',
+            'firstName'=>'required',
+            'lastName'=>'required'
         ];
     }
 }

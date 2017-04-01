@@ -19,11 +19,24 @@
                             </div>
                         @endif
                         <p>Just some things we need to know ahead of the event.</p>
-                        <form method="post" action="{{ route('attendee.store') }}">
+                        <form method="post" action="{{ route('attendee.store') }}" class="form-horizontal">
 
                             {!! csrf_field() !!}
                         <fieldset>
-
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="firstName">First Name</label>
+                                <div class="col-md-6">
+                                    <input id="firstName" value="{{old("firstName")}}" name="firstName" type="text" placeholder="Your first name" class="form-control input-md" required="required">
+                                </div>
+                            </div>
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="lastName">Last Name</label>
+                                <div class="col-md-6">
+                                    <input id="lastName" value="{{old("lastName")}}" name="lastName" type="text" placeholder="Your last name" class="form-control input-md" required="required">
+                                </div>
+                            </div>
                             <!-- Text input-->
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="attendeeId">Email</label>
@@ -65,7 +78,7 @@
                             </div>
 
                         </fieldset>
-                            <input type="submit" class="btn btn-success pull-right" value="send" />
+                            <input type="submit" class="btn btn-primary pull-right" value="send" />
                         </form>
                     </div>
                 </div>

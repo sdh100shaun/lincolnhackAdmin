@@ -36,4 +36,6 @@ class ApplicationTest extends TestCase
     
         $response->assertStatus(302);
     }
+    
+    
 }

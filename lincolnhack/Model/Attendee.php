@@ -17,6 +17,8 @@ class Attendee extends Model
     
     protected  $service;
     
+    protected $fillable = ['attendeeId','firstName','lastName'];
+    
     protected $collection = "attendees";
     
     
@@ -33,6 +35,10 @@ class Attendee extends Model
         
     }
     
+    /**
+     * @param array $properties
+     * @return Attendee
+     */
     public function add(array $properties):Attendee
     {
         $self = $this;
