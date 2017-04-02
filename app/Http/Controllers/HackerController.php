@@ -13,7 +13,7 @@ namespace app\Http\Controllers;
 use GuzzleHttp\Client;
 use Illuminate\Config\Repository;
 use Illuminate\Http\Request;
-
+use Lincolnhack\Repositories\MessageRepository;
 
 
 class HackerController
@@ -22,22 +22,29 @@ class HackerController
      * @var Client
      */
     private $client;
+    /**
+     * @var MessageRepository
+     */
+    private $messageRepository;
     
     /**
      * HackerController constructor.
-     * @param Client $client
+     *
+     * @param MessageRepository $messageRepository
      */
-    public function __construct(Client $client, Repository $config)
+    public function __construct(MessageRepository $messageRepository)
     {
-        $this->slack = $config->get('slack');
-        $this->client = $client;
+        $this->messageRepository = $messageRepository;
     }
     
     public function setMessage(Request $request)
     {
         
-      // @todo handle post from the message component
+        $data['message'] = filter_var($request->get('message'),FILTER_SANITIZE_STRING);
+        $data['active'] = strtotime($request->get('active'));
+        $data['type'] =$request->get('type');
         
-        
+        $this->messageRepository->addMessage($data);
+        return redirect('/home');
     }
 }
