@@ -47,4 +47,5 @@ class HackerController
         $this->messageRepository->addMessage($data);
         return redirect('/home');
     }
+    
 }

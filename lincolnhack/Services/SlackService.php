@@ -19,6 +19,9 @@ class SlackService extends AbstractService
   
     private $slackToken;
     
+    /**
+     * @param $slackToken
+     */
     public function setToken($slackToken)
     {
         $this->slackToken = $slackToken;
@@ -26,6 +29,11 @@ class SlackService extends AbstractService
     }
     
     
+    /**
+     * @param Attendee $attendee
+     * @param $endpoint
+     * @return string
+     */
     public function invite(Attendee $attendee, $endpoint)
     {
      

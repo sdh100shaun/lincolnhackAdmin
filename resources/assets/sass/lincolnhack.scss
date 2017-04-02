@@ -193,6 +193,9 @@ Sponsors
   color: white;
   font-size: 135%;
 }
+.attendee-form{
+  color:#000000;
+}
 @media (max-width: 1199px) {
   .sponsor:not(.inline):not(.big) {
     margin: 8px;
@@ -236,6 +239,18 @@ Sponsors
     width: 180px;
     height: 180px;
   }
+}
+#map{
+  height: 400px;
+}
+.attendee-location{
+  img{
+    width:75px; height: auto;
+  }
+  vertical-align: middle;
+  padding:5px 25px 20px 25px;
+  color:#fff;
+  background:#000000;
 }
 .lincolhack-flat-button {
   position: relative;
