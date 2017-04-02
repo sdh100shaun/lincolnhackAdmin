@@ -2,3 +2,13 @@ language: php
 php: '7.0'
 before_install: echo "extension = mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 install: composer install
+env:
+  global:
+    - setup=basic
+    - APP_ENV=staging
+    - APP_DEBUG=true
+    - APP_KEY=WbvTI5O29PtowunRC3ljFcu1qfy3+TSp3IFHSLhCYc8=]
+    - DB_CONNECTION=sqlite
+    - CACHE_DRIVER=file
+    - SESSION_DRIVER=file
+    - QUEUE_DRIVER=sync
