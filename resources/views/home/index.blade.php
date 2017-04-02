@@ -200,7 +200,7 @@
                 <h4 class="h h--4">Logo Sponsors</h4>
                 <div class="row sponsors">
                     <div class="sponsor big">
-                        <a href="https://phpminds.org/" target="_blank"><img alt="PHP Minds" src="images/phpminds.svg"></a>
+                        <a href="https://www.phpminds.org/" target="_blank"><img alt="PHP Minds" src="images/phpminds.svg"></a>
                     </div>
                     <div class="sponsor big">
                         <a href="https://cooperpress.com/" target="_blank"><img alt="StatusCode" src="images/StatusCode.png"></a>
