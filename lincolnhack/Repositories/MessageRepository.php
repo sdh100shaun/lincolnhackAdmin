@@ -34,17 +34,19 @@ class MessageRepository
      */
     public function getLastMessage($type):string
     {
-        $lastMessage ='';
+        $lastMessage = '';
         
         $message = $this->makeModel();
         
-        $message = $message->where('active','>', time())->where('type',$type)->get();
-     
-        if(!$message->isEmpty())
-        {
-            $lastMessage = $message->first()->message;
+        if (!empty($type)) {
+            $message = $message->where('active', '>', time())->where('type', $type)->get();
+            if (!$message->isEmpty()) {
+                $lastMessage = $message->first()->message;
+            }
         }
-       return $lastMessage;
+        
+        
+        return $lastMessage;
     }
     
     /**
@@ -53,8 +55,8 @@ class MessageRepository
      */
     private function makeModel():Message
     {
-        $modelName = str_replace('Repositories','Model',__CLASS__);
-        $modelName = str_replace('Repository','',$modelName);
+        $modelName = str_replace('Repositories', 'Model', __CLASS__);
+        $modelName = str_replace('Repository', '', $modelName);
         
         return $this->container->make($modelName);
         
@@ -62,15 +64,16 @@ class MessageRepository
     
     /**
      * @param array $properties
+     * @return Message
      */
-    public function addMessage(array $properties)
+    public function addMessage(array $properties):Message
     {
         $model = $this->makeModel();
-        array_walk($properties,function($value,$key) use ($model) {
+        array_walk($properties, function ($value, $key) use ($model) {
             $model->$key = $value;
         });
         $model->save();
-        
+        return $model;
     }
     
 }
