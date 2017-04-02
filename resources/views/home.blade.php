@@ -3,7 +3,5 @@
 @section('content')
 
     <messages></messages>
-
-
     <tshirt></tshirt>
 @endsection
