@@ -8,7 +8,7 @@ env:
     - APP_ENV=staging
     - APP_DEBUG=true
     - APP_KEY=WbvTI5O29PtowunRC3ljFcu1qfy3+TSp3IFHSLhCYc8=]
-    - DB_CONNECTION=sqlite
+    - DB_CONNECTION=mongodb
     - CACHE_DRIVER=file
     - SESSION_DRIVER=file
     - QUEUE_DRIVER=sync

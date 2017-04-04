@@ -13,6 +13,7 @@ namespace app\Http\Controllers;
 use GuzzleHttp\Client;
 use Illuminate\Config\Repository;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Event;
 use Lincolnhack\Repositories\MessageRepository;
 
 
@@ -45,6 +46,7 @@ class HackerController
         $data['type'] =$request->get('type');
         
         $this->messageRepository->addMessage($data);
+        
         return redirect('/home');
     }
     
