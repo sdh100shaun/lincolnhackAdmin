@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "element-ui": "^1.2.7",
-    "imagemin-webpack-plugin": "^1.4.4"
+    "imagemin-webpack-plugin": "^1.4.4",
+    "laravel-echo": "^1.3.0",
+    "pusher-js": "^4.0.0"
   }
 }

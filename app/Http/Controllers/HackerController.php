@@ -10,6 +10,7 @@ namespace app\Http\Controllers;
 
 
 
+use App\Events\CountdownMessageEvent;
 use GuzzleHttp\Client;
 use Illuminate\Config\Repository;
 use Illuminate\Http\Request;
@@ -45,6 +46,7 @@ class HackerController
         $data['type'] =$request->get('type');
         
         $this->messageRepository->addMessage($data);
+        event(new CountdownMessageEvent($data));
         return redirect('/home');
     }
     

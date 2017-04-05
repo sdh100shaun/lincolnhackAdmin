@@ -8,6 +8,13 @@
 require('./bootstrap');
 
 
+window.Pusher = require('pusher-js');
+
+window.Echo = new Echo({
+    broadcaster: 'pusher',
+    key: 'a7db4bd6f484f5635646'
+});
+
 
 Vue.component('tshirt', require('./components/tshirt.vue'));
 Vue.component('countdown',require('./components/countdown.vue'));
@@ -19,3 +26,9 @@ const app = new Vue({
         active:null
     }
 });
+
+Echo.private(`countdown-message`)
+    .listen('CountdownMessage', (e) => {
+        console.log(e.update);
+    });
+
