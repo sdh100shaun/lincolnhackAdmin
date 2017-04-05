@@ -211,6 +211,9 @@
                     <div class="sponsor big">
                         <a href="https://www.pagetiger.com/" target="_blank"><img alt="Page Tiger" src="images/page-tiger.png"></a>
                     </div>
+                    <div class="sponsor big">
+                        <a href="http://www.steamdesk.com/" target="_blank"><img alt="Steam Desk" src="images/Steamdesk-Square-Logo.jpg"></a>
+                    </div>
                 </div>
                 <h4 class="h h--4">Partners</h4>
                 <div class="row sponsors">
