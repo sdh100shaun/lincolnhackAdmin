@@ -194,7 +194,7 @@
                         <a href="https://www.khaoscontrol.com/" target="_blank"><img alt="KhaosControl" src="images/KhaosControl_Red-Black.jpg"></a>
                     </div>
                     <div class="sponsor big">
-                        <a href="https://laser.red" target="_blank"><img alt="Laser Red" src="images/laserred.png"></a>
+                        <a href="https://laser.red" target="_blank"><img alt="Laser Red" src="images/LaserRed600.png"></a>
                     </div>
                 </div>
                 <h4 class="h h--4">Logo Sponsors</h4>
