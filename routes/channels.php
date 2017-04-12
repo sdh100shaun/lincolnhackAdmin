@@ -11,6 +11,8 @@
 |
 */
 
-Broadcast::channel('countdown-message', function ($user, $id) {
+use Illuminate\Support\Facades\Broadcast;
+
+Broadcast::channel('countdown.*', function ($user, $id) {
     return true;
 });

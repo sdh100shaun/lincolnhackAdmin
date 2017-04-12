@@ -23286,12 +23286,8 @@ module.exports = g;
 
 /***/ }),
 /* 33 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_echo__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_echo__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -23300,14 +23296,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  */
 
 __webpack_require__(77);
-
-
-window.Pusher = __webpack_require__(102);
-
-window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
-    broadcaster: 'pusher',
-    key: 'a7db4bd6f484f5635646'
-});
 
 Vue.component('tshirt', __webpack_require__(105));
 Vue.component('countdown', __webpack_require__(103));
@@ -23320,8 +23308,9 @@ var app = new Vue({
     }
 });
 
-__WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a.private('countdown-message').listen('CountdownMessage', function (e) {
-    console.log(e.update);
+window.Echo.channel('message.countdown').listen('CountdownMessage', function (e) {
+    alert(e);
+    console.log(e);
 });
 
 /***/ }),
@@ -25701,8 +25690,12 @@ __WEBPACK_IMPORTED_MODULE_2_element_ui_lib_locale___default.a.use(__WEBPACK_IMPO
 
 /***/ }),
 /* 77 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_echo__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_echo__);
 
 window._ = __webpack_require__(101);
 
@@ -25749,6 +25742,14 @@ window.axios.defaults.headers.common = {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
+
+
+window.Pusher = __webpack_require__(102);
+
+window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
+  broadcaster: 'pusher',
+  key: 'a7db4bd6f484f5635646'
+});
 
 /***/ }),
 /* 78 */

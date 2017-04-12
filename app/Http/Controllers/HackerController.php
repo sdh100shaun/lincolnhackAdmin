@@ -10,7 +10,7 @@ namespace app\Http\Controllers;
 
 
 
-use App\Events\CountdownMessageEvent;
+use App\Events\CountdownMessage;
 use GuzzleHttp\Client;
 use Illuminate\Config\Repository;
 use Illuminate\Http\Request;
@@ -38,16 +38,28 @@ class HackerController
         $this->messageRepository = $messageRepository;
     }
     
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function setMessage(Request $request)
     {
-        
+        $eventfired = false;
         $data['message'] = filter_var($request->get('message'),FILTER_SANITIZE_STRING);
         $data['active'] = strtotime($request->get('active'));
         $data['type'] =$request->get('type');
         
-        $this->messageRepository->addMessage($data);
-        event(new CountdownMessageEvent($data));
-        return redirect('/home');
+        $countdownMessage = $this->messageRepository->addMessage($data);
+       
+        if($data["type"] =="countdown")
+        {
+            event(new CountdownMessage($countdownMessage));
+            $eventfired=true;
+        }
+        
+        
+       
+        return redirect('/home'."?event=".$eventfired."&type=".$data['type']);
     }
     
 }
