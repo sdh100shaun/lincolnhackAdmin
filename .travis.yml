@@ -7,21 +7,11 @@ install: composer install  --no-interaction
 services:
   - mongodb
 before_script:
+  - cp env.testing .env
   - php artisan key:generate
   - php artisan config:clear
   - php artisan migrate
 env:
   global:
     - setup=basic
-    - APP_ENV=staging
-    - APP_DEBUG=true
-    - APP_KEY=WbvTI5O29PtowunRC3ljFcu1qfy3+TSp3IFHSLhCYc8=]
-    - DB_CONNECTION=mongodb
-    - DB_HOST=localhost
-    - DB_PORT=27017
-    - DB_DATABASE=lincolnhack
-    - DB_USERNAME=''
-    - DB_PASSWORD=
-    - CACHE_DRIVER=file
-    - SESSION_DRIVER=file
-    - QUEUE_DRIVER=sync
+
