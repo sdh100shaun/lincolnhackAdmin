@@ -194,7 +194,13 @@
                         <a href="https://www.khaoscontrol.com/" target="_blank"><img alt="KhaosControl" src="images/KhaosControl_Red-Black.jpg"></a>
                     </div>
                     <div class="sponsor big">
-                        <a href="https://laser.red" target="_blank"><img alt="Laser Red" src="images/laserred.png"></a>
+                        <a href="https://laser.red" target="_blank"><img alt="Laser Red" src="images/LaserRed600.png"></a>
+                    </div>
+                </div>
+                <h4 class="h h--4">Silver Sponsors</h4>
+                <div class="row sponsors">
+                    <div class="sponsor big">
+                        <a href="http://lincsinnovation.co.uk/" target="_blank"><img alt="Innovation programme for Greater Lincolnshire" src="images/innovation-logo.jpg"></a>
                     </div>
                 </div>
                 <h4 class="h h--4">Logo Sponsors</h4>
@@ -210,6 +216,9 @@
                     </div>
                     <div class="sponsor big">
                         <a href="https://www.pagetiger.com/" target="_blank"><img alt="Page Tiger" src="images/page-tiger.png"></a>
+                    </div>
+                    <div class="sponsor big">
+                        <a href="http://www.steamdesk.com/" target="_blank"><img alt="Steam Desk" src="images/Steamdesk-Square-Logo.jpg"></a>
                     </div>
                 </div>
                 <h4 class="h h--4">Partners</h4>

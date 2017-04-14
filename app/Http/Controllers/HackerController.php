@@ -14,6 +14,7 @@ use App\Events\CountdownMessage;
 use GuzzleHttp\Client;
 use Illuminate\Config\Repository;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Event;
 use Lincolnhack\Repositories\MessageRepository;
 
 
@@ -44,22 +45,23 @@ class HackerController
      */
     public function setMessage(Request $request)
     {
-        $eventfired = false;
+        
         $data['message'] = filter_var($request->get('message'),FILTER_SANITIZE_STRING);
         $data['active'] = strtotime($request->get('active'));
         $data['type'] =$request->get('type');
         
+
         $countdownMessage = $this->messageRepository->addMessage($data);
        
         if($data["type"] =="countdown")
         {
             event(new CountdownMessage($countdownMessage));
-            $eventfired=true;
         }
         
         
        
-        return redirect('/home'."?event=".$eventfired."&type=".$data['type']);
+        return redirect('/home');
+
     }
     
 }
