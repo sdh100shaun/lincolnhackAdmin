@@ -197,6 +197,12 @@
                         <a href="https://laser.red" target="_blank"><img alt="Laser Red" src="images/LaserRed600.png"></a>
                     </div>
                 </div>
+                <h4 class="h h--4">Silver Sponsors</h4>
+                <div class="row sponsors">
+                    <div class="sponsor big">
+                        <a href="http://lincsinnovation.co.uk/" target="_blank"><img alt="Innovation programme for Greater Lincolnshire" src="images/innovation_logo.jpg"></a>
+                    </div>
+                </div>
                 <h4 class="h h--4">Logo Sponsors</h4>
                 <div class="row sponsors">
                     <div class="sponsor big">
