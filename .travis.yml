@@ -1,7 +1,11 @@
 language: php
+sudo: required
+dist: trusty
 php: '7.0'
 before_install: echo "extension = mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-install: composer install
+install: composer install  --no-interaction
+services:
+  - mongodb
 env:
   global:
     - setup=basic
