@@ -19,9 +19,5 @@ const app = new Vue({
     }
 });
 
-window.Echo.channel('message.countdown')
-    .listen('CountdownMessage', (e) => {
-        alert(e);
-        console.log(e);
-    });
+
 
