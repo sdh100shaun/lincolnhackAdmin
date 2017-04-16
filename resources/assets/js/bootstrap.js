@@ -52,8 +52,3 @@ window.Echo = new Echo({
     broadcaster: 'pusher',
     key: 'a7db4bd6f484f5635646'
 });
-window.Echo.channel('message.countdown')
-    .listen('CountdownMessage', (e) => {
-        alert(e);
-        console.log(e);
-    });

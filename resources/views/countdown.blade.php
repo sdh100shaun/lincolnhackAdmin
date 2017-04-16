@@ -84,9 +84,10 @@
         ]) !!};
         </script>
     </head>
-    <body>
-        @include('partials.message');
-        <div class="flex-center position-ref full-height" id="app">
+    <body></body>
+    <div id="app">
+    <announcer></announcer>
+        <div class="flex-center position-ref full-height" >
 
             <div class="content">
 
@@ -98,6 +99,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
