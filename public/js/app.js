@@ -23308,11 +23308,6 @@ var app = new Vue({
     }
 });
 
-window.Echo.channel('message.countdown').listen('CountdownMessage', function (e) {
-    alert(e);
-    console.log(e);
-});
-
 /***/ }),
 /* 34 */
 /***/ (function(module, exports) {
@@ -25749,6 +25744,10 @@ window.Pusher = __webpack_require__(102);
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
   broadcaster: 'pusher',
   key: 'a7db4bd6f484f5635646'
+});
+window.Echo.channel('message.countdown').listen('CountdownMessage', function (e) {
+  alert(e);
+  console.log(e);
 });
 
 /***/ }),

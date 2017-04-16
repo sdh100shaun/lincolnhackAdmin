@@ -38,7 +38,7 @@ class CountdownMessage implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('message.'.$this->message->type);
+        return new Channel('message.'.$this->message->type);
     }
    
 }

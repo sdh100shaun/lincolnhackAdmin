@@ -13,6 +13,6 @@
 
 use Illuminate\Support\Facades\Broadcast;
 
-Broadcast::channel('countdown.*', function ($user, $id) {
+Broadcast::channel('message.countdown', function ($user, $id) {
     return true;
 });
