@@ -64,7 +64,7 @@
     <div class="smalltext">Seconds</div>
   </div>
 </div>
-<div v-else><h1> Hacking is over !</h1></div>
+<div v-else><h1> Hacking is over ! Time for Presentations. </h1></div>
 </div>
 </template>
 

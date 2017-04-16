@@ -14,3 +14,21 @@
     </div>
 </template>
 
+<script>
+
+
+
+    export default {
+        mounted() {
+            console.log('tshirt Component mounted.')
+        },
+        props:['source'],
+        data(){
+            return  {
+                messageTime: null,
+                token:window.Laravel.csrfToken
+              }
+
+        }
+    }
+</script>

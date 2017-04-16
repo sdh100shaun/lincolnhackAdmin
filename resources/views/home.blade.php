@@ -3,5 +3,5 @@
 @section('content')
 
     <messages></messages>
-    <tshirt></tshirt>
+    <tshirt source="../api/shirts"></tshirt>
 @endsection
