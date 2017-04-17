@@ -1,0 +1,17 @@
+{
+  "_id": {
+    "$oid": "58dfebf1c1887a8a344aadd2"
+  },
+  "_token": "lT0XK2XOk3vg9kEsEGSXmk8f6qmcrOXTg2NEpN7G",
+  "firstName": "Shaun",
+  "lastName": "Hare",
+  "attendeeId": "e@example.com",
+  "tshirt": "M",
+  "dietaryRequirements": "veggie",
+  "updated_at": {
+    "$date": "2017-04-01T18:05:37.000Z"
+  },
+  "created_at": {
+    "$date": "2017-04-01T18:05:37.000Z"
+  }
+}
