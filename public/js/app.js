@@ -25499,7 +25499,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         var _this = this;
 
         window.Echo.channel('message.countdown').listen('CountdownMessage', function (e) {
-            console.log(e.message);
+
             _this.message = e.message.message;
             _this.hasClass = true;
         });
@@ -25738,19 +25738,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = {
     mounted: function mounted() {
-        console.log('tshirt Component mounted.');
+        console.log('ready');
+        this.tshirts = this.getTshirtData();
     },
 
     props: ['source'],
     data: function data() {
         return {
             messageTime: null,
-            token: window.Laravel.csrfToken
+            token: window.Laravel.csrfToken,
+            tshirts: []
         };
+    },
+
+    methods: {
+        getTshirtData: function getTshirtData() {
+            axios.get();
+            return [{ size: 'xl' }];
+        }
     }
 };
 
@@ -82349,7 +82360,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('textarea', {
     attrs: {
       "name": "message",
-      "id": "message"
+      "id": "message",
+      "cols": "50"
     }
   })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -82390,8 +82402,6 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container"
   }, [_c('div', {
@@ -82402,10 +82412,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "panel panel-default"
   }, [_c('div', {
     staticClass: "panel-heading"
-  }, [_vm._v("T Shirts")]), _vm._v(" "), _c('div', {
+  }, [_vm._v("T Shirts")]), _vm._v("\n" + _vm._s(_vm.tshirts) + "\n                    "), _c('div', {
     staticClass: "panel-body"
-  }, [_vm._v("\n                    I am going to be a list of t-shirt orders\n                ")])])])])])
-}]}
+  }, [_c('table', {
+    staticClass: "table-bordered table"
+  }, _vm._l((_vm.tshirts), function(tshirt) {
+    return _c('tr', [_c('td', [_vm._v(_vm._s(tshirt.size))])])
+  }))])])])])])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
