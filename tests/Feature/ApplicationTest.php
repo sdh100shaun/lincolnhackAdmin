@@ -23,6 +23,13 @@ class ApplicationTest extends TestCase
         $response->assertStatus(200);
     }
     
+    public function testAttendee()
+    {
+        $this->get('/attendee')
+            ->assertViewHas('tshirtsizes');
+        
+    }
+    
     public function testLogin()
     {
         $response = $this->get('/login');
