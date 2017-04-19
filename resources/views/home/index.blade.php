@@ -200,6 +200,9 @@
                 <h4 class="h h--4">Silver Sponsors</h4>
                 <div class="row sponsors">
                     <div class="sponsor big">
+                        <a href="https://frontendmasters.com/" target="_blank"><img alt="Frontend Masters" src="images/frontend_masters.png"></a>
+                    </div>
+                    <div class="sponsor big">
                         <a href="http://lincsinnovation.co.uk/" target="_blank"><img alt="Innovation programme for Greater Lincolnshire" src="images/innovation-logo.jpg"></a>
                     </div>
                 </div>
