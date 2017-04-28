@@ -79,11 +79,12 @@ class AttendeeController extends Controller
     {
         //
     }
-
+    
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param StoreAttendee|Request $request
+     * @param Slack $slack
      * @return \Illuminate\Http\Response
      */
     public function store(StoreAttendee $request, Slack $slack)
@@ -107,7 +108,7 @@ class AttendeeController extends Controller
                 $slackApi=$this->slack['url'];
                 $slackApi.='/api/users.admin.invite?t=' . time();
                 $slack->setBaseUrl($slackApi);
-                $slack->setClient($this->client);
+                $slack->setClient($this->slackClient);
                 $this->attendee->slackResponse = $slack->sendSlackInvite($this->attendee,$slackToken,$slackApi);
             }
             catch (ClientException $clientException)
