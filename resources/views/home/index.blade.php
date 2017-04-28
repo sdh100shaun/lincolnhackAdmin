@@ -220,6 +220,9 @@
                     <div class="sponsor big">
                         <a href="http://www.steamdesk.com/" target="_blank"><img alt="Steam Desk" src="images/Steamdesk-Square-Logo.jpg"></a>
                     </div>
+                    <div class="sponsor big">
+                        <a href="http://www.streetsweb.co.uk/" target="_blank"><img alt="Streets" src="images/streets.png"></a>
+                    </div>
                 </div>
                 <h4 class="h h--4">Partners</h4>
                 <div class="row sponsors">
