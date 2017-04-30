@@ -1,5 +1,6 @@
 <?php
 
+
 use Jenssegers\Mongodb\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
@@ -29,6 +30,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-       
+        Schema::drop('users');
     }
 }

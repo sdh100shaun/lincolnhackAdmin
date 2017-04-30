@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Schema;
 use Jenssegers\Mongodb\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
@@ -27,6 +28,6 @@ class Messages extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('siteMessages');
     }
 }
