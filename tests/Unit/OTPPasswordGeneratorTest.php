@@ -9,9 +9,11 @@
 namespace Tests\Unit;
 
 
+use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Hashing\BcryptHasher;
 use Lincolnhack\Auth\OTPGenerator;
 use Lincolnhack\Model\OneTimePassword;
+use \Mockery as Mock;
 use Tests\TestCase;
 
 class OTPPasswordGeneratorTest extends TestCase
@@ -20,10 +22,13 @@ class OTPPasswordGeneratorTest extends TestCase
      * @var OTPGenerator
      */
     private $otp;
+  
+    private $mockModel;
     
     public function setUp()
     {
-        $this->otp = new OTPGenerator(new BcryptHasher(),new OneTimePassword());
+        $this->mockModel = Mock::mock(OneTimePassword::class);
+        $this->otp = new OTPGenerator(new BcryptHasher(),$this->mockModel);
         parent::setUp();
     }
     
@@ -48,8 +53,13 @@ class OTPPasswordGeneratorTest extends TestCase
        $this->assertNotSame($token1,$token2);
     }
     
-    public function tokenValidates()
+    /**
+     * @test
+     */
+    public function modelPopulated()
     {
+        $this->otp->generate();
+    
         
     }
     

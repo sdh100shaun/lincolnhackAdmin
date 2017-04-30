@@ -34,6 +34,14 @@ class OTPGenerator
         $this->oneTimePassword = $oneTimePassword;
     }
     
+    /**
+     * @return OneTimePassword
+     */
+    public function getOneTimePassword(): OneTimePassword
+    {
+        return ;
+    }
+    
     
     public function generate()
     {

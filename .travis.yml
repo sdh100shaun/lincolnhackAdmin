@@ -11,6 +11,7 @@ before_script:
   - php artisan key:generate
   - php artisan config:clear
   - php artisan migrate
+  - php artisan db:seed
 env:
   global:
     - setup=basic
