@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Password;
 
 class ResetPasswordController extends Controller
 {
@@ -34,6 +36,19 @@ class ResetPasswordController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('auth');
+    }
+    
+    public function reset(Request $request)
+    {
+        $this->validate($request, $this->rules(), $this->validationErrorMessages());
+        
+        //update password directly here
+        
+        $response = Password::PASSWORD_RESET;
+    
+        return $response == Password::PASSWORD_RESET
+            ? $this->sendResetResponse($response)
+            : $this->sendResetFailedResponse($request, $response);
     }
 }
