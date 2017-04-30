@@ -27,8 +27,8 @@ class OTPPasswordGeneratorTest extends TestCase
     
     public function setUp()
     {
-        $this->mockModel = Mock::mock(OneTimePassword::class);
-        $this->otp = new OTPGenerator(new BcryptHasher(),$this->mockModel);
+        
+        $this->otp = new OTPGenerator(new BcryptHasher(),new OneTimePassword());
         parent::setUp();
     }
     
@@ -59,8 +59,8 @@ class OTPPasswordGeneratorTest extends TestCase
     public function modelPopulated()
     {
         $this->otp->generate();
-    
-        
+            
+        $this->assertNotEmpty($this->otp->getOneTimePassword()->password);
     }
     
     

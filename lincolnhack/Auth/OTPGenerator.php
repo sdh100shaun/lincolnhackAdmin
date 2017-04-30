@@ -39,7 +39,7 @@ class OTPGenerator
      */
     public function getOneTimePassword(): OneTimePassword
     {
-        return ;
+        return $this->oneTimePassword;
     }
     
     
