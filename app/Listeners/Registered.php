@@ -8,13 +8,15 @@
 
 namespace App\Listeners;
 
+use App\Notifications\SendOTP;
 use \Illuminate\Auth\Events\Registered as R;
 use Illuminate\Log\Writer;
+use Illuminate\Notifications\Notifiable;
 use Lincolnhack\Auth\OTPGenerator;
 
 class Registered
 {
-    
+    use Notifiable;
     /**
      * @var Writer
      */
@@ -23,6 +25,8 @@ class Registered
      * @var OTPGenerator
      */
     private $OTPGenerator;
+    
+    public $email;
     
     /**
      * Registered constructor.
@@ -43,5 +47,7 @@ class Registered
         $model = $this->OTPGenerator->getOneTimePassword();
         $model->email = $registeredEvent->user->email;
         $model->save();
+        $this->email = $model->email;
+        $this->notify(new SendOTP($registeredEvent->user));
     }
 }
