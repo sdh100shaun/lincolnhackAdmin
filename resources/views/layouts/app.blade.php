@@ -64,7 +64,7 @@
                             <ul class="dropdown-menu" role="menu">
 
                                 <li><a href="{{ route('register') }}">Register new admin</a></li>
-                                <li><a href="{{route('password.reset',['email'=>Auth::user()->email])}}">Update password</a></li>
+                                <li><a href="{{route('password.reset',['token'=>hash('sha512',Auth::user()->email)])}}">Update password</a></li>
 
                                 <li>
                                     <a href="{{ route('logout') }}"
