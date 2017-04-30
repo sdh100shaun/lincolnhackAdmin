@@ -46,8 +46,8 @@ class OTPGenerator
     public function generate()
     {
         $randomString = (string) openssl_random_pseudo_bytes(22);
-        
-        return $randomString;
+        $this->oneTimePassword->password = $randomString;
+        return $this->getOneTimePassword()->password;
     }
     
    

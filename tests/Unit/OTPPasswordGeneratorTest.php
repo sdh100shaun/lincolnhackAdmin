@@ -23,7 +23,7 @@ class OTPPasswordGeneratorTest extends TestCase
      */
     private $otp;
   
-    private $mockModel;
+   
     
     public function setUp()
     {
@@ -59,9 +59,11 @@ class OTPPasswordGeneratorTest extends TestCase
     public function modelPopulated()
     {
         $this->otp->generate();
-            
         $this->assertNotEmpty($this->otp->getOneTimePassword()->password);
+        
     }
+    
+    
     
     
 }
