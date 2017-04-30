@@ -10,7 +10,7 @@ namespace Lincolnhack\Auth;
 
 
 use Illuminate\Contracts\Hashing\Hasher;
-use lincolnhack\Model\OneTimePassword;
+use Lincolnhack\Model\OneTimePassword;
 
 class OTPGenerator
 {
@@ -42,13 +42,23 @@ class OTPGenerator
         return $this->oneTimePassword;
     }
     
-    
+    /**
+     * @return mixed
+     */
     public function generate()
     {
-        $randomString = (string) openssl_random_pseudo_bytes(22);
+        $randomString = random_bytes (22);
+        $randomString = bin2hex($randomString);
         $this->oneTimePassword->password = $randomString;
         return $this->getOneTimePassword()->password;
     }
     
+    /**
+     * @return string
+     */
+    public function hashPassword()
+    {
+        return $this->hasher->make($this->getOneTimePassword()->password);
+    }
    
 }

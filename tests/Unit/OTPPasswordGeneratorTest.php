@@ -63,7 +63,17 @@ class OTPPasswordGeneratorTest extends TestCase
         
     }
     
-    
+    /**
+     * @test
+     */
+    public function passwordHashed()
+    {
+        $password =$this->otp->generate();
+        $hashedPassword = $this->otp->hashPassword();
+        $hasher = new BcryptHasher();
+        $this->assertTrue($hasher->check($password,$hashedPassword));
+        
+    }
     
     
 }
