@@ -12,6 +12,7 @@ use App\Notifications\SendOTP;
 use \Illuminate\Auth\Events\Registered as R;
 use Illuminate\Log\Writer;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Config;
 use Lincolnhack\Auth\OTPGenerator;
 
 class Registered
@@ -48,6 +49,13 @@ class Registered
         $model->email = $registeredEvent->user->email;
         $model->save();
         $this->email = $model->email;
+        $registeredEvent->user->password = $this->OTPGenerator->hashPassword();
+        
         $this->notify(new SendOTP($registeredEvent->user));
+    }
+    
+    public function routeNotificationForSlack()
+    {
+        return Config::get('slack.webhook.admin');
     }
 }

@@ -5,6 +5,7 @@ namespace App\Notifications;
 
 use App\User;
 use Illuminate\Bus\Queueable;
+use Illuminate\Notifications\Messages\SlackMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -48,21 +49,31 @@ class SendOTP extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+                    ->subject('Your set as an admin for LincolnHack ')
+                    ->line('The following is the way to access the system once only, once that has been done update your password to enter using that.')
+                    ->action('Your magic login link ', url('/sesame?token='.$this->registered->password));
+                   
     }
-
+    
     /**
-     * Get the array representation of the notification.
-     *
-     * @param  mixed  $notifiable
-     * @return array
+     * @param $notifiable
+     * @return SlackMessage
      */
-    public function toArray($notifiable)
+    public function toSlack($notifiable):SlackMessage
     {
-        return [
-            //
-        ];
+        $url = url('/sesame?token='.$this->registered->password);
+        $email = $this->registered->email;
+        return (new SlackMessage)
+            ->from('LincolnHack',':lincolnhack:')
+            ->success()
+            ->content('Access the LincolnHack admin ')
+            ->attachment(function ($attachment) use ($url,$email) {
+                $attachment->title('Access details', $url)
+                    ->fields([
+                        'email' => $email
+                    ]);
+            });
     }
+    
+    
 }
