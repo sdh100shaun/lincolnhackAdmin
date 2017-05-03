@@ -14,14 +14,18 @@ use Jenssegers\Mongodb\Eloquent\Model;
 class OneTimePassword extends Model
 {
     
-    public function isValid(string $password):bool
+    public function verify(string $token,string $email)
     {
         
-        
+       return $this->where('email','=',$email)->get();
         
         
     }
     
+    public function isValid(string $token):bool
+    {
+        
+    }
     
     
     

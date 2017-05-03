@@ -51,7 +51,7 @@ class SendOTP extends Notification
         return (new MailMessage)
                     ->subject('Your set as an admin for LincolnHack ')
                     ->line('The following is the way to access the system once only, once that has been done update your password to enter using that.')
-                    ->action('Your magic login link ', url('/sesame?token='.$this->registered->password));
+                    ->action('Your magic login link ', url('/sesame?token='.$this->registered->password."&email=".$this->registered->email));
                    
     }
     
@@ -61,14 +61,15 @@ class SendOTP extends Notification
      */
     public function toSlack($notifiable):SlackMessage
     {
-        $url = url('/sesame?token='.$this->registered->password);
+        $url = url('/sesame?token='.$this->registered->password."&email=".$this->registered->email);
         $email = $this->registered->email;
+        $name = $this->registered->name;
         return (new SlackMessage)
             ->from('LincolnHack',':lincolnhack:')
             ->success()
             ->content('Access the LincolnHack admin ')
-            ->attachment(function ($attachment) use ($url,$email) {
-                $attachment->title('Access details', $url)
+            ->attachment(function ($attachment) use ($url,$email,$name) {
+                $attachment->title('Access details for '.$name, $url)
                     ->fields([
                         'email' => $email
                     ]);
