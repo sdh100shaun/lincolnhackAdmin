@@ -196,6 +196,9 @@
                     <div class="sponsor big">
                         <a href="https://laser.red" target="_blank"><img alt="Laser Red" src="images/LaserRed600.png"></a>
                     </div>
+                    <div class="sponsor big">
+                        <a href="https://http://www.kryptokloud.com/" target="_blank"><img alt="Kryptokloud" src="images/Kryptokloud.png"></a>
+                    </div>
                 </div>
                 <h4 class="h h--4">Silver Sponsors</h4>
                 <div class="row sponsors">
@@ -205,6 +208,11 @@
                     <div class="sponsor big">
                         <a href="http://lincsinnovation.co.uk/" target="_blank"><img alt="Innovation programme for Greater Lincolnshire" src="images/innovation-logo.jpg"></a>
                     </div>
+                    <div class="sponsor big">
+                        <a href="https://cooperpress.com/" target="_blank"><img alt="StatusCode" src="images/StatusCode.png"></a>
+                    </div>
+
+
                 </div>
                 <h4 class="h h--4">Logo Sponsors</h4>
                 <div class="row sponsors">
