@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Jenssegers\Mongodb\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Messages extends Migration
+class OneTimePasswords extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class Messages extends Migration
      */
     public function up()
     {
-        Schema::create('siteMessages', function($collection)
-        {
-            $collection->string('message');
-            $collection->string('active');
-            $collection->string('type');
+        Schema::create('OneTimePasswords', function($collection){
+           $collection->string('email');
+           $collection->string('password');
+            
+            
         });
     }
 
@@ -28,6 +28,6 @@ class Messages extends Migration
      */
     public function down()
     {
-        Schema::drop('siteMessages');
+        Schema::drop('OneTimePasswords');
     }
 }

@@ -19,7 +19,7 @@ return [
     
     
     'url' => env('SLACK_URL'),
-    'token' => env('SLACK_TOKEN')
-
-
+    'token' => env('SLACK_TOKEN'),
+    'webhook.admin' =>env('SLACK_WEBHOOK_ADMIN'),
+    'webhook.user' =>env('SLACK_WEBHOOK_USER')
 ];
