@@ -7,7 +7,7 @@ install: composer install  --no-interaction
 services:
   - mongodb
 before_script:
-  - cp env.testing .env
+  - cp env.testing .env.testing
   - php artisan key:generate
   - php artisan config:clear
   - php artisan migrate
