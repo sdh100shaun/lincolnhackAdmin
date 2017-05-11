@@ -110,6 +110,7 @@ class AttendeeController extends Controller
                 $slack->setBaseUrl($slackApi);
                 $slack->setClient($this->slackClient);
                 $this->attendee->slackResponse = $slack->sendSlackInvite($this->attendee,$slackToken,$slackApi);
+                
             }
             catch (ClientException $clientException)
             {
