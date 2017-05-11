@@ -33,7 +33,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-       
-        return view('home');
+        $attendees = $this->attendee->all();
+        return view('home',['attendees'=>$attendees]);
     }
 }
