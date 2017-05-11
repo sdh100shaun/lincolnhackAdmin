@@ -7,11 +7,10 @@ image: php:latest
 # Only needed when using a docker container to run your tests in.
 # Check out: http://docs.gitlab.com/ce/ci/docker/using_docker_images.html#what-is-service
 services:
-  - mysql:latest
+  - mongo:latest
 
 variables:
-  MYSQL_DATABASE: project_name
-  MYSQL_ROOT_PASSWORD: secret
+  
 
 # This folder is cached between builds
 # http://docs.gitlab.com/ce/ci/yaml/README.html#cache
@@ -49,7 +48,7 @@ before_script:
   # DB_DATABASE=project_name
   # DB_USERNAME=root
   # DB_PASSWORD=secret
-  - cp .env.testing .env
+  - cp env.testing .env
 
   # Run npm build
   # comment this out if you don't have a frontend build
