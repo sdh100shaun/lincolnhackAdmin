@@ -4,20 +4,26 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Lincolnhack\Model\Attendee;
 
 class HomeController extends Controller
 {
     private $userId;
+    /**
+     * @var Attendee
+     */
+    private $attendee;
     
     /**
      * Create a new controller instance.
      *
-     * @return void
+     * @param Attendee $attendee
      */
-    public function __construct()
+    public function __construct(Attendee $attendee)
     {
         $this->middleware('auth');
-        
+    
+        $this->attendee = $attendee;
     }
 
     /**
