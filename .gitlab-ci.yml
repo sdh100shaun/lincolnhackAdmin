@@ -24,7 +24,7 @@ cache:
 before_script:
   # Update packages 
   - apt-get update -yqq
-  
+  - apt-get install php-mongodb
   # Upgrade to Node 7
   - curl -sL https://deb.nodesource.com/setup_7.x | bash -
   
