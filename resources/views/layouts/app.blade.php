@@ -91,5 +91,13 @@
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script>
+    var options = {
+        valueNames: [ 'firstname', 'lastname' ]
+    };
+
+    var attendeeList = new List('attendees', options);
+</script>
 </body>
 </html>

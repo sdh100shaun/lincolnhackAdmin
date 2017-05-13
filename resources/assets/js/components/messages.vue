@@ -9,7 +9,7 @@
                   <fieldset>
                      <div class="form-group">
                         <label class="col-md-4 control-label" for="message" >Enter message</label>
-                        <div class="col-md-6"><textarea name="message" id="message" cols="50"></textarea></div>
+                        <div class="col-md-6"><textarea name="message" id="message"></textarea></div>
                      </div>
                      <div class="form-group">
                         <label class="col-md-4 control-label" for="type" >Enter location</label>
