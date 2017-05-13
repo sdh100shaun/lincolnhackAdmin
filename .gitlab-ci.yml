@@ -33,7 +33,7 @@ before_script:
 
   # Install php extensions
   - docker-php-ext-install mbstring mcrypt pdo_mysql curl json intl gd xml zip bz2 opcache 
-  - pecl install mongo
+  - pecl install mongodb
   # Install Composer and project dependencies.
   - curl -sS https://getcomposer.org/installer | php
   - php composer.phar install 
