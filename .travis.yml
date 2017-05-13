@@ -9,9 +9,9 @@ services:
 before_script:
   - cp env.testing .env
   - php artisan key:generate
+  - cp .env .env.testing
   - php artisan config:clear
   - php artisan migrate
-
 env:
   global:
     - setup=basic

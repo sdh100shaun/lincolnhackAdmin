@@ -12,11 +12,13 @@
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "pusher/pusher-php-server": "^2.6"
+
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.7"
+        "phpunit/phpunit": "~5.7",
+        "sensiolabs/security-checker": "^4.0"
     },
     "autoload": {
         "classmap": [

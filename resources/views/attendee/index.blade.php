@@ -50,7 +50,16 @@
                                         <span class="help-block">Will get you into <a href="">Slack</a> and <a href="">Hackbot</a>.</span>
                                     </div>
                                 </div>
-
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="attendee-contact">A contact number</label>
+                                    <div class="col-md-6">
+                                        <input id="attendee-contact" value="{{old("attendee-contact")}}" name="attendee-contact"
+                                               type="text" placeholder="Your contact number" class="form-control input-md"
+                                               required="required">
+                                        <span class="help-block">This number is not shared and only for health and safety reasons.</span>
+                                    </div>
+                                </div>
                                 <!-- Select Basic -->
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for="tshirt">Choose your t-shirt size</label>
