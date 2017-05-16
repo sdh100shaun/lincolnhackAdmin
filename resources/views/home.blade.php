@@ -30,18 +30,17 @@
                 </thead>
 
                 <tbody class="list">
+                <form>
                 @foreach($attendees as $attendee)
                     <tr>
                         <td class="firstname">{{$attendee->firstName}} {{$attendee->lastName}}</td>
                         <td class="lastname">{{$attendee->attendeeId}}</td>
                         <td>{{$attendee->dietaryRequirements}}</td>
                         <td>{{$attendee->getAttribute('attendee-contact')}}</td>
-                        <td><select>
-                                <option value="no">no</option>
-                                <option value="yes">yes</option>
-                            </select></td>
+                        <td><register id="cmn-toggle-{{$attendee->_id}}" attendee="{{$attendee->_id}}"></register></td>
                     </tr>
                 @endforeach
+                </form>
                 </tbody>
             </table>
         </div>
