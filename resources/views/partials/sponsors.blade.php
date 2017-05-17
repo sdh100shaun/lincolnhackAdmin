@@ -51,6 +51,12 @@
             <div class="sponsor big">
                 <a href="http://www.streetsweb.co.uk/" target="_blank"><img alt="Streets" src="images/streets.png"></a>
             </div>
+            <div class="sponsor big">
+                <a href="http://www.wellvale.co.uk/" target="_blank"><img alt="Wellvale" src="images/wellvale.png"></a>
+            </div>
+            <div class="sponsor big">
+                <a href="/https://www.jolt.co.uk/" target="_blank"><img alt="jolt" src="images/jolt.png"></a>
+            </div>
         </div>
         <h4 class="h h--4">Partners</h4>
         <div class="row sponsors">
