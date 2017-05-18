@@ -213,7 +213,7 @@
     <div class="wrapper wrapper--no-margin">
         <div class="container">
             <div class="row">
-                <h3 class="h h--1 xs-center">Hackbot</h3>
+                <h3 class="h h--1 xs-center" id="hackbot">Hackbot</h3>
                 <p class="xs-center">Developed for <a href="https://technottingham.com"> Tech Nottingham </a> by <a href="https://twitter.com/codesleuth">@codesleuth</a></p>
                 <p>During the hack - our team organisation and info is aided by a bot within our Slack channel. This bot developed by our friends in the Nottingham
                     technical community is easy to use below is what you can do.</p>
