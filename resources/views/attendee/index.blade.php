@@ -256,6 +256,12 @@
     <div class="parallax parallax--boole">
 
     </div>
+    <div class="wrapper wrapper--no-margin">
+    @include('partials.challenges')
+        </div>
+    <div class="parallax parallax--boole">
+
+    </div>
     <div class="wrapper wrapper--no-margin wrapper--grey">
         <div class="container">
             <div class="row">
@@ -277,6 +283,7 @@
             </div>
         </div>
     </div>
+
     <script>
         // initialize the map
         var map = L.map('map').setView([53.227252,-0.55722], 17);
