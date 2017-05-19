@@ -20,6 +20,9 @@
             <div class="sponsor big">
                 <a href="http://www.blueprintgaming.com/" target="_blank"><img alt="Blueprint gaming" src="images/blueprint-challenge.jpg"></a>
             </div>
+            <div class="sponsor big">
+                <a href="http://statuscode.com/" target="_blank"><img alt="Frontend Masters presented by Statuscode" src="images/frontendmasters-challenge.jpg"></a>
+            </div>
         </div>
         <div class="row">
              <div class="col-sm-8 col-sm-offset-2">
