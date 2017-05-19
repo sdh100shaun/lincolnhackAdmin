@@ -13,7 +13,7 @@ Vue.component('countdown',require('./components/countdown.vue'));
 Vue.component('messages',require('./components/messages.vue'));
 Vue.component('announcer',require('./components/announcer.vue'));
 Vue.component('register',require('./components/register.vue'));
-
+Vue.component('teams',require('./components/teams.vue'));
 const app = new Vue({
     el: '#app',
     data:{
