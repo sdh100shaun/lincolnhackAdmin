@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::middleware('api')->get('/tshirts','Api\TshirtController@index')->name('tshirts');
-
+Route::middleware('api')->post('/register','Api\RegistrationController@register')->name('register');

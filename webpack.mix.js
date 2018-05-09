@@ -13,7 +13,16 @@ var ImageminPlugin = require('imagemin-webpack-plugin').default
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
-   .copy('resources/assets/images/*', 'public/images/');
+    .options({
+        processCssUrls: false
+    });
+   mix.copy('resources/assets/images/*', 'public/images/')
+   .copy('resources/assets/images/favicons/*', 'public/images/favicons');
+
+mix.copyDirectory('resources/assets/images/assets', 'public/images/assets');
+mix.copyDirectory('resources/assets/videos', 'public/videos');
+mix.less('resources/assets/less/bootstrap.less', 'public/css');
+
 mix.webpackConfig({
     resolve: {
         plugins: [

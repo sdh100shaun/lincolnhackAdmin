@@ -111,7 +111,7 @@ body {
 }
 
 .parallax {
-  background-image: url(images/header-bg-2000x1151.jpg);
+  background-image: url(../images/header-bg-2000x1151.jpg);
   min-height: 100px;
   background-attachment: fixed;
   background-position: center;
@@ -122,12 +122,12 @@ body {
 }
 
 .parallax--boole {
-  background-image: url(images/boole-overview-bg-2000x1731.jpg);
+  background-image: url(../images/boole-overview-bg-2000x1731.jpg);
   color: #000;
 }
 
 .parallax--group {
-  background-image: url(images/footer-bg-2000x1334.jpg);
+  background-image: url(../images/footer-bg-2000x1334.jpg);
   color: #000;
   padding: 170px;
 }
@@ -272,7 +272,7 @@ Sponsors
   cursor: pointer;
   -webkit-box-shadow: inset 0 -2px #80399d;
   box-shadow: inset 0 -2px #80399d;
-  background:rgb(151,145,225) url("images/tickets.svg") no-repeat;
+  background:rgb(151,145,225) url("../images/tickets.svg") no-repeat;
   background-position: right 20px top 2px;
   background-size: 10%;
   padding-right: 1em;
@@ -283,7 +283,7 @@ Sponsors
   color: white;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background:rgb(151,145,225) url("images/tickets.svg") no-repeat;
+  background:rgb(151,145,225) url("../images/tickets.svg") no-repeat;
   background-position: right 20px top 2px;
   background-size: 10%;
 }
@@ -293,7 +293,7 @@ Sponsors
   color: white;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background:rgb(151,145,225) url("images/tickets.svg") no-repeat;
+  background:rgb(151,145,225) url("../images/tickets.svg") no-repeat;
   background-position: right 20px top 2px;
   background-size: 10%;
 }
@@ -314,3 +314,15 @@ Sponsors
 }
 #mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; }
 #mc_embed_signup .mc-field-group input{color:#aaa !important}
+
+#hackbot {
+  dd {
+    margin-left:15%;
+    padding:1em;
+
+  }
+  dt{
+   font-size:115%;
+  }
+
+}
