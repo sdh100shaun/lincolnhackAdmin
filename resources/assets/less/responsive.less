@@ -1,0 +1,222 @@
+// div debug
+// div{
+//  border:10px solid rgba(0,255,0,0.2);
+//      div{
+//          border:10px solid rgba(255,0,0,0.2);
+//          div{
+//          border:10px solid rgba(0,0,255,.2);
+//              div{
+//              border:10px solid rgba(0,255,255,0.2);
+//              }
+//          }
+//      }
+// }
+// .row{
+// 	border: 3px solid red;
+// }
+// .container{
+// 	border: 3px solid green;
+// 	.row{
+// 		border: 3px solid yellow;
+// 	}
+// }
+// .container-fluid{
+// 	border: 3px dotted green;
+// 	.row{
+// 		border: 3px dotted yellow;
+// 	}
+// }
+// colour debug for responsiveness
+// @media (min-width: @screen-lg-min) { body { border: 5px solid fade(blue, 50%);} }
+// @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { body { border: 5px solid fade(green, 50%);} }
+// @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { body { border: 5px solid fade(yellow, 50%);} }
+// @media (max-width: @screen-xs-max) { body { border: 5px solid fade(red, 50%);} }
+
+
+// Responsive overides
+
+// Large tablet (blue)
+@media (min-width: @screen-lg-min)  {
+    .sponsors{
+        .card{
+           padding:0;
+           margin:0;
+        }
+    }
+}
+
+// Medium tablet (green)
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .sponsors{
+        .card{
+           padding:0;
+           margin:0;
+        }
+    }
+
+    .subscribe{
+        h5{
+            margin-top:15px;
+            font-size: @font-size-base + 4;
+        }
+    }
+    
+}
+
+// Small tablet (yellow)
+// @media only screen and (max-width: @screen-sm ) {}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .what{
+        padding-bottom:40px;
+        .video-container{
+            height: 430px;
+            background-image: none !important;
+            video{
+                top: 0;
+                .translate(0,0);
+            }
+        }
+    }
+
+    .subscribe{
+        h5{
+            text-align:center;
+        }
+
+        button{
+            display:block;
+            margin: 0 auto;
+            margin-top:10px;
+        }
+    }
+
+    .sponsors{
+        .card{
+            .box-shadow(0px 0px 0px rgba(0,0,0,0.5)) !important;
+            margin-top: 0 !important;
+            margin-bottom:20px;
+            .header{
+                border-top-left-radius:10px !important;
+                border-top-right-radius:10px !important;
+            }
+
+            .body{
+                border-bottom-left-radius:10px !important;
+                border-bottom-right-radius:10px !important;
+            }
+        }
+    }
+
+    .faqs{
+        a{
+            text-align:center;
+        }
+    }
+
+    footer{
+
+        .imp, .eyes, .mouth-open, .mouth-oo, .laptop-glow, .nose{
+            display:block;
+            position: absolute;
+            top:-250px;
+            width:170px;
+            background-size:contain;
+        }
+    }
+
+}
+
+// Xsmall mobile (red)
+// @media only screen and (min-width: @screen-xs)  {}
+@media (max-width: @screen-xs-max) {
+    .banner{
+        .overlay{
+            .logo{
+                top:8%;
+                width: 60%;
+            }
+        }
+    }
+    .what{
+        padding-top:20px;
+        padding-bottom:40px;
+        button{
+            margin-top:0;
+        }
+        h2{
+            margin-top:30px;
+        }
+        .video-container{
+            height: 430px;
+            background-image: none !important;
+            video{
+                top: 0;
+                .translate(0,0);
+            }
+        }
+    }
+
+    .subscribe{
+        h5{
+            text-align:center;
+        }
+
+        button{
+            display:block;
+            margin: 0 auto;
+            margin-top:10px;
+        }
+    }
+
+    .sponsors{
+        .card{
+            .box-shadow(0px 0px 0px rgba(0,0,0,0.5)) !important;
+            margin-top: 0 !important;
+            margin-bottom:20px;
+            .header{
+                border-top-left-radius:10px !important;
+                border-top-right-radius:10px !important;
+            }
+
+            .body{
+                border-bottom-left-radius:10px !important;
+                border-bottom-right-radius:10px !important;
+            }
+        }
+    }
+
+    .faqs{
+        a{
+            text-align:center;
+            font-size: @font-size-base + 4;
+        }
+
+        .speech-bubble{
+            border-radius:8px;
+            margin:15px;
+
+            &::before{
+                display:none;
+            }
+            p{
+                padding:75px;
+                font-size: @font-size-base + 2;
+            }
+        }
+    }
+
+    .where{
+        padding-bottom:20px;
+        img{
+            margin: 0 auto;
+        }
+    }
+
+    footer{
+        .imp, .eyes, .mouth-open, .mouth-oo, .laptop-glow, .nose{
+            height:209px;
+            width:90px;
+            background-size: contain;
+        }
+    }
+}
