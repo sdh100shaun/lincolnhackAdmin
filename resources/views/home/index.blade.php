@@ -93,7 +93,7 @@
     <div class="banner">
 
         <video autoplay preload="auto" loop muted playsinline>
-            <source src="/videos/edit2.mp4" type="video/mp4">
+            <source src="/videos/banner.mp4" type="video/mp4">
             <source src="/videos/edit2.webm" type="video/webm">
         </video>
         <div class="overlay">
