@@ -188,7 +188,8 @@
                     <img src="/images/assets/marker.png" alt="Boole Technology Centre" class="img-responsive">
                 </div>
                 <div class="col-sm-8">
-                    <p> LincolnHack is being hosted in the brand new Boole Technology Centre, within the grounds of Lincoln Science and Innovation Park.<br><br>The Boole Technology Centre is named after George Boole, who was born in Lincoln in 1815. This self-taught son of a Boot Maker revolutionised mathematics, not least by defining the algebraic definition of logic. In doing so, he established the rules of binary code and became the grandfather of the digital age.</p>
+                    <p> LincolnHack is being hosted in the Boole Technology Centre, within the grounds of Lincoln Science and Innovation Park.
+                        The Boole Technology Centre is named after George Boole, who was born in Lincoln in 1815. This self-taught son of a Boot Maker revolutionised mathematics. In doing so, he established the rules of binary code and became the grandfather of the digital age.</p>
                 </div>
             </div>
         </div>
