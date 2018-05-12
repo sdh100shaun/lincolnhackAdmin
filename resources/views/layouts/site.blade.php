@@ -31,7 +31,6 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="home" href="2018.lincolnhack.org" />
-    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
@@ -49,5 +48,6 @@
     ga('send', 'pageview');
 
 </script>
+<link rel="stylesheet" href="css/app.css">
 </body>
 </html>
