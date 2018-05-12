@@ -234,25 +234,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-1 col-sm-10 col-sm-offset-1">
-                    <form class="form-inline">
+                    <form action="//lincolnhack.us13.list-manage.com/subscribe/post?u=9363c6282f6b2b8e8f6e06302&amp;id=b80ea51571" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate="novalidate">
                         <h5><strong>Subscribe to our newsletter</strong></h5>
                 </div>
 
                 <div class="col-md-2 col-md-offset-0 col-sm-10 col-sm-offset-1">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Your name" name="name">
+                        <input type="email" value="" name="EMAIL" class="required form-control email mce_inline_error" placeholder="your email" id="mce-EMAIL" aria-required="true" aria-invalid="true">
                     </div>
                 </div>
 
                 <div class="col-md-2 col-md-offset-0 col-sm-10 col-sm-offset-1">
-                    <div class="form-group">
-                        <input class="form-control" placeholder="Your email" name="email">
-                    </div>
+                    <button type="submit" id="mc-embedded-subscribe" class="btn btn-default text-uppercase">Subscribe</button>
                 </div>
-
-                <div class="col-md-2 col-md-offset-0 col-sm-10 col-sm-offset-1">
-                    <button class="btn btn-default text-uppercase">Subscribe</button>
-                </div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9363c6282f6b2b8e8f6e06302_b80ea51571" tabindex="-1" value=""></div>
                 </form>
             </div>
         </div>
@@ -282,7 +277,7 @@
                             <li>Plus all Bronze & Silver features</li>
                         </ul>
 
-                        <button class="btn btn-default text-uppercase">Enquire</button>
+                        <button class="btn btn-default text-uppercase"><a class="btn-link sponsorlink" href="mailto:hello@lincolnhack.org?subject=sponsorship">Enquire</a></button>
                     </div>
                 </div>
 
@@ -298,7 +293,7 @@
                             <li>All Bronze features</li>
                         </ul>
 
-                        <button class="btn btn-default text-uppercase"> <a href="mailto:hello@lincolnhack.org?subject=sponsorship">Enquire</a></button>
+                        <button class="btn btn-default text-uppercase"> <a class="btn-link sponsorlink" href="mailto:hello@lincolnhack.org?subject=sponsorship">Enquire</a></button>
 
                     </div>
                 </div>
@@ -315,7 +310,7 @@
                             <li>Promotional materials at event</li>
                         </ul>
 
-                        <button class="btn btn-default text-uppercase">Enquire</button>
+                        <button class="btn btn-default text-uppercase"><a class="btn-link sponsorlink" href="mailto:hello@lincolnhack.org?subject=sponsorship">Enquire</a></button>
                     </div>
                 </div>
             </div>
@@ -339,7 +334,7 @@
                 <div class="col-sm-5 col-sm-offset-1">
                     <p>We have 500+ members and host regular events in and around Lincoln which alternate between both technical and non-technical topics, that way there is something for everybody. Many of these events take place at the Boole Technology Centre in Lincoln with the kind support of our sponsor, the Lincoln Science and Innovation Park.</p>
                     <form action="https://digitallincoln.co.uk" method="get">
-                    <button class="btn btn-default text-uppercase" type="submit">Join Digital Lincoln</button>
+                    <button class="btn btn-default text-uppercase" type="">Join Digital Lincoln</button>
                     </form>
                 </div>
             </div>
