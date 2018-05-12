@@ -97,7 +97,7 @@ function faqQuestionSetup(){
                 break;
 
             case "3":
-                answer = "Answer for question " + questionRef;
+                answer = "Ticket releases will be announced here and on @techlincs";
                 break;
 
             case "4":

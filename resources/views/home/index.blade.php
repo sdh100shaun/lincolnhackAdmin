@@ -105,7 +105,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <button class="btn btn-default text-uppercase" data-toggle="modal" data-target="#ticketsModal"><strong>Get Tickets!</strong></button>
+                    <button class="btn btn-default text-uppercase" data-toggle="modal" data-target="#ticketsModal"><strong>Tickets coming soon</strong></button>
                     <h2 class="text-center"><strong>What</strong> is LincolnHack?</h2>
                     <div class="embed-responsive embed-responsive-16by9">
                         <div class="video-control play"></div>
@@ -298,7 +298,8 @@
                             <li>All Bronze features</li>
                         </ul>
 
-                        <button class="btn btn-default text-uppercase">Enquire</button>
+                        <button class="btn btn-default text-uppercase"> <a href="mailto:hello@lincolnhack.org?subject=sponsorship">Enquire</a></button>
+
                     </div>
                 </div>
 
@@ -337,8 +338,9 @@
 
                 <div class="col-sm-5 col-sm-offset-1">
                     <p>We have 500+ members and host regular events in and around Lincoln which alternate between both technical and non-technical topics, that way there is something for everybody. Many of these events take place at the Boole Technology Centre in Lincoln with the kind support of our sponsor, the Lincoln Science and Innovation Park.</p>
-
-                    <button class="btn btn-default text-uppercase">Join Digital Lincoln</button>
+                    <form action="https://digitallincoln.co.uk" method="get">
+                    <button class="btn btn-default text-uppercase" type="submit">Join Digital Lincoln</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -427,7 +429,7 @@
                 <h2 class="modal-title">Get LincolnHack Tickets</h2>
             </div>
             <div class="modal-body">
-                <p>Form Here</p>
+                <p>Ticket Sales have not yet opened.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -457,5 +459,5 @@
 </script>
 
 
-<script type="text/javascript" src="/js/scripts.js"></script>
+<script type="text/javascript" src="https://2018.lincolnhack.org/js/scripts.js"></script>
 @endsection
