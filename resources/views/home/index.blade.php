@@ -110,7 +110,7 @@
                     <h2 class="text-center"><strong>What</strong> is LincolnHack?</h2>
                     <div class="embed-responsive embed-responsive-16by9">
                         <div class="video-control play"></div>
-                        <video class="embed-responsive-item" preload="auto" autostart="0" loop="loop">
+                        <video class="embed-responsive-item" poster="/images/assets/video-start.png" preload="auto" autostart="0" loop="loop">
                             <source src="/videos/lincolnhack.mp4" type="video/mp4">
                         </video>
                     </div>
