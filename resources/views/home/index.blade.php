@@ -111,7 +111,7 @@
                     <div class="embed-responsive embed-responsive-16by9">
                         <div class="video-control play"></div>
                         <video class="embed-responsive-item" preload="auto" autostart="0" loop="loop">
-                            <source src="/videos/lincoln-hack-test-enc.mp4" type="video/mp4">
+                            <source src="/videos/lincolnhack.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
