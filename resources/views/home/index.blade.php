@@ -93,8 +93,8 @@
     <div class="banner">
 
         <video autoplay preload="auto" loop muted playsinline>
-            <source src="/videos/banner.mp4" type="video/mp4">
-            <source src="/videos/edit2.webm" type="video/webm">
+            <source src="/videos/edit2.mp4" type="video/mp4">
+
         </video>
         <div class="overlay">
             <img class="logo img-responsive" alt="Lincoln Hack Imp" src="/images/assets/logo.png">
