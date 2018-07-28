@@ -6046,10 +6046,10 @@ header > div > .navbar-header button:hover span:nth-child(3) {
 .sponsors {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#A154D2), to(#6374DA));
-  background-image: linear-gradient(to bottom, #A154D2 0%, #6374DA 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6374DA), to(#A154D2));
+  background-image: linear-gradient(to bottom, #6374DA 0%, #A154D2 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa154d2', endColorstr='#ff6374da', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6374da', endColorstr='#ffa154d2', GradientType=0);
 }
 .sponsors .sponsors-background-two {
   height: 200px;
@@ -6113,39 +6113,42 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   -webkit-transition: all extract(all, 2), 0.3s extract(0.3s, 2), ease-in-out extract(ease-in-out, 2);
   transition: all extract(all, 2), 0.3s extract(0.3s, 2), ease-in-out extract(ease-in-out, 2);
 }
-.sponsors .card.bronze {
-  margin-top: 40px;
+.sponsors .card.platinum {
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
-.sponsors .card.bronze .header {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #dfb667), to(#f9f3e8));
-  background: linear-gradient(0deg, #dfb667 15%, #f9f3e8 100%);
-  border-top-right-radius: 0px;
+.sponsors .card.platinum .header {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #b14896), to(#9d479b));
+  background: linear-gradient(0deg, #b14896 15%, #9d479b 100%);
 }
-.sponsors .card.bronze .body {
-  border-bottom-right-radius: 0px;
+.sponsors .card.platinum .body li {
+  background: url('/images/assets/002-tick.svg') no-repeat 0 0;
+  background-size: 20px 20px;
 }
-.sponsors .card.bronze .body li {
-  background: url('/images/assets/tick-bronze.png') no-repeat 0 0;
-}
-.sponsors .card.bronze .body button {
+.sponsors .card.platinum .body button {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, rgba(223, 182, 103, 0.6)), to(rgba(249, 243, 232, 0.6)));
   background: linear-gradient(0deg, rgba(223, 182, 103, 0.6) 15%, rgba(249, 243, 232, 0.6) 100%);
 }
-.sponsors .card.bronze .body button:hover,
-.sponsors .card.bronze .body button:focus {
+.sponsors .card.platinum .body button:hover,
+.sponsors .card.platinum .body button:focus {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #dfb667), to(#f9f3e8));
   background: linear-gradient(0deg, #dfb667 15%, #f9f3e8 100%);
 }
 .sponsors .card.gold {
-  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
 }
 .sponsors .card.gold .header {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f2d70c), to(#ffffff));
   background: linear-gradient(0deg, #f2d70c 20%, #ffffff 100%);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.sponsors .card.gold .body {
+  border-bottom-right-radius: 0px;
 }
 .sponsors .card.gold .body li {
-  background: url('/images/assets/tick-gold.png') no-repeat 0 0;
+  background: url('/images/assets/003-tick.svg') no-repeat 0 0;
+  background-size: 20px 20px;
 }
 .sponsors .card.gold .body button {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(242, 215, 12, 0.6)), to(rgba(255, 255, 255, 0.6)));
@@ -6171,7 +6174,8 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   border-bottom-left-radius: 0px;
 }
 .sponsors .card.silver .body li {
-  background: url('/images/assets/tick-silver.png') no-repeat 0 0;
+  background: url('/images/assets/004-tick.svg') no-repeat 0 0;
+  background-size: 20px 20px;
 }
 .sponsors .card.silver .body button {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(160, 160, 160, 0.6)), to(rgba(255, 255, 255, 0.6)));
@@ -6183,12 +6187,11 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   background: linear-gradient(0deg, #a0a0a0 20%, #ffffff 100%);
 }
 .current-sponsors {
+  display: none;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2d70c), color-stop(50%, #a0a0a0), to(#dfb667));
-  background-image: linear-gradient(#f2d70c, #a0a0a0 50%, #dfb667);
-  background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2d70c', endColorstr='#ffdfb667', GradientType=0);
+  background: white url('/images/assets/what-bg.png') no-repeat center center;
+  background-size: cover;
 }
 .current-sponsors .sponsors-background-two {
   height: 200px;
@@ -6196,7 +6199,7 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .current-sponsors h2 {
-  color: #fff;
+  color: #000;
   font-size: 48px;
   font-weight: 400;
 }
@@ -6204,13 +6207,12 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   font-weight: 600;
 }
 .current-sponsors p {
-  color: #fff;
+  color: #000;
   margin-bottom: 60px;
 }
 .current-sponsors .card {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  border: 1px solid #bababa;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-top: 2em;
@@ -6220,18 +6222,16 @@ header > div > .navbar-header button:hover span:nth-child(3) {
 }
 .current-sponsors .card.gold {
   padding: 0.5em;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #ffffff), to(#f2d70c));
-  background: linear-gradient(0deg, #ffffff 20%, #f2d70c 100%);
+}
+.current-sponsors .card.gold a img {
+  border: solid 15px #d0aa00;
+  margin-bottom: 10px;
 }
 .current-sponsors .card.silver {
   padding: 0.5em;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #ffffff), to(#a0a0a0));
-  background: linear-gradient(0deg, #ffffff 20%, #a0a0a0 100%);
 }
-.current-sponsors .card.bronze {
+.current-sponsors .card.platinum {
   padding: 0.5em;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f9f3e8), to(#dfb667));
-  background: linear-gradient(0deg, #f9f3e8 20%, #dfb667 100%);
 }
 .current-sponsors .sponsor-grid {
   padding: 0.5em;

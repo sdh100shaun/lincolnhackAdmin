@@ -387,29 +387,18 @@
 
                 <div class="row sponsor-gold">
                     <div class="card gold">
-                        <div class="header">
-                            <h3 class="text-center">Gold</h3>
-                        </div>
 
                         <div class="sponsor-grid">
 
-                            <a href=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""></a>
 
-                            <a href=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""></a>
 
-                            <a href=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""></a>
-
-                            <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
-
-                            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-                            <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
 
 
                         </div>
                     </div>
 
                 </div>
-
+¬
 
                 <div class="row sponsor-silver">
                     <div class="card silver">
@@ -419,16 +408,7 @@
 
                         <div class="sponsor-grid">
 
-                            <a href=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""></a>
 
-                            <a href=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""></a>
-
-                            <a href=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""></a>
-
-                            <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
-
-                            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-                            <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
 
 
                         </div>
@@ -444,16 +424,6 @@
 
                         <div class="sponsor-grid">
 
-                            <a href=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""></a>
-
-                            <a href=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""></a>
-
-                            <a href=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""></a>
-
-                            <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
-
-                            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-                            <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
 
 
                         </div>
@@ -476,9 +446,9 @@
 
                 <div class="row">
 
-                    <div class="col-md-4 col-md-offset-0 col-md-push-4 col-sm-10 col-sm-offset-1 card gold">
+                    <div class="col-md-4 col-md-offset-0 col-md-push-4 col-sm-10 col-sm-offset-1 card platinum">
                         <div class="header">
-                            <h3 class="text-center">Gold</h3>
+                            <h3 class="text-center">Platinum</h3>
                         </div>
 
                         <div class="body">
@@ -514,9 +484,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-md-offset-0 col-md-pull-8 col-sm-10 col-sm-offset-1 card bronze">
+                    <div class="col-md-4 col-md-offset-0 col-md-pull-8 col-sm-10 col-sm-offset-1 card gold">
                         <div class="header">
-                            <h3 class="text-center">Bronze</h3>
+                            <h3 class="text-center">Gold</h3>
                         </div>
 
                         <div class="body">

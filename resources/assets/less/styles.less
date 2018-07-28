@@ -655,7 +655,7 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  #gradient.vertical(#A154D2; #6374DA; 0%; 100%);
+  #gradient.vertical(#6374DA; #A154D2; 0%; 100%);
 
   .sponsors-background-two {
     height: 200px;
@@ -724,17 +724,19 @@ header {
       }
     }
 
-    &.bronze {
-      margin-top: 40px;
+    &.platinum {
+      .box-shadow(2px 2px 8px rgba(0, 0, 0, 0.5));
       .header {
-        background: linear-gradient(0deg, rgba(223, 182, 103, 1) 15%, rgba(249, 243, 232, 1) 100%);
-        border-top-right-radius: 0px;
+        background: linear-gradient(0deg, rgba(177, 72, 150, 1) 15%, rgba(157, 71, 155, 1) 100%);
+
       }
 
       .body {
-        border-bottom-right-radius: 0px;
+
+
         li {
-          background: url('/images/assets/tick-bronze.png') no-repeat 0 0;
+          background: url('/images/assets/002-tick.svg') no-repeat 0 0;
+          background-size: 20px 20px;
         }
 
         button {
@@ -749,16 +751,21 @@ header {
     }
 
     &.gold {
-      .box-shadow(2px 2px 8px rgba(0, 0, 0, 0.5));
+      margin-top: 40px;
+
 
       .header {
         // background: linear-gradient(0deg,  rgba(242,215,12,1) 10%,rgba(255,255,255,1) 50%,rgba(252,235,0,1) 90%);
         background: linear-gradient(0deg, rgba(242, 215, 12, 1) 20%, rgba(255, 255, 255, 1) 100%);
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
       }
 
       .body {
+        border-bottom-right-radius: 0px;
         li {
-          background: url('/images/assets/tick-gold.png') no-repeat 0 0;
+          background: url('/images/assets/003-tick.svg') no-repeat 0 0;
+          background-size: 20px 20px;
         }
         button {
           // background-color:#FFBC00;
@@ -784,7 +791,8 @@ header {
       .body {
         border-bottom-left-radius: 0px;
         li {
-          background: url('/images/assets/tick-silver.png') no-repeat 0 0;
+          background: url('/images/assets/004-tick.svg') no-repeat 0 0;
+          background-size: 20px 20px;
         }
         button {
           // background-color:#B9C1C2;
@@ -799,10 +807,12 @@ header {
 }
 
 .current-sponsors {
+  display:none;
   padding-top: 60px;
   padding-bottom: 60px;
 
-  #gradient.vertical-three-colors( rgba(242, 215, 12, 1); rgba(160, 160, 160, 1);50%;rgba(223, 182, 103, 1));
+  background: white url('/images/assets/what-bg.png') no-repeat center center;
+  background-size: cover;
 
   .sponsors-background-two {
     height: 200px;
@@ -810,7 +820,7 @@ header {
   }
 
   h2 {
-    color: #fff;
+    color: #000;
     font-size: @font-size-h1 + 12;
     font-weight: 400;
     strong {
@@ -819,13 +829,12 @@ header {
   }
 
   p {
-    color: #fff;
+    color: #000;
     margin-bottom: 60px;
   }
  .card{
    border-bottom-left-radius: 10px;
    border-bottom-right-radius: 10px;
-   border: 1px solid #bababa;
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
 
@@ -839,18 +848,20 @@ header {
    &.gold{
 
      padding: 0.5em;
-     background: linear-gradient(0deg,  rgba(255, 255, 255, 1) 20%, rgba(242, 215, 12, 1) 100%);
+     a img {
+       border: solid 15px rgb(208,170,0);
+       margin-bottom: 10px;
+     }
 
    }
    &.silver{
 
      padding: 0.5em;
-     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 20%, rgba(160, 160, 160, 1) 100%);
-   }
+      }
 
-   &.bronze{
+   &.platinum{
      padding: 0.5em;
-     background: linear-gradient(0deg, rgba(249, 243, 232, 1) 20%, rgba(223, 182, 103, 1) 100%);
+
    }
  }
 
@@ -864,6 +875,7 @@ header {
   .sponsor-grid img {
     width: 100%;
     padding: 7px 0;
+
   }
   @media (max-width: 500px) {
 
