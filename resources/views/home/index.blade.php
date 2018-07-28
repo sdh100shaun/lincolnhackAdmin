@@ -453,10 +453,10 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li>Logo will be part of the event</li>
-                                <li>Main prominent logo on all printed materials related to event</li>
-                                <li>Company details on all prevent materials related to event</li>
-                                <li>Plus all Bronze & Silver features</li>
+                                <li>Largest logo spot, prominently placed on all public material for the event.</li>
+                                <li>Ability to set challenge and a slot at the opening address</li>
+                                <li>2 judging spots and workshop opportunity</li>
+                                <li>Plus all Gold & Silver features</li>
                             </ul>
 
                             <button class="btn btn-default text-uppercase"><a class="btn-link sponsorlink"
@@ -472,9 +472,9 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li>Advert in Official event program</li>
-                                <li>Logo placement on banners and backdrops in all press photos</li>
-                                <li>All Bronze features</li>
+                                <li>Link to company page on website</li>
+                                <li>The opportunity to provide materials for distribution at the event</li>
+                                <li>All logo sponsorship features</li>
                             </ul>
 
                             <button class="btn btn-default text-uppercase"><a class="btn-link sponsorlink"
@@ -491,9 +491,10 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li>Logo placement on website</li>
-                                <li>Link to company page on website</li>
-                                <li>Promotional materials at event</li>
+                                <li>Logo on Lincolnhack promotional material</li>
+                                <li>The opportunity to provide company standing banner</li>
+                                <li>One judging spot</li>
+
                             </ul>
 
                             <button class="btn btn-default text-uppercase"><a class="btn-link sponsorlink"
