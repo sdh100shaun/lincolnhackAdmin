@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <title>Code Coverage for /Volumes/Development/lincolnhack/lincolnhack-admin/app/Providers/AuthServiceProvider.php</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
-  <link href="../css/style.css" rel="stylesheet">
+  <link href="../.css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../.css/style.css" rel="stylesheet" type="text/css">
   <!--[if lt IE 9]>
-  <script src="../js/html5shiv.min.js"></script>
-  <script src="../js/respond.min.js"></script>
+  <script src="../.js/html5shiv.min.js"></script>
+  <script src="../.js/respond.min.js"></script>
   <![endif]-->
  </head>
  <body>
@@ -71,7 +71,7 @@
      </tr>
 
      <tr>
-      <td class="success">AuthServiceProvider</td>
+      <td class="success">App\Providers\AuthServiceProvider</td>
       <td class="success big">       <div class="progress">
          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" style="width: 100.00%">
            <span class="sr-only">100.00% covered (success)</span>
@@ -151,11 +151,11 @@
      <tr><td><div align="right"><a name="24"></a><a href="#24">24</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></td></tr>
      <tr><td><div align="right"><a name="25"></a><a href="#25">25</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">boot</span><span class="keyword">(</span><span class="keyword">)</span></td></tr>
      <tr><td><div align="right"><a name="26"></a><a href="#26">26</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">{</span></td></tr>
-     <tr class="covered-by-large-tests popin" data-title="17 tests cover line 27" data-content="&lt;ul&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testIndex&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testCountdown&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testAttendee&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testLogin&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testAuthRedirect&lt;/li&gt;&lt;li class=&quot;danger&quot;&gt;Feature\DatabaseTest::testUserSeeded&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeServiceTest::testGoodResponse&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeServiceTest::testAttendeeDataCorrect&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeTest::testModelReturnsName&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeTest::testServiceNameCorrect_whenHackBotMethodCalled&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\MessageRepositoryTest::testMessageRepositoryReturnsEmptyStringIfEmptyType&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\MessageRepositoryTest::testAddMessage&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::tokenGenerated&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::tokenGenerateDifferentEachTime&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::modelPopulated&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::passwordHashed&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OneTimePasswordTest::testVerify&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="27"></a><a href="#27">27</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="default">-&gt;</span><span class="default">registerPolicies</span><span class="keyword">(</span><span class="keyword">)</span><span class="keyword">;</span></td></tr>
+     <tr class="covered-by-large-tests popin" data-title="14 tests cover line 27" data-content="&lt;ul&gt;&lt;li class=&quot;danger&quot;&gt;Tests\Feature\ApplicationTest::testIndex&lt;/li&gt;&lt;li class=&quot;danger&quot;&gt;Tests\Feature\ApplicationTest::testCountdown&lt;/li&gt;&lt;li class=&quot;danger&quot;&gt;Tests\Feature\ApplicationTest::testAttendee&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testLogin&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testAuthRedirect&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeServiceTest::testGoodResponse&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeServiceTest::testAttendeeDataCorrect&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeTest::testModelReturnsName&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeTest::testServiceNameCorrect_whenHackBotMethodCalled&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\MessageRepositoryTest::testMessageRepositoryReturnsEmptyStringIfEmptyType&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::tokenGenerated&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::tokenGenerateDifferentEachTime&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::modelPopulated&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::passwordHashed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="27"></a><a href="#27">27</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="default">-&gt;</span><span class="default">registerPolicies</span><span class="keyword">(</span><span class="keyword">)</span><span class="keyword">;</span></td></tr>
      <tr><td><div align="right"><a name="28"></a><a href="#28">28</a></div></td><td class="codeLine"></td></tr>
      <tr><td><div align="right"><a name="29"></a><a href="#29">29</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//</span></td></tr>
      <tr><td><div align="right"><a name="30"></a><a href="#30">30</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-     <tr class="covered-by-large-tests popin" data-title="17 tests cover line 31" data-content="&lt;ul&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testIndex&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testCountdown&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testAttendee&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testLogin&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testAuthRedirect&lt;/li&gt;&lt;li class=&quot;danger&quot;&gt;Feature\DatabaseTest::testUserSeeded&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeServiceTest::testGoodResponse&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeServiceTest::testAttendeeDataCorrect&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeTest::testModelReturnsName&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeTest::testServiceNameCorrect_whenHackBotMethodCalled&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\MessageRepositoryTest::testMessageRepositoryReturnsEmptyStringIfEmptyType&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\MessageRepositoryTest::testAddMessage&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::tokenGenerated&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::tokenGenerateDifferentEachTime&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::modelPopulated&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::passwordHashed&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OneTimePasswordTest::testVerify&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="31"></a><a href="#31">31</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">}</span></td></tr>
+     <tr class="covered-by-large-tests popin" data-title="14 tests cover line 31" data-content="&lt;ul&gt;&lt;li class=&quot;danger&quot;&gt;Tests\Feature\ApplicationTest::testIndex&lt;/li&gt;&lt;li class=&quot;danger&quot;&gt;Tests\Feature\ApplicationTest::testCountdown&lt;/li&gt;&lt;li class=&quot;danger&quot;&gt;Tests\Feature\ApplicationTest::testAttendee&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testLogin&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Feature\ApplicationTest::testAuthRedirect&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeServiceTest::testGoodResponse&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeServiceTest::testAttendeeDataCorrect&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeTest::testModelReturnsName&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\AttendeeTest::testServiceNameCorrect_whenHackBotMethodCalled&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\MessageRepositoryTest::testMessageRepositoryReturnsEmptyStringIfEmptyType&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::tokenGenerated&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::tokenGenerateDifferentEachTime&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::modelPopulated&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\Unit\OTPPasswordGeneratorTest::passwordHashed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="31"></a><a href="#31">31</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">}</span></td></tr>
      <tr><td><div align="right"><a name="32"></a><a href="#32">32</a></div></td><td class="codeLine"><span class="keyword">}</span></td></tr>
 
     </tbody>
@@ -169,36 +169,14 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 4.0.8</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.14</a> with <a href="https://xdebug.org/">Xdebug 2.5.5</a> and <a href="https://phpunit.de/">PHPUnit 5.7.19</a> at Mon May 7 9:13:50 UTC 2018.</small>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.3.2</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.16</a> with <a href="https://xdebug.org/">Xdebug 2.5.5</a> and <a href="https://phpunit.de/">PHPUnit 6.5.8</a> at Sat Jul 28 16:09:33 UTC 2018.</small>
     </p>
     <a title="Back to the top" id="toplink" href="#"><span class="glyphicon glyphicon-arrow-up"></span></a>
    </footer>
   </div>
-  <script src="../js/jquery.min.js" type="text/javascript"></script>
-  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="../js/holder.min.js" type="text/javascript"></script>
-  <script type="text/javascript">
-  $(function() {
-   var $window   = $(window)
-     , $top_link = $('#toplink')
-     , $body     = $('body, html')
-     , offset    = $('#code').offset().top;
-
-   $top_link.hide().click(function(event) {
-    event.preventDefault();
-    $body.animate({scrollTop:0}, 800);
-   });
-
-   $window.scroll(function() {
-    if($window.scrollTop() > offset) {
-     $top_link.fadeIn();
-    } else {
-     $top_link.fadeOut();
-    }
-   }).scroll();
-
-   $('.popin').popover({trigger: 'hover'});
-  });
-  </script>
+  <script src="../.js/jquery.min.js" type="text/javascript"></script>
+  <script src="../.js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../.js/holder.min.js" type="text/javascript"></script>
+  <script src="../.js/file.js" type="text/javascript"></script>
  </body>
 </html>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1525684430">
-  <project timestamp="1525684430">
+<coverage generated="1532794173">
+  <project timestamp="1532794173">
     <package name="App\Console">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Console/Kernel.php">
-        <class name="Kernel" namespace="App\Console">
+        <class name="App\Console\Kernel" namespace="App\Console">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
         </class>
-        <line num="25" type="method" name="schedule" visibility="protected" complexity="1" crap="1" count="17"/>
-        <line num="29" type="stmt" count="17"/>
-        <line num="36" type="method" name="commands" visibility="protected" complexity="1" crap="1" count="1"/>
-        <line num="38" type="stmt" count="1"/>
-        <line num="39" type="stmt" count="1"/>
+        <line num="25" type="method" name="schedule" visibility="protected" complexity="1" crap="1" count="14"/>
+        <line num="29" type="stmt" count="14"/>
+        <line num="36" type="method" name="commands" visibility="protected" complexity="1" crap="1" count="14"/>
+        <line num="38" type="stmt" count="14"/>
+        <line num="39" type="stmt" count="14"/>
         <metrics loc="40" ncloc="18" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
       </file>
     </package>
     <package name="App\Events">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Events/CountdownMessage.php">
-        <class name="CountdownMessage" namespace="App\Events">
+        <class name="App\Events\CountdownMessage" namespace="App\Events">
           <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="5" coveredelements="0"/>
         </class>
         <line num="28" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
@@ -29,14 +29,14 @@
     </package>
     <package name="App\Exceptions">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Exceptions/Handler.php">
-        <class name="Handler" namespace="App\Exceptions">
+        <class name="App\Exceptions\Handler" namespace="App\Exceptions">
           <metrics complexity="4" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="5" elements="9" coveredelements="7"/>
         </class>
-        <line num="33" type="method" name="report" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="35" type="stmt" count="1"/>
-        <line num="36" type="stmt" count="1"/>
-        <line num="45" type="method" name="render" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="47" type="stmt" count="1"/>
+        <line num="33" type="method" name="report" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="35" type="stmt" count="4"/>
+        <line num="36" type="stmt" count="4"/>
+        <line num="45" type="method" name="render" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="47" type="stmt" count="4"/>
         <line num="57" type="method" name="unauthenticated" visibility="protected" complexity="2" crap="2.15" count="1"/>
         <line num="59" type="stmt" count="1"/>
         <line num="60" type="stmt" count="0"/>
@@ -46,7 +46,7 @@
     </package>
     <package name="app\Http\Controllers\Api">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Controllers/Api/RegistrationController.php">
-        <class name="RegistrationController" namespace="app\Http\Controllers\Api">
+        <class name="app\Http\Controllers\Api\RegistrationController" namespace="app\Http\Controllers\Api">
           <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="12" coveredelements="0"/>
         </class>
         <line num="28" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
@@ -66,7 +66,7 @@
     </package>
     <package name="App\Http\Controllers\Api">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Controllers/Api/TshirtController.php">
-        <class name="TshirtController" namespace="App\Http\Controllers\Api">
+        <class name="App\Http\Controllers\Api\TshirtController" namespace="App\Http\Controllers\Api">
           <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="5" coveredelements="0"/>
         </class>
         <line num="25" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
@@ -79,7 +79,7 @@
     </package>
     <package name="App\Http\Controllers">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Controllers/AttendeeController.php">
-        <class name="AttendeeController" namespace="App\Http\Controllers">
+        <class name="App\Http\Controllers\AttendeeController" namespace="App\Http\Controllers">
           <metrics complexity="12" methods="9" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="10" elements="46" coveredelements="12"/>
         </class>
         <line num="49" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
@@ -131,13 +131,13 @@
         <metrics loc="180" ncloc="108" classes="1" methods="9" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="10" elements="46" coveredelements="12"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Controllers/Controller.php">
-        <class name="Controller" namespace="App\Http\Controllers">
+        <class name="App\Http\Controllers\Controller" namespace="App\Http\Controllers">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
         <metrics loc="13" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Controllers/CountdownController.php">
-        <class name="CountdownController" namespace="App\Http\Controllers">
+        <class name="App\Http\Controllers\CountdownController" namespace="App\Http\Controllers">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
         </class>
         <line num="15" type="method" name="index" visibility="public" complexity="1" crap="1" count="1"/>
@@ -145,7 +145,7 @@
         <metrics loc="19" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Controllers/HomeController.php">
-        <class name="HomeController" namespace="App\Http\Controllers">
+        <class name="App\Http\Controllers\HomeController" namespace="App\Http\Controllers">
           <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="3" elements="7" coveredelements="4"/>
         </class>
         <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
@@ -160,7 +160,7 @@
     </package>
     <package name="App\Http\Controllers\Auth">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Controllers/Auth/ForgotPasswordController.php">
-        <class name="ForgotPasswordController" namespace="App\Http\Controllers\Auth">
+        <class name="App\Http\Controllers\Auth\ForgotPasswordController" namespace="App\Http\Controllers\Auth">
           <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
         </class>
         <line num="28" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
@@ -169,7 +169,7 @@
         <metrics loc="32" ncloc="17" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Controllers/Auth/LoginController.php">
-        <class name="LoginController" namespace="App\Http\Controllers\Auth">
+        <class name="App\Http\Controllers\Auth\LoginController" namespace="App\Http\Controllers\Auth">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
         </class>
         <line num="35" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
@@ -178,7 +178,7 @@
         <metrics loc="39" ncloc="19" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Controllers/Auth/RegisterController.php">
-        <class name="RegisterController" namespace="App\Http\Controllers\Auth">
+        <class name="App\Http\Controllers\Auth\RegisterController" namespace="App\Http\Controllers\Auth">
           <metrics complexity="5" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="17" coveredelements="0"/>
         </class>
         <line num="20" type="method" name="showRegistrationForm" visibility="public" complexity="1" crap="2" count="0"/>
@@ -201,7 +201,7 @@
         <metrics loc="86" ncloc="55" classes="1" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="17" coveredelements="0"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Controllers/Auth/ResetPasswordController.php">
-        <class name="ResetPasswordController" namespace="App\Http\Controllers\Auth">
+        <class name="App\Http\Controllers\Auth\ResetPasswordController" namespace="App\Http\Controllers\Auth">
           <metrics complexity="4" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="13" coveredelements="0"/>
         </class>
         <line num="39" type="method" name="showResetForm" visibility="public" complexity="1" crap="2" count="0"/>
@@ -222,7 +222,7 @@
     </package>
     <package name="app\Http\Controllers">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Controllers/HackerController.php">
-        <class name="HackerController" namespace="app\Http\Controllers">
+        <class name="app\Http\Controllers\HackerController" namespace="app\Http\Controllers">
           <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
         </class>
         <line num="37" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
@@ -241,7 +241,7 @@
     </package>
     <package name="App\Http">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Kernel.php">
-        <class name="Kernel" namespace="App\Http">
+        <class name="App\Http\Kernel" namespace="App\Http">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
         <metrics loc="61" ncloc="40" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
@@ -249,13 +249,13 @@
     </package>
     <package name="App\Http\Middleware">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Middleware/EncryptCookies.php">
-        <class name="EncryptCookies" namespace="App\Http\Middleware">
+        <class name="App\Http\Middleware\EncryptCookies" namespace="App\Http\Middleware">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
         <metrics loc="17" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Middleware/OneTimeTokenMiddleware.php">
-        <class name="OneTimeTokenMiddleware" namespace="App\Http\Middleware">
+        <class name="App\Http\Middleware\OneTimeTokenMiddleware" namespace="App\Http\Middleware">
           <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
         </class>
         <line num="20" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
@@ -269,7 +269,7 @@
         <metrics loc="44" ncloc="30" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Middleware/RedirectIfAuthenticated.php">
-        <class name="RedirectIfAuthenticated" namespace="App\Http\Middleware">
+        <class name="App\Http\Middleware\RedirectIfAuthenticated" namespace="App\Http\Middleware">
           <metrics complexity="2" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="4" coveredelements="2"/>
         </class>
         <line num="18" type="method" name="handle" visibility="public" complexity="2" crap="2.15" count="1"/>
@@ -279,13 +279,13 @@
         <metrics loc="26" ncloc="18" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="4" coveredelements="2"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Middleware/TrimStrings.php">
-        <class name="TrimStrings" namespace="App\Http\Middleware">
+        <class name="App\Http\Middleware\TrimStrings" namespace="App\Http\Middleware">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
         <metrics loc="18" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Middleware/VerifyCsrfToken.php">
-        <class name="VerifyCsrfToken" namespace="App\Http\Middleware">
+        <class name="App\Http\Middleware\VerifyCsrfToken" namespace="App\Http\Middleware">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
         <metrics loc="17" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
@@ -293,7 +293,7 @@
     </package>
     <package name="App\Http\Requests">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/Requests/StoreAttendee.php">
-        <class name="StoreAttendee" namespace="App\Http\Requests">
+        <class name="App\Http\Requests\StoreAttendee" namespace="App\Http\Requests">
           <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
         </class>
         <line num="14" type="method" name="authorize" visibility="public" complexity="1" crap="2" count="0"/>
@@ -305,21 +305,21 @@
     </package>
     <package name="App\Http\ViewComposers">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Http/ViewComposers/MessageComposer.php">
-        <class name="MessageComposer" namespace="App\Http\ViewComposers">
-          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+        <class name="App\Http\ViewComposers\MessageComposer" namespace="App\Http\ViewComposers">
+          <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="3" elements="6" coveredelements="4"/>
         </class>
         <line num="24" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
         <line num="27" type="stmt" count="2"/>
         <line num="28" type="stmt" count="2"/>
-        <line num="36" type="method" name="compose" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="36" type="method" name="compose" visibility="public" complexity="1" crap="1.12" count="2"/>
         <line num="38" type="stmt" count="2"/>
-        <line num="39" type="stmt" count="2"/>
-        <metrics loc="39" ncloc="24" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+        <line num="39" type="stmt" count="0"/>
+        <metrics loc="39" ncloc="24" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="3" elements="6" coveredelements="4"/>
       </file>
     </package>
     <package name="App\Listeners">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Listeners/EventListener.php">
-        <class name="EventListener" namespace="App\Listeners">
+        <class name="App\Listeners\EventListener" namespace="App\Listeners">
           <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
         </class>
         <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
@@ -329,7 +329,7 @@
         <metrics loc="31" ncloc="16" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Listeners/Registered.php">
-        <class name="Registered" namespace="App\Listeners">
+        <class name="App\Listeners\Registered" namespace="App\Listeners">
           <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="16" coveredelements="0"/>
         </class>
         <line num="37" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
@@ -353,7 +353,7 @@
     </package>
     <package name="App\Notifications">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Notifications/SendOTP.php">
-        <class name="SendOTP" namespace="App\Notifications">
+        <class name="App\Notifications\SendOTP" namespace="App\Notifications">
           <metrics complexity="5" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="23" coveredelements="0"/>
         </class>
         <line num="26" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
@@ -374,7 +374,7 @@
         <line num="68" type="stmt" count="0"/>
         <line num="69" type="stmt" count="0"/>
         <line num="70" type="stmt" count="0"/>
-        <line num="71" type="method" name="anonymous function" complexity="1" crap="2" count="0"/>
+        <line num="71" type="method" name="anonymousFunction:71#294" complexity="1" crap="2" count="0"/>
         <line num="72" type="stmt" count="0"/>
         <line num="73" type="stmt" count="0"/>
         <line num="74" type="stmt" count="0"/>
@@ -384,88 +384,88 @@
     </package>
     <package name="App\Providers">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Providers/AppServiceProvider.php">
-        <class name="AppServiceProvider" namespace="App\Providers">
+        <class name="App\Providers\AppServiceProvider" namespace="App\Providers">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
         </class>
-        <line num="14" type="method" name="boot" visibility="public" complexity="1" crap="1" count="17"/>
-        <line num="17" type="stmt" count="17"/>
-        <line num="24" type="method" name="register" visibility="public" complexity="1" crap="1" count="17"/>
-        <line num="27" type="stmt" count="17"/>
+        <line num="14" type="method" name="boot" visibility="public" complexity="1" crap="1" count="14"/>
+        <line num="17" type="stmt" count="14"/>
+        <line num="24" type="method" name="register" visibility="public" complexity="1" crap="1" count="14"/>
+        <line num="27" type="stmt" count="14"/>
         <metrics loc="28" ncloc="14" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Providers/AuthServiceProvider.php">
-        <class name="AuthServiceProvider" namespace="App\Providers">
+        <class name="App\Providers\AuthServiceProvider" namespace="App\Providers">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
         </class>
-        <line num="25" type="method" name="boot" visibility="public" complexity="1" crap="1" count="17"/>
-        <line num="27" type="stmt" count="17"/>
-        <line num="31" type="stmt" count="17"/>
+        <line num="25" type="method" name="boot" visibility="public" complexity="1" crap="1" count="14"/>
+        <line num="27" type="stmt" count="14"/>
+        <line num="31" type="stmt" count="14"/>
         <metrics loc="32" ncloc="20" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Providers/BroadcastServiceProvider.php">
-        <class name="BroadcastServiceProvider" namespace="App\Providers">
+        <class name="App\Providers\BroadcastServiceProvider" namespace="App\Providers">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
         </class>
-        <line num="15" type="method" name="boot" visibility="public" complexity="1" crap="1" count="17"/>
-        <line num="17" type="stmt" count="17"/>
-        <line num="19" type="stmt" count="17"/>
-        <line num="20" type="stmt" count="17"/>
+        <line num="15" type="method" name="boot" visibility="public" complexity="1" crap="1" count="14"/>
+        <line num="17" type="stmt" count="14"/>
+        <line num="19" type="stmt" count="14"/>
+        <line num="20" type="stmt" count="14"/>
         <metrics loc="21" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Providers/ComposerServiceProvider.php">
-        <class name="ComposerServiceProvider" namespace="App\Providers">
+        <class name="App\Providers\ComposerServiceProvider" namespace="App\Providers">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
         </class>
-        <line num="23" type="method" name="boot" visibility="public" complexity="1" crap="1" count="17"/>
-        <line num="25" type="stmt" count="17"/>
-        <line num="26" type="stmt" count="17"/>
-        <line num="28" type="stmt" count="17"/>
-        <line num="35" type="method" name="register" visibility="public" complexity="1" crap="1" count="17"/>
-        <line num="38" type="stmt" count="17"/>
+        <line num="23" type="method" name="boot" visibility="public" complexity="1" crap="1" count="14"/>
+        <line num="25" type="stmt" count="14"/>
+        <line num="26" type="stmt" count="14"/>
+        <line num="28" type="stmt" count="14"/>
+        <line num="35" type="method" name="register" visibility="public" complexity="1" crap="1" count="14"/>
+        <line num="38" type="stmt" count="14"/>
         <metrics loc="38" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Providers/EventServiceProvider.php">
-        <class name="EventServiceProvider" namespace="App\Providers">
+        <class name="App\Providers\EventServiceProvider" namespace="App\Providers">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
         </class>
-        <line num="27" type="method" name="boot" visibility="public" complexity="1" crap="1" count="17"/>
-        <line num="29" type="stmt" count="17"/>
-        <line num="32" type="stmt" count="17"/>
+        <line num="27" type="method" name="boot" visibility="public" complexity="1" crap="1" count="14"/>
+        <line num="29" type="stmt" count="14"/>
+        <line num="32" type="stmt" count="14"/>
         <metrics loc="33" ncloc="21" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </file>
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/Providers/RouteServiceProvider.php">
-        <class name="RouteServiceProvider" namespace="App\Providers">
+        <class name="App\Providers\RouteServiceProvider" namespace="App\Providers">
           <metrics complexity="4" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="18" coveredelements="18"/>
         </class>
-        <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="17"/>
-        <line num="28" type="stmt" count="17"/>
-        <line num="29" type="stmt" count="17"/>
-        <line num="36" type="method" name="map" visibility="public" complexity="1" crap="1" count="17"/>
-        <line num="38" type="stmt" count="17"/>
-        <line num="40" type="stmt" count="17"/>
-        <line num="43" type="stmt" count="17"/>
-        <line num="52" type="method" name="mapWebRoutes" visibility="protected" complexity="1" crap="1" count="17"/>
-        <line num="54" type="stmt" count="17"/>
-        <line num="55" type="stmt" count="17"/>
-        <line num="56" type="stmt" count="17"/>
-        <line num="57" type="stmt" count="17"/>
-        <line num="66" type="method" name="mapApiRoutes" visibility="protected" complexity="1" crap="1" count="17"/>
-        <line num="68" type="stmt" count="17"/>
-        <line num="69" type="stmt" count="17"/>
-        <line num="70" type="stmt" count="17"/>
-        <line num="71" type="stmt" count="17"/>
-        <line num="72" type="stmt" count="17"/>
+        <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="14"/>
+        <line num="28" type="stmt" count="14"/>
+        <line num="29" type="stmt" count="14"/>
+        <line num="36" type="method" name="map" visibility="public" complexity="1" crap="1" count="14"/>
+        <line num="38" type="stmt" count="14"/>
+        <line num="40" type="stmt" count="14"/>
+        <line num="43" type="stmt" count="14"/>
+        <line num="52" type="method" name="mapWebRoutes" visibility="protected" complexity="1" crap="1" count="14"/>
+        <line num="54" type="stmt" count="14"/>
+        <line num="55" type="stmt" count="14"/>
+        <line num="56" type="stmt" count="14"/>
+        <line num="57" type="stmt" count="14"/>
+        <line num="66" type="method" name="mapApiRoutes" visibility="protected" complexity="1" crap="1" count="14"/>
+        <line num="68" type="stmt" count="14"/>
+        <line num="69" type="stmt" count="14"/>
+        <line num="70" type="stmt" count="14"/>
+        <line num="71" type="stmt" count="14"/>
+        <line num="72" type="stmt" count="14"/>
         <metrics loc="73" ncloc="38" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="18" coveredelements="18"/>
       </file>
     </package>
     <package name="App">
       <file name="/Volumes/Development/lincolnhack/lincolnhack-admin/app/User.php">
-        <class name="User" namespace="App">
+        <class name="App\User" namespace="App">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
         <metrics loc="33" ncloc="23" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="32" loc="1461" ncloc="912" classes="26" methods="63" coveredmethods="22" conditionals="0" coveredconditionals="0" statements="178" coveredstatements="57" elements="241" coveredelements="79"/>
+    <metrics files="32" loc="1461" ncloc="912" classes="26" methods="63" coveredmethods="21" conditionals="0" coveredconditionals="0" statements="178" coveredstatements="56" elements="241" coveredelements="77"/>
   </project>
 </coverage>
