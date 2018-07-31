@@ -2,7 +2,7 @@
 
 @section('content')
 
-    @include('partials.message')
+
     <header>
         <div>
             <div class="navbar-header">
