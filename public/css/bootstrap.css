@@ -6064,6 +6064,9 @@ header > div > .navbar-header button:hover span:nth-child(3) {
 .sponsors h2 strong {
   font-weight: 600;
 }
+.sponsors h3 {
+  color: rgba(255, 255, 255, 0.6);
+}
 .sponsors p {
   color: #fff;
   margin-bottom: 60px;
@@ -6093,7 +6096,6 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   margin: auto;
 }
 .sponsors .card .body ul li {
-  padding-left: 40px;
   margin: 30px 0px;
   line-height: 26px;
   font-family: museo-sans, sans-serif;
@@ -6113,51 +6115,49 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   -webkit-transition: all extract(all, 2), 0.3s extract(0.3s, 2), ease-in-out extract(ease-in-out, 2);
   transition: all extract(all, 2), 0.3s extract(0.3s, 2), ease-in-out extract(ease-in-out, 2);
 }
-.sponsors .card.platinum {
+.sponsors .card.gold {
   -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
-.sponsors .card.platinum .header {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #b14896), to(#9d479b));
-  background: linear-gradient(0deg, #b14896 15%, #9d479b 100%);
+.sponsors .card.gold .header {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(242, 215, 12, 0.6)), to(rgba(255, 255, 255, 0.6)));
+  background: linear-gradient(0deg, rgba(242, 215, 12, 0.6) 20%, rgba(255, 255, 255, 0.6) 100%);
 }
-.sponsors .card.platinum .body li {
-  background: url('/images/assets/002-tick.svg') no-repeat 0 0;
+.sponsors .card.gold .body li {
   background-size: 20px 20px;
 }
-.sponsors .card.platinum .body button {
+.sponsors .card.gold .body button {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, rgba(223, 182, 103, 0.6)), to(rgba(249, 243, 232, 0.6)));
   background: linear-gradient(0deg, rgba(223, 182, 103, 0.6) 15%, rgba(249, 243, 232, 0.6) 100%);
 }
-.sponsors .card.platinum .body button:hover,
-.sponsors .card.platinum .body button:focus {
+.sponsors .card.gold .body button:hover,
+.sponsors .card.gold .body button:focus {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #dfb667), to(#f9f3e8));
   background: linear-gradient(0deg, #dfb667 15%, #f9f3e8 100%);
 }
-.sponsors .card.gold {
+.sponsors .card.partners {
   margin-top: 40px;
 }
-.sponsors .card.gold .header {
+.sponsors .card.partners .header {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f2d70c), to(#ffffff));
   background: linear-gradient(0deg, #f2d70c 20%, #ffffff 100%);
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.sponsors .card.gold .body {
+.sponsors .card.partners .body {
   border-bottom-right-radius: 0px;
 }
-.sponsors .card.gold .body li {
-  background: url('/images/assets/003-tick.svg') no-repeat 0 0;
+.sponsors .card.partners .body li {
   background-size: 20px 20px;
 }
-.sponsors .card.gold .body button {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(242, 215, 12, 0.6)), to(rgba(255, 255, 255, 0.6)));
-  background: linear-gradient(0deg, rgba(242, 215, 12, 0.6) 20%, rgba(255, 255, 255, 0.6) 100%);
+.sponsors .card.partners .body button {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #b14896), to(#9d479b));
+  background: linear-gradient(0deg, #b14896 15%, #9d479b 100%);
   margin: 60px auto;
   margin-bottom: 25px;
 }
-.sponsors .card.gold .body button:hover,
-.sponsors .card.gold .body button:focus {
+.sponsors .card.partners .body button:hover,
+.sponsors .card.partners .body button:focus {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f2d70c), to(#ffffff));
   background: linear-gradient(0deg, #f2d70c 20%, #ffffff 100%);
 }
@@ -6174,7 +6174,6 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   border-bottom-left-radius: 0px;
 }
 .sponsors .card.silver .body li {
-  background: url('/images/assets/004-tick.svg') no-repeat 0 0;
   background-size: 20px 20px;
 }
 .sponsors .card.silver .body button {
@@ -6190,6 +6189,7 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   display: none;
   padding-top: 60px;
   padding-bottom: 60px;
+  min-height: 300px;
   background: white url('/images/assets/what-bg.png') no-repeat center center;
   background-size: cover;
 }
