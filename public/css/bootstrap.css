@@ -6120,8 +6120,8 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 .sponsors .card.gold .header {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(242, 215, 12, 0.6)), to(rgba(255, 255, 255, 0.6)));
-  background: linear-gradient(0deg, rgba(242, 215, 12, 0.6) 20%, rgba(255, 255, 255, 0.6) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #dfb667), to(#f9f3e8));
+  background: linear-gradient(0deg, #dfb667 15%, #f9f3e8 100%);
 }
 .sponsors .card.gold .body li {
   background-size: 20px 20px;
@@ -6185,13 +6185,37 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #a0a0a0), to(#ffffff));
   background: linear-gradient(0deg, #a0a0a0 20%, #ffffff 100%);
 }
+.sponsor-page {
+  margin-top: 2em;
+}
+.sponsor-page p {
+  font-size: 16px;
+  font-family: museo-sans, sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+}
+.sponsor-page h5 {
+  font-size: 29px;
+  line-height: 40px;
+}
+.sponsor-page h5.epix {
+  color: #F37029;
+  font-weight: bold;
+}
+.sponsor-page h5.khaos {
+  color: #f60c3d;
+  font-weight: bold;
+}
+.sponsor-page h5.recap {
+  color: #78c1b9;
+  font-weight: bold;
+}
 .current-sponsors {
-  display: none;
   padding-top: 60px;
-  padding-bottom: 60px;
-  min-height: 300px;
-  background: white url('/images/assets/what-bg.png') no-repeat center center;
+  padding-bottom: 260px;
+  background: url('/images/assets/promo-1400x1415.png') no-repeat center 70%;
   background-size: cover;
+  background-color: #000000 !important;
 }
 .current-sponsors .sponsors-background-two {
   height: 200px;

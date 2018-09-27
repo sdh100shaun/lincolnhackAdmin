@@ -15,6 +15,8 @@ class Sponsor extends Model
 
     protected $collection = 'sponsors';
 
+    const SPONSOR_TYPE_GOLD = 'gold';
+
     public function findByName($name)
     {
         return $this->where('name', $name)->firstOrFail();

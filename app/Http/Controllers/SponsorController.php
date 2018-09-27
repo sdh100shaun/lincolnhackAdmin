@@ -21,6 +21,8 @@ class SponsorController extends Controller
      */
     private $sponsor;
 
+
+
     public function __construct(Sponsor $sponsor)
     {
 
@@ -33,7 +35,7 @@ class SponsorController extends Controller
         try {
             $viewName = $name;
             $this->sponsor->findByName($name);
-            if(!$this->sponsor->type === ' Gold')
+            if(!$this->sponsor->type === $this->sponsor::SPONSOR_TYPE_GOLD)
             {
                 $viewName = $this->sponsor->type;
             }

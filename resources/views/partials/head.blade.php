@@ -1,5 +1,4 @@
-@extends('layouts.site')
-
+@extends('layouts.sponsor')
 @section('content')
     <header>
         <div>
@@ -88,14 +87,12 @@
             </ul>
         </div>
 
-        <div class="banner">
-
-            <video autoplay preload="auto" loop muted playsinline>
-                <source src="/videos/edit2.mp4" type="video/mp4">
-
-            </video>
+        <div class="banner ">
             <div class="overlay">
                 <img class="logo img-responsive" alt="Lincoln Hack Imp" src="/images/assets/logo.png">
+
             </div>
 
         </div>
+
+@endsection

@@ -376,63 +376,6 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid current-sponsors" id="current-sponsors">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center"><strong>Sponsors and Partners</strong> LincolnHack</h2>
-                        <p class="text-center">LincolnHack would not be possible without our sponsors</p>
-                    </div>
-                </div>
-
-                <div class="row sponsor-gold">
-                    <div class="card gold">
-
-                        <div class="sponsor-grid">
-
-
-
-
-
-                        </div>
-                    </div>
-
-                </div>
-¬
-
-                <div class="row sponsor-silver">
-                    <div class="card silver">
-                        <div class="header">
-                            <h3 class="text-center">Silver</h3>
-                        </div>
-
-                        <div class="sponsor-grid">
-
-
-
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row sponsor-bronze">
-                    <div class="card bronze">
-                        <div class="header">
-                            <h3 class="text-center">Bronze</h3>
-                        </div>
-
-                        <div class="sponsor-grid">
-
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
 
         <div class="container-fluid sponsors" id="sponsors">
             <div class="container">
@@ -452,9 +395,11 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li><img src="/images/assets/sponsors/KC_Square_black_text.svg" alt="Khaos Control" /> </li>
-                                <li>Ability to set challenge and a slot at the opening address</li>
-                                <li>2 judging spots and workshop opportunity</li>
+                                <li><a href="../../sponsors/khaoscontrol"><img src="/images/assets/sponsors/KC_Square_black_text.svg" alt="Khaos Control" /></a> </li>
+                                <li><a href="../../sponsors/epixmedia"><img src="../../images/assets/sponsors/epix-logo.svg" alt="Expix Media" /></a>
+                                </li>
+                                <li><a href="../../sponsors/recap"><img src="../../images/assets/sponsors/recap-io.svg" alt="Recap.io" /></a>
+                                </li>
                                 <li>Plus all Gold & Silver features</li>
                             </ul>
 
