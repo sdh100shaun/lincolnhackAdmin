@@ -41,12 +41,12 @@ class SponsorController extends Controller
         }
         catch (ModelNotFoundException $nfe) {
 
-            return redirect('home');
+            return redirect('/');
 
         }
 
 
 
-        return view('sponsors.'.$viewName, ['sponsor' => ]);
+        return view('sponsors.'.$viewName, ['sponsor' => $this->sponsor]);
     }
 }
