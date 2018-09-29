@@ -107,7 +107,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <button class="btn btn-default text-uppercase" data-toggle="modal" data-target="#ticketsModal">
-                            <strong>Tickets</strong></button>
+                            <strong>Get tickets now</strong></button>
                         <h2 class="text-center"><strong>What</strong> is LincolnHack?</h2>
                         <div class="embed-responsive embed-responsive-16by9">
                             <div class="video-control play"></div>
@@ -565,7 +565,26 @@
                     <h2 class="modal-title">Get LincolnHack Tickets</h2>
                 </div>
                 <div class="modal-body">
-                    <p>Ticket Sales have not yet opened.</p>
+                    <div id="eventbrite-widget-container-50209435774"></div>
+
+                    <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+
+                    <script type="text/javascript">
+                        var callback = function() {
+                            $('.close').click();
+                        };
+
+                        window.EBWidgets.createWidget({
+                            // Required
+                            widgetType: 'checkout',
+                            eventId: '50209435774',
+                            iframeContainerId: 'eventbrite-widget-container-50209435774',
+
+                            // Optional
+                            iframeContainerHeight: 425,
+                            onOrderComplete: callback
+                        });
+                    </script>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
