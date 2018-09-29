@@ -400,7 +400,7 @@
                                 </li>
                                 <li><a href="../../sponsors/recap"><img src="../../images/assets/sponsors/recap-io.svg" alt="Recap.io" /></a>
                                 </li>
-                                <li>Plus all Gold & Silver features</li>
+
                             </ul>
 
                             <h4>Click a logo to see sponsor challenges.</h4>
@@ -414,14 +414,15 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li>Link to company page on website</li>
-                                <li>The opportunity to provide materials for distribution at the event</li>
-                                <li>All logo sponsorship features</li>
+                                <li><a href="../../sponsors/StreetsHeaver"><img width="150px" src="/images/assets/sponsors/StreetsHeaver.svg" alt="Streets Heaver" /></a> </li>
+                                <li><a href="../../sponsors/Selenity"><img width="150px" src="../../images/assets/sponsors/Selenity.svg" alt="Selenity" /></a>
+                                </li>
+
+
+
                             </ul>
 
-                            <button class="btn btn-default text-uppercase"><a class="btn-link sponsorlink"
-                                                                              href="mailto:hello@lincolnhack.org?subject=sponsorship">Enquire</a>
-                            </button>
+
 
                         </div>
                     </div>
@@ -432,14 +433,18 @@
                         </div>
 
                         <div class="body">
-                            <div class="sponsor-grid">
+                        <ul class="list-unstyled">
+                            <li><a href="../../sponsors/lsip"><img width="150px" src="/images/assets/sponsors/lsip.svg" alt="" /></a> </li>
+                            <li><a href="../../sponsors/bl"><img width="250px" src="../../images/assets/sponsors/bl.svg" alt="" /></a>
+                            </li>
 
 
 
-                            </div>
+                        </ul>
 
 
-                        </div>
+
+                    </div>
                     </div>
                 </div>
             </div>
