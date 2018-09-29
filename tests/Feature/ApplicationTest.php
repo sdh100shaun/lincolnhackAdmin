@@ -12,6 +12,9 @@ class ApplicationTest extends TestCase
     public function testIndex()
     {
         $response = $this->get('/');
+
+
+
     
         $response->assertStatus(200);
     }

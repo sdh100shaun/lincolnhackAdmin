@@ -10,3 +10,4 @@ deploy.php
 .env
 deploy.php
 .DS_Store
+coverage/*
