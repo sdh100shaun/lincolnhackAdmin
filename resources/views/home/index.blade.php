@@ -398,6 +398,8 @@
                                 <li><a href="../../sponsors/khaoscontrol"><img src="/images/assets/sponsors/KC_Square_black_text.svg" alt="Khaos Control" /></a> </li>
                                 <li><a href="../../sponsors/epixmedia"><img src="../../images/assets/sponsors/epix-logo.svg" alt="Expix Media" /></a>
                                 </li>
+                                <li><a href="../../sponsors/scholarpack"><img src="../../images/assets/sponsors/scholarpack.svg" alt="Recap.io" /></a>
+                                </li>
                                 <li><a href="../../sponsors/recap"><img src="../../images/assets/sponsors/recap-io.svg" alt="Recap.io" /></a>
                                 </li>
 
@@ -417,7 +419,8 @@
                                 <li><a href="../../sponsors/StreetsHeaver"><img width="150px" src="/images/assets/sponsors/StreetsHeaver.svg" alt="Streets Heaver" /></a> </li>
                                 <li><a href="../../sponsors/Selenity"><img width="150px" src="../../images/assets/sponsors/Selenity.svg" alt="Selenity" /></a>
                                 </li>
-
+                                <li><a href="../../sponsors/cooperpress"><img width="150px" src="../../images/assets/sponsors/cooperpress-blue.svg" alt="Selenity" /></a>
+                                </li>
 
 
                             </ul>
