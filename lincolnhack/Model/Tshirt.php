@@ -9,7 +9,9 @@
 namespace Lincolnhack\Model;
 
 
-use Jenssegers\Mongodb\Eloquent\Model as Model;
+use Jenssegers\Mongodb\Eloquent\{
+    Model as Model
+};
 
 class Tshirt extends Model
 {

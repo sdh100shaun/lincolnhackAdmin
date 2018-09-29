@@ -107,7 +107,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <button class="btn btn-default text-uppercase" data-toggle="modal" data-target="#ticketsModal">
-                            <strong>Tickets</strong></button>
+                            <strong>Get tickets now</strong></button>
                         <h2 class="text-center"><strong>What</strong> is LincolnHack?</h2>
                         <div class="embed-responsive embed-responsive-16by9">
                             <div class="video-control play"></div>
@@ -376,92 +376,36 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid current-sponsors" id="current-sponsors">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center"><strong>Sponsors and Partners</strong> LincolnHack</h2>
-                        <p class="text-center">LincolnHack would not be possible without our sponsors</p>
-                    </div>
-                </div>
-
-                <div class="row sponsor-gold">
-                    <div class="card gold">
-
-                        <div class="sponsor-grid">
-
-
-
-
-
-                        </div>
-                    </div>
-
-                </div>
-¬
-
-                <div class="row sponsor-silver">
-                    <div class="card silver">
-                        <div class="header">
-                            <h3 class="text-center">Silver</h3>
-                        </div>
-
-                        <div class="sponsor-grid">
-
-
-
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row sponsor-bronze">
-                    <div class="card bronze">
-                        <div class="header">
-                            <h3 class="text-center">Bronze</h3>
-                        </div>
-
-                        <div class="sponsor-grid">
-
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
 
         <div class="container-fluid sponsors" id="sponsors">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-center"><strong>Sponsor</strong> LincolnHack</h2>
-                        <p class="text-center">LincolnHack would not be possible without our sponsors,<br>we offer three
-                            tiers of sponsorship…</p>
+                        <h2 class="text-center"> LincolnHack <strong>Sponsors</strong></h2>
+                        <h3 class="text-center">LincolnHack would not be possible without our sponsors,<br>View our sponsor challenges and information.</h3>
                     </div>
                 </div>
 
                 <div class="row">
 
-                    <div class="col-md-4 col-md-offset-0 col-md-push-4 col-sm-10 col-sm-offset-1 card platinum">
+                    <div class="col-md-4 col-md-offset-0 col-md-push-4 col-sm-10 col-sm-offset-1 card gold">
                         <div class="header">
-                            <h3 class="text-center">Platinum</h3>
+                            <h3 class="text-center">Gold</h3>
                         </div>
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li>Largest logo spot, prominently placed on all public material for the event.</li>
-                                <li>Ability to set challenge and a slot at the opening address</li>
-                                <li>2 judging spots and workshop opportunity</li>
-                                <li>Plus all Gold & Silver features</li>
+                                <li><a href="../../sponsors/gold/khaoscontrol"><img src="/images/assets/sponsors/KC_Square_black_text.svg" alt="Khaos Control" /></a> </li>
+                                <li><a href="../../sponsors/gold/epixmedia"><img src="../../images/assets/sponsors/epix-logo.svg" alt="Expix Media" /></a>
+                                </li>
+                                <li><a href="../../sponsors/gold/scholarpack"><img src="../../images/assets/sponsors/scholarpack.svg" alt="Recap.io" /></a>
+                                </li>
+                                <li><a href="../../sponsors/gold/recap"><img src="../../images/assets/sponsors/recap-io.svg" width="85%" alt="Recap.io" /></a>
+                                </li>
+
                             </ul>
 
-                            <button class="btn btn-default text-uppercase"><a class="btn-link sponsorlink"
-                                                                              href="mailto:hello@lincolnhack.org?subject=sponsorship">Enquire</a>
-                            </button>
+                            <h4>Click a logo to see sponsor challenges.</h4>
                         </div>
                     </div>
 
@@ -472,37 +416,41 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li>Link to company page on website</li>
-                                <li>The opportunity to provide materials for distribution at the event</li>
-                                <li>All logo sponsorship features</li>
+                                <li><a href="../../sponsors/silver/StreetsHeaver#streetsheaver"><img width="150px" src="/images/assets/sponsors/streetsheaver.svg" alt="Streets Heaver" /></a> </li>
+                                <li><a href="../../sponsors/silver/Selenity#selenity"><img width="150px" src="../../images/assets/sponsors/selenity.svg" alt="Selenity" /></a>
+                                </li>
+                                <li><a href="../../sponsors/silver/cooperpress#cooperpress"><img width="150px" src="../../images/assets/sponsors/cooperpress.svg" alt="Cooper Press" /></a>
+                                </li>
+
                             </ul>
 
-                            <button class="btn btn-default text-uppercase"><a class="btn-link sponsorlink"
-                                                                              href="mailto:hello@lincolnhack.org?subject=sponsorship">Enquire</a>
-                            </button>
+
 
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-md-offset-0 col-md-pull-8 col-sm-10 col-sm-offset-1 card gold">
+                    <div class="col-md-4 col-md-offset-0 col-md-pull-8 col-sm-10 col-sm-offset-1 card partners">
                         <div class="header">
-                            <h3 class="text-center">Gold</h3>
+                            <h3 class="text-center">Partners</h3>
                         </div>
 
                         <div class="body">
-                            <ul class="list-unstyled">
-                                <li>Logo on Lincolnhack promotional material</li>
-                                <li>The opportunity to provide company standing banner</li>
-                                <li>One judging spot</li>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><img width="150px" src="/images/assets/sponsors/lsip.svg" alt="" /></a> </li>
+                            <li><a href="#"><img width="250px" src="../../images/assets/sponsors/bl.svg" alt="" /></a>
+                            </li>
 
-                            </ul>
 
-                            <button class="btn btn-default text-uppercase"><a class="btn-link sponsorlink"
-                                                                              href="mailto:hello@lincolnhack.org?subject=sponsorship">Enquire</a>
-                            </button>
-                        </div>
+
+                        </ul>
+
+
+
                     </div>
+                    </div>
+
                 </div>
+                <h4 class="friends">Also a big thanks for their support to the <a href="#" >friends of Lincolnhack</a></h4>
             </div>
         </div>
         <div class="container-fluid digital-lincoln" id="digitaLincoln">
@@ -601,7 +549,7 @@
                 </div>
                 <div class="col-md-8">
                     <p class="text-center">LincolnHack follows the standard code of conduct as written by <a
-                                href="hackcodeofconduct.org">hackcodeofconduct.org</a>. LincolnHack is a fun event -
+                                href="http://hackcodeofconduct.org">hackcodeofconduct.org</a>. LincolnHack is a fun event -
                         help us to keep it fun by behaving appropriately<br>Copyright LincolnHack 2018. LincolnHack is
                         run by members of Digital Lincoln</p>
                 </div>
@@ -621,7 +569,26 @@
                     <h2 class="modal-title">Get LincolnHack Tickets</h2>
                 </div>
                 <div class="modal-body">
-                    <p>Ticket Sales have not yet opened.</p>
+                    <div id="eventbrite-widget-container-50209435774"></div>
+
+                    <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+
+                    <script type="text/javascript">
+                        var callback = function() {
+                            $('.close').click();
+                        };
+
+                        window.EBWidgets.createWidget({
+                            // Required
+                            widgetType: 'checkout',
+                            eventId: '50209435774',
+                            iframeContainerId: 'eventbrite-widget-container-50209435774',
+
+                            // Optional
+                            iframeContainerHeight: 425,
+                            onOrderComplete: callback
+                        });
+                    </script>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
