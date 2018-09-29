@@ -6194,6 +6194,15 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #a0a0a0), to(#ffffff));
   background: linear-gradient(0deg, #a0a0a0 20%, #ffffff 100%);
 }
+.silver-sponsor {
+  margin: 2em;
+  font-size: 16px;
+  font-family: museo-sans, sans-serif;
+  font-weight: 300;
+}
+.silver-sponsor p {
+  margin-top: 1em;
+}
 .sponsor-page {
   margin-top: 2em;
 }

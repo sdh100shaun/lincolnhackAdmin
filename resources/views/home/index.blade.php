@@ -416,12 +416,11 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li><a href="../../sponsors/silver/StreetsHeaver"><img width="150px" src="/images/assets/sponsors/StreetsHeaver.svg" alt="Streets Heaver" /></a> </li>
-                                <li><a href="../../sponsors/silver/Selenity"><img width="150px" src="../../images/assets/sponsors/Selenity.svg" alt="Selenity" /></a>
+                                <li><a href="../../sponsors/silver/StreetsHeaver#streetsheaver"><img width="150px" src="/images/assets/sponsors/streetsheaver.svg" alt="Streets Heaver" /></a> </li>
+                                <li><a href="../../sponsors/silver/Selenity#selenity"><img width="150px" src="../../images/assets/sponsors/selenity.svg" alt="Selenity" /></a>
                                 </li>
-                                <li><a href="../../sponsors/silver/cooperpress"><img width="150px" src="../../images/assets/sponsors/cooperpress-blue.svg" alt="Selenity" /></a>
+                                <li><a href="../../sponsors/silver/cooperpress#cooperpress"><img width="150px" src="../../images/assets/sponsors/cooperpress.svg" alt="Cooper Press" /></a>
                                 </li>
-
 
                             </ul>
 

@@ -27,7 +27,7 @@ class Sponsor extends Model
     public function findByType($type)
     {
 
-        return $this->where('type', $type)->get();
+        return $this->where('type', $type)->get()->sortBy('name');
     }
 
 }
