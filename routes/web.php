@@ -12,10 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('home.index');
+    return view('home.home');
 });
 Route::get('/hackers', 'HackerController@index');
 
+Route::get('/sponsors/{type}/{name}', 'SponsorController@index')->name('sponsors')
+->where(['name' => '[A-z|0-9]+', 'type'=>'silver|gold']);
 
 Auth::routes();
 
