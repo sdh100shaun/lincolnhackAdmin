@@ -29,7 +29,8 @@
 
                 <p>Epix Media are a crack unit of awarding-winning creatives that work together across a range of specialisms. As a result, they craft beautiful and bespoke creative campaigns. Basically, they produce results that you will love!
 
-                They are all about relationships at Epix. The team will keep you up-to-date at every stage of a project. They encourage all kinds of questions (no matter how silly you think they are). They always meet deadlines, more often than not delivering ahead of schedule.</p>
+                They are all about relationships at Epix. The team will keep you up-to-date at every stage of a project. They encourage all kinds of questions (no matter how silly you think they are). They always meet deadlines, more often than not delivering ahead of schedule.
+                If you need creativity then call Epix Media.</p>
             </div>
 
             <div class="col-sm-5 col-sm-offset-1">

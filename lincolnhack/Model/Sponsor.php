@@ -24,4 +24,10 @@ class Sponsor extends Model
         return $this->where('name', $name)->firstOrFail();
     }
 
+    public function findByType($type)
+    {
+
+        return $this->where('type', $type)->get();
+    }
+
 }

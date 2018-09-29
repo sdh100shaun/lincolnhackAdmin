@@ -400,7 +400,7 @@
                                 </li>
                                 <li><a href="../../sponsors/gold/scholarpack"><img src="../../images/assets/sponsors/scholarpack.svg" alt="Recap.io" /></a>
                                 </li>
-                                <li><a href="../../sponsors/gold/recap"><img src="../../images/assets/sponsors/recap-io.svg" width="95%" alt="Recap.io" /></a>
+                                <li><a href="../../sponsors/gold/recap"><img src="../../images/assets/sponsors/recap-io.svg" width="85%" alt="Recap.io" /></a>
                                 </li>
 
                             </ul>
@@ -437,8 +437,8 @@
 
                         <div class="body">
                         <ul class="list-unstyled">
-                            <li><a href="../../sponsors/lsip"><img width="150px" src="/images/assets/sponsors/lsip.svg" alt="" /></a> </li>
-                            <li><a href="../../sponsors/bl"><img width="250px" src="../../images/assets/sponsors/bl.svg" alt="" /></a>
+                            <li><a href="../../partners/lsip"><img width="150px" src="/images/assets/sponsors/lsip.svg" alt="" /></a> </li>
+                            <li><a href="../../partners/bl"><img width="250px" src="../../images/assets/sponsors/bl.svg" alt="" /></a>
                             </li>
 
 
@@ -449,7 +449,9 @@
 
                     </div>
                     </div>
+
                 </div>
+                <h4 class="friends">Also a big thanks for their support to the <a href="../../partners#friends" >friends of Lincolnhack</a></h4>
             </div>
         </div>
         <div class="container-fluid digital-lincoln" id="digitaLincoln">

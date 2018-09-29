@@ -32,18 +32,21 @@ class SponsorController extends Controller
     public function index($type, $name)
     {
 
+
         try {
             $viewName = $type;
 
             if($type === $this->sponsor::SPONSOR_TYPE_GOLD)
             {
-                $this->sponsor->findByName($name);
+                $sponsorDetails = $this->sponsor->findByName(strtolower($name));
                 $viewName = $name;
 
             }
             else
             {
-                $this->sponsor->findByType($type);
+
+                $sponsorDetails = $this->sponsor->findByType(strtolower($type));
+
             }
 
 
@@ -56,6 +59,6 @@ class SponsorController extends Controller
 
 
 
-        return view('sponsors.'.$viewName, ['sponsor' => $this->sponsor]);
+        return view('sponsors.'.$viewName, ['sponsor' => $sponsorDetails]);
     }
 }
