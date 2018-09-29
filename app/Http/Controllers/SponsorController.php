@@ -29,16 +29,23 @@ class SponsorController extends Controller
         $this->sponsor = $sponsor;
     }
 
-    public function index($name)
+    public function index($type, $name)
     {
 
         try {
-            $viewName = $name;
-            $this->sponsor->findByName($name);
-            if(!$this->sponsor->type === $this->sponsor::SPONSOR_TYPE_GOLD)
+            $viewName = $type;
+
+            if($type === $this->sponsor::SPONSOR_TYPE_GOLD)
             {
-                $viewName = $this->sponsor->type;
+                $this->sponsor->findByName($name);
+                $viewName = $name;
+
             }
+            else
+            {
+                $this->sponsor->findByType($type);
+            }
+
 
         }
         catch (ModelNotFoundException $nfe) {

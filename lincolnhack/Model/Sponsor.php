@@ -16,6 +16,8 @@ class Sponsor extends Model
     protected $collection = 'sponsors';
 
     const SPONSOR_TYPE_GOLD = 'gold';
+    const SPONSOR_TYPE_SILVER = 'silver';
+    const SPONSOR_TYPE_PARTNER = 'partner';
 
     public function findByName($name)
     {
