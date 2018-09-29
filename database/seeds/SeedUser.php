@@ -11,10 +11,6 @@ class SeedUser extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => str_random(10),
-            'email' => 'shaun@shaunhare.co.uk',
-            'password' => bcrypt('secret'),
-        ]);
+
     }
 }
