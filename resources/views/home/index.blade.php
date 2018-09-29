@@ -436,8 +436,8 @@
 
                         <div class="body">
                         <ul class="list-unstyled">
-                            <li><a href="../../partners/lsip"><img width="150px" src="/images/assets/sponsors/lsip.svg" alt="" /></a> </li>
-                            <li><a href="../../partners/bl"><img width="250px" src="../../images/assets/sponsors/bl.svg" alt="" /></a>
+                            <li><a href="#"><img width="150px" src="/images/assets/sponsors/lsip.svg" alt="" /></a> </li>
+                            <li><a href="#"><img width="250px" src="../../images/assets/sponsors/bl.svg" alt="" /></a>
                             </li>
 
 
@@ -450,7 +450,7 @@
                     </div>
 
                 </div>
-                <h4 class="friends">Also a big thanks for their support to the <a href="../../partners#friends" >friends of Lincolnhack</a></h4>
+                <h4 class="friends">Also a big thanks for their support to the <a href="#" >friends of Lincolnhack</a></h4>
             </div>
         </div>
         <div class="container-fluid digital-lincoln" id="digitaLincoln">
