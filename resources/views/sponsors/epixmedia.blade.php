@@ -1,21 +1,16 @@
 @include('partials.head')
-
-<div class="container-fluid current-sponsors">
-
-</div>
 <div class="container-fluid sponsor-page">
     <div class="container">
-
 
         <div class="row">
             <div class="col-sm-12">
                 <h2 class="text-center"><strong>Gold Sponsor</strong></h2>
-
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12">
                 <div class="center-block sponsor-page">
+
                     <img width="95%" src="../../images/assets/sponsors/epix-logo.svg" alt="Expix Media" />
                 </div>
             <hr />
@@ -59,9 +54,7 @@
             </div>
         </div>
         <div class="row ">
-            <div class="col-sm-6">
 
-            </div>
 
             <div class="col-sm-12 faqs">
                 <div class="row">

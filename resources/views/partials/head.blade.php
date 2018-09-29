@@ -87,12 +87,17 @@
             </ul>
         </div>
 
-        <div class="banner ">
+        <div class="banner {{  $type }}">
             <div class="overlay">
                 <img class="logo img-responsive" alt="Lincoln Hack Imp" src="/images/assets/logo.png">
 
             </div>
 
+        </div>
+
+        <div class="container-fluid current-sponsors {{$type}}">
+            <div class="row ">
+            </div>
         </div>
 
 @endsection

@@ -6222,8 +6222,15 @@ header > div > .navbar-header button:hover span:nth-child(3) {
 }
 .current-sponsors {
   padding-top: 60px;
-  padding-bottom: 260px;
-  background: url('/images/assets/promo-1400x1415.png') no-repeat center 70%;
+  min-height: 260px;
+}
+.current-sponsors.gold {
+  background: url('/images/footer-bg-2000x1334.jpg') no-repeat center 60%;
+  background-color: #000000 !important;
+  background-size: cover;
+}
+.current-sponsors.silver {
+  background: url('/images/header-silver.jpg') no-repeat 20% 60%;
   background-size: cover;
   background-color: #000000 !important;
 }

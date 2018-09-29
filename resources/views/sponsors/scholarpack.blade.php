@@ -1,8 +1,4 @@
 @include('partials.head')
-
-<div class="container-fluid current-sponsors">
-
-</div>
 <div class="container-fluid sponsor-page">
     <div class="container">
 

@@ -59,6 +59,6 @@ class SponsorController extends Controller
 
 
 
-        return view('sponsors.'.$viewName, ['sponsor' => $sponsorDetails]);
+        return view('sponsors.'.$viewName, ['sponsor' => $sponsorDetails, 'type'=>$type]);
     }
 }

@@ -852,10 +852,17 @@ header {
 
 .current-sponsors {
   padding-top: 60px;
-  padding-bottom: 260px;
-  background:  url('/images/assets/promo-1400x1415.png') no-repeat center 70%;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 1.0) !important;
+  min-height: 260px;
+  &.gold{
+    background:  url('/images/footer-bg-2000x1334.jpg') no-repeat center 60%;
+    background-color: rgba(0, 0, 0, 1.0) !important;
+    background-size: cover;
+  }
+  &.silver{
+    background:  url('/images/header-silver.jpg') no-repeat 20% 60%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 1.0) !important;
+  }
   .sponsors-background-two {
     height: 200px;
     .box-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
