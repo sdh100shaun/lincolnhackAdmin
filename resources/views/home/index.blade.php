@@ -520,7 +520,7 @@
 
                 <div class="row">
                     <div class="col-sm-4">
-                        <a href="#answer" data-question-ref="7">Do I need Tickets?</a>
+                        <a href="#answer" data-question-ref="7">Do I need tickets?</a>
                     </div>
                     <div class="col-sm-4">
                         <a href="#answer" data-question-ref="8">What is for dinner?</a>

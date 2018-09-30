@@ -166,7 +166,7 @@ function faqQuestionSetup() {
         switch (questionRef) {
 
             case "1":
-                answer = "On site parking is available. Where possible, please car share. Pay and Display parking is available within a 20 minute walk.";
+                answer = "On site parking is available. Where possible, please car share. Pay and Display parking is available across the street.";
                 break;
 
             case "2":
@@ -186,7 +186,7 @@ function faqQuestionSetup() {
                 break;
 
             case "6":
-                answer = "No… indeed, we strongly advise you get some sleep and stay hydrated. You’re allowed to go home. Come and go as you please. Rember to take regular breaks. Rest is important.";
+                answer = "No… indeed, we strongly advise you get some sleep and stay hydrated. You’re allowed to go home. Come and go as you please. Remember to take regular breaks. Rest is important.";
                 break;
 
             case "7":
