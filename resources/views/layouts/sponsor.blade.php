@@ -47,6 +47,6 @@
     ga('send', 'pageview');
 
 </script>
-
+@include('partials.scripts')
 </body>
 </html>
