@@ -1,5 +1,5 @@
 @include('partials.head')
-<div class="container-fluid sponsor-page">
+<div class="container-fluid partner-page">
 
 <div class="container">
     <div class="row">

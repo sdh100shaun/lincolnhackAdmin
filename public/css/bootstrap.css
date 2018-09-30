@@ -6229,6 +6229,9 @@ header > div > .navbar-header button:hover span:nth-child(3) {
 .sponsor-page h5.scholar {
   color: #3382ff;
 }
+.partner-page .col-sm-6 {
+  text-align: center;
+}
 .current-sponsors {
   padding-top: 60px;
   min-height: 260px;
