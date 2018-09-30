@@ -102,7 +102,7 @@ function faqQuestionSetup(){
                 break;
 
             case "4":
-                answer = "Yes. You can team up with friends or other hackers on the day, or you can hack solo. Only one prize per team member per challenge and each challenge has a maximum of four prizes. A maximum of 4 members per team (you can have more than 4 but there are only 4 prize)";
+                answer = "Yes. You can team up with friends or other hackers on the day, or you can hack solo. Only one prize per team member per challenge and each challenge has a maximum of four prizes. A maximum of 4 members per team (you can have more than 4 but there are only 4 prizes)";
                 break;
 
             case "5":
