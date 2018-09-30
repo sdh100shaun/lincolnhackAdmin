@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{{ $cssVersion=1 }}
+@php $cssVersion =1 @endphp
 <html lang="en">
 <head>
     <meta charset="utf-8" />
