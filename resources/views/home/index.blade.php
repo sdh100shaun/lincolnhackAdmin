@@ -74,7 +74,7 @@
                 </li>
 
                 <li role="presentation" class="dropdown">
-                    <a data-nav-ref="" href="#sponsors"></a>
+                    <a data-nav-ref="" href="#sponsor"></a>
                     <span>Sponsor</span>
                 </li>
 
@@ -436,10 +436,11 @@
 
                         <div class="body">
                         <ul class="list-unstyled">
-                            <li><a href="#"><img width="150px" src="/images/assets/sponsors/lsip.svg" alt="" /></a> </li>
-                            <li><a href="#"><img width="250px" src="../../images/assets/sponsors/bl.svg" alt="" /></a>
+                            <li><a href="../../partners"><img width="150px" src="/images/assets/sponsors/lsip.svg" alt="" /></a> </li>
+                            <li><a href="../../partners"><img width="150px" src="../../images/assets/sponsors/bl.svg" alt="" /></a>
                             </li>
-
+                            <li><a href="../../partners"><img width="150px" class="uni" src="../../images/assets/sponsors/soc.svg" alt="" /></a>
+                            </li>
 
 
                         </ul>
@@ -450,7 +451,7 @@
                     </div>
 
                 </div>
-                <h4 class="friends">Also a big thanks for their support to the <a href="#" >friends of Lincolnhack</a></h4>
+                <h4 class="friends">Also a big thanks for their support to the <a href="../../partners#friends" >friends of Lincolnhack</a></h4>
                 <h4 class="friends">Want to sponsor there is still time contact us at  <a href="mailto:hello@lincolnhack.org" >hello@lincolnhack.org</a></h4>
 
             </div>

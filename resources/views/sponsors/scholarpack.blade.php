@@ -27,16 +27,16 @@
                     From attendance and assessments to accidents and incidents, ScholarPack helps schools record, manage
                     and review everything that’s going on. As a technology company, with a Lincoln
                     base, they actively support Digital Lincoln, Code Club and now Lincoln Hack and are often looking
-                    for development and operations staff.
+                    to enhance their talented team with more development and operations staff.
                 </p>
             </div>
             <div class="col-sm-5 col-sm-offset-1">
                 <h5 class="scholar"> The ScholarPack Challenge </h5>
 
-                <p>The people at ScholarPack are super techy, they know stuff - often seen chatting about thinks
-                    like robotics and always
-                    up for some fun and lively discussion we are super excited to see what they challenge you to do </p>
-                <p>The ScholarPack control challenge this year will be announced soon.</p>
+                <p>The people at ScholarPack are super techy, they know stuff. They are often seen chatting about things
+                    like robotics, agile methodologies, python and programming in general, they are always
+                    up for some fun and lively discussion. We are super excited to see what they challenge you to do </p>
+                <p>The ScholarPack  challenge this year will be announced soon.</p>
 
             </div>
         </div>

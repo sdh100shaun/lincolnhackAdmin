@@ -5640,7 +5640,7 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   bottom: 0;
   right: 0;
   height: 30%;
-  width: 35px;
+  width: 65px;
 }
 .main-sidebar ul {
   position: relative;
@@ -6243,6 +6243,11 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   background-size: cover;
   background-color: #000000 !important;
 }
+.current-sponsors.partner {
+  background: url('/images/assets/partner-header.jpg') no-repeat 50% 80%;
+  background-size: cover;
+  background-color: #000000 !important;
+}
 .current-sponsors .sponsors-background-two {
   height: 200px;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
@@ -6283,23 +6288,38 @@ header > div > .navbar-header button:hover span:nth-child(3) {
 .current-sponsors .card.platinum {
   padding: 0.5em;
 }
-.current-sponsors .sponsor-grid {
-  padding: 0.5em;
-  -webkit-column-count: 3;
-  /* Chrome, Safari, Opera */
-  /* Firefox */
-  column-count: 3;
+.uni {
+  border: #bababa solid 1px;
 }
-.current-sponsors .sponsor-grid img {
-  width: 100%;
-  padding: 7px 0;
+#friends {
+  margin-top: 2em;
+}
+.friends-grid {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 15em;
+}
+.friends-grid img {
+  max-width: 200px;
+  padding: 10px;
 }
 @media (max-width: 500px) {
-  .current-sponsors .sponsor-grid {
+  .friends-grid {
     -webkit-column-count: 1;
     /* Chrome, Safari, Opera */
     /* Firefox */
     column-count: 1;
+    margin-bottom: 15em;
+    text-align: center;
+    clear: both;
+  }
+  .friends-grid img {
+    min-width: 300px;
+    margin-top: 1em;
   }
 }
 .digital-lincoln {
