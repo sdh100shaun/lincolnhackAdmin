@@ -25,27 +25,27 @@
             <nav>
                 <ul class="">
                     <li role="presentation" class="dropdown">
-                        <a data-nav-ref="" href="#what">What</a>
+                        <a href="https://2018.lincolnhack.org#what">What</a>
                     </li>
 
                     <li role="presentation" class="dropdown">
-                        <a data-nav-ref="" href="#when">When</a>
+                        <a  href="https://2018.lincolnhack.org#when">When</a>
                     </li>
 
                     <li role="presentation" class="dropdown">
-                        <a data-nav-ref="" href="#where">Where</a>
+                        <a  href="https://2018.lincolnhack.org#where">Where</a>
                     </li>
 
                     <li role="presentation" class="dropdown">
-                        <a data-nav-ref="" href="#sponsor">Sponsor</a>
+                        <a  href="https://2018.lincolnhack.org#sponsor">Sponsor</a>
                     </li>
 
                     <li role="presentation" class="dropdown">
-                        <a data-nav-ref="" href="#digitaLincoln">Digital Lincoln</a>
+                        <a  href="https://2018.lincolnhack.org#digitaLincoln">Digital Lincoln</a>
                     </li>
 
                     <li role="presentation" class="dropdown">
-                        <a data-nav-ref="" href="#faqs">FAQS</a>
+                        <a  href="https://2018.lincolnhack.org#faqs">FAQS</a>
                     </li>
                 </ul>
             </nav>
@@ -56,33 +56,33 @@
         <div class="main-sidebar hidden-xs">
             <ul class="">
                 <li role="presentation" class="dropdown">
-                    <a data-nav-ref="" href="#what"></a>
+                    <a  href="https://2018.lincolnhack.org#what"></a>
                     <span>What</span>
                 </li>
 
                 <li role="presentation" class="dropdown">
-                    <a data-nav-ref="" href="#when"></a>
+                    <a  href="https://2018.lincolnhack.org#when"></a>
                     <span>When</span>
                 </li>
 
                 <li role="presentation" class="dropdown">
-                    <a data-nav-ref="" href="#where"></a>
+                    <a  href="https://2018.lincolnhack.org#where"></a>
                     <span>Where</span>
                 </li>
 
                 <li role="presentation" class="dropdown">
-                    <a data-nav-ref="" href="#sponsors"></a>
+                    <a  href="https://2018.lincolnhack.org#sponsors"></a>
                     <span>Sponsor</span>
                 </li>
 
                 <li role="presentation" class="dropdown">
-                    <a data-nav-ref="" href="#digitaLincoln"></a>
+                    <a  href="https://2018.lincolnhack.org#digitaLincoln"></a>
                     <span>Digital Lincoln</span>
                 </li>
 
                 <li role="presentation" class="dropdown">
                     <span>FAQS</span>
-                    <a data-nav-ref="" href="#faqs"></a>
+                    <a data-nav-ref="" href="https://2018.lincolnhack.org#faqs"></a>
                 </li>
             </ul>
         </div>

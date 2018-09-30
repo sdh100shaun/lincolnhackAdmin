@@ -123,7 +123,7 @@ header {
 
 .main-nav {
   > div {
-    background: url('/images/assets/hack-nav-bg.jpg') no-repeat center center;
+    background: url('/images/assets/hack-nav-bg.jpg') repeat center center;
     height: 100vh;
     z-index: 100;
     .transition(all 400ms ease-in-out);
@@ -872,6 +872,11 @@ header {
     background-size: cover;
     background-color: rgba(0, 0, 0, 1.0) !important;
   }
+  &.partner{
+    background:  url('/images/assets/partner-header.jpg') no-repeat 50% 80%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 1.0) !important;
+  }
   .sponsors-background-two {
     height: 200px;
     .box-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
@@ -921,34 +926,45 @@ header {
      padding: 0.5em;
 
    }
+
  }
+}
+.uni {
+  border: #bababa solid 1px;
+}
+#friends{
+  margin-top: 2em;
+}
 
-  .sponsor-grid {
-    padding: 0.5em;
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
+.friends-grid {
 
-  }
-  .sponsor-grid img {
-    width: 100%;
-    padding: 7px 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 15em;
+}
+.friends-grid img {
 
-  }
-  @media (max-width: 500px) {
+  max-width: 200px;
+  padding: 10px;
 
-    .sponsor-grid {
+}
+@media (max-width: 500px) {
 
-      -webkit-column-count: 1; /* Chrome, Safari, Opera */
-      -moz-column-count: 1; /* Firefox */
-      column-count: 1;
+  .friends-grid {
 
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    margin-bottom: 15em;
+    text-align: center;
+    clear: both;
+    img{
+      min-width: 300px;
+      margin-top: 1em;
     }
-
   }
 
 }
-
 .digital-lincoln {
   background: url('/images/assets/digital-lincoln-bg.png') no-repeat 0 0;
   background-size: cover;

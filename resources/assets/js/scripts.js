@@ -62,6 +62,7 @@ function sidebarFunctionality() {
 
     // Loop through each section.
     var sections = $('[section-name]');
+    console.log(sections);
     for (var key in sections) {
         // Valid property and not inherited?
         if (!isNaN(key) && sections.hasOwnProperty(key)) {

@@ -18,6 +18,7 @@ Route::get('/hackers', 'HackerController@index');
 
 Route::get('/sponsors/{type}/{name}', 'SponsorController@index')->name('sponsors')
 ->where(['name' => '[A-z|0-9]+', 'type'=>'silver|gold']);
+Route::get('/partners', 'PartnersController@index');
 
 Auth::routes();
 

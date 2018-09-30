@@ -13,10 +13,11 @@
         @foreach($sponsor as $sponsors)
             <div class="row silver-sponsor" id="{{$sponsors->name}}">
                 <div class="col-sm-5 col-sm-offset-1">
-                    <div>
+                    <div><a href="{{$sponsors->url}}" title="{{$sponsors->name}}">
                         <img class="img-responsive center-block"
                              src="../../images/assets/sponsors/{{$sponsors->name}}.svg" alt="{{$sponsors->name}}"
                              width="50%" height="50%"/>
+                        </a>
                     </div>
                 </div>
 

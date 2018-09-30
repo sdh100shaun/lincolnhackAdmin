@@ -74,7 +74,7 @@
                 </li>
 
                 <li role="presentation" class="dropdown">
-                    <a data-nav-ref="" href="#sponsors"></a>
+                    <a data-nav-ref="" href="#sponsor"></a>
                     <span>Sponsor</span>
                 </li>
 
@@ -377,7 +377,7 @@
             </div>
         </div>
 
-        <div class="container-fluid sponsors" id="sponsors">
+        <div class="container-fluid sponsors" id="sponsor">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -436,10 +436,11 @@
 
                         <div class="body">
                         <ul class="list-unstyled">
-                            <li><a href="#"><img width="150px" src="/images/assets/sponsors/lsip.svg" alt="" /></a> </li>
-                            <li><a href="#"><img width="250px" src="../../images/assets/sponsors/bl.svg" alt="" /></a>
+                            <li><a href="../../partners"><img width="150px" src="/images/assets/sponsors/lsip.svg" alt="" /></a> </li>
+                            <li><a href="../../partners"><img width="150px" src="../../images/assets/sponsors/bl.svg" alt="" /></a>
                             </li>
-
+                            <li><a href="../../partners"><img width="150px" class="uni" src="../../images/assets/sponsors/soc.svg" alt="" /></a>
+                            </li>
 
 
                         </ul>
@@ -450,7 +451,9 @@
                     </div>
 
                 </div>
-                <h4 class="friends">Also a big thanks for their support to the <a href="#" >friends of Lincolnhack</a></h4>
+                <h4 class="friends">Also a big thanks for their support to the <a href="../../partners#friends" >friends of Lincolnhack</a></h4>
+                <h4 class="friends">Want to sponsor there is still time contact us at  <a href="mailto:hello@lincolnhack.org" >hello@lincolnhack.org</a></h4>
+
             </div>
         </div>
         <div class="container-fluid digital-lincoln" id="digitaLincoln">
@@ -597,47 +600,8 @@
 
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
-            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
-
-    <!-- Fonts Here -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
-
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7C_xfL1ftPNavF8PQ9Qvd702D_yEzb1E&callback=initMap"></script>
 
-    <script>
-        (function (d) {
-            var config = {
-                    kitId: 'lcy0ljx',
-                    scriptTimeout: 3000,
-                    async: true
-                },
-                h = d.documentElement, t = setTimeout(function () {
-                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-                }, config.scriptTimeout), tk = d.createElement("script"), f = false,
-                s = d.getElementsByTagName("script")[0], a;
-            h.className += " wf-loading";
-            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-            tk.async = true;
-            tk.onload = tk.onreadystatechange = function () {
-                a = this.readyState;
-                if (f || a && a != "complete" && a != "loaded") return;
-                f = true;
-                clearTimeout(t);
-                try {
-                    Typekit.load(config)
-                } catch (e) {
-                }
-            };
-            s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
-
-
-    <script type="text/javascript" src="https://2018.lincolnhack.org/js/scripts.js"></script>
+   @include('partials.scripts')
 @endsection
