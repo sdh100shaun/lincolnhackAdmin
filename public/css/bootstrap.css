@@ -6426,6 +6426,7 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   font-family: museo-sans, sans-serif;
 }
 footer {
+  margin-top: 4em;
   background-color: black;
   padding: 40px;
 }
