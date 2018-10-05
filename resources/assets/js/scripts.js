@@ -62,6 +62,7 @@ function sidebarFunctionality() {
 
     // Loop through each section.
     var sections = $('[section-name]');
+    console.log(sections);
     for (var key in sections) {
         // Valid property and not inherited?
         if (!isNaN(key) && sections.hasOwnProperty(key)) {
@@ -89,7 +90,7 @@ function faqQuestionSetup(){
         switch(questionRef){
 
             case "1":
-                answer = "On site parking is available. Where possible, please car share. Pay and Display parking is available within a 20 minute walk.";
+                answer = "On site parking is available. Where possible, please car share. Pay and Display parking is available across the street.";
                 break;
 
             case "2":
@@ -101,7 +102,7 @@ function faqQuestionSetup(){
                 break;
 
             case "4":
-                answer = "Yes. You can team up with friends or other hackers on the day, or you can hack solo. Only one prize per team member per challenge and each challenge has a maximum of four prizes. A maximum of 4 members per team (you can have more than 4 but there are only 4 prize)";
+                answer = "Yes. You can team up with friends or other hackers on the day, or you can hack solo. Only one prize per team member per challenge and each challenge has a maximum of four prizes. A maximum of 4 members per team (you can have more than 4 but there are only 4 prizes)";
                 break;
 
             case "5":
@@ -109,7 +110,7 @@ function faqQuestionSetup(){
                 break;
 
             case "6":
-                answer = "No… indeed, we strongly advise you get some sleep and stay hydrated. You’re allowed to go home. Come and go as you please. Rember to take regular breaks. Rest is important.";
+                answer = "No… indeed, we strongly advise you get some sleep and stay hydrated. You’re allowed to go home. Come and go as you please. Remember to take regular breaks. Rest is important.";
                 break;
 
             case "7":

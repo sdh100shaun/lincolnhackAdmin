@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+@php $cssVersion =1 @endphp
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -31,7 +32,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="home" href="2018.lincolnhack.org" />
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css?v={{$cssVersion}}">
 </head>
 <body>
 

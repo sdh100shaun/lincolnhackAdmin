@@ -13,12 +13,17 @@ class Messages extends Migration
      */
     public function up()
     {
-        Schema::create('siteMessages', function($collection)
-        {
-            $collection->string('message');
-            $collection->string('active');
-            $collection->string('type');
-        });
+        if (!Schema::hasTable('siteMessages')) {
+
+            Schema::create('siteMessages', function($collection)
+            {
+                $collection->string('message');
+                $collection->string('active');
+                $collection->string('type');
+            });
+        }
+
+
     }
 
     /**
