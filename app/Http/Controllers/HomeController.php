@@ -6,7 +6,7 @@ use Lincolnhack\Model\Attendee;
 
 class HomeController extends Controller
 {
-    private $userId;
+
     /**
      * @var Attendee
      */
