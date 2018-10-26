@@ -6474,6 +6474,26 @@ footer img {
   position: absolute;
   bottom: -90px;
 }
+.attendee-location {
+  vertical-align: middle;
+  padding: 0px 25px 20px 25px;
+  color: #fff;
+  background: #000000;
+  text-align: center;
+}
+.attendee-location img {
+  height: 4em;
+  width: auto;
+}
+.attendee-location .sponsor-list ul li {
+  margin-bottom: 4em;
+}
+.attendee-location .sponsor-list ul li a img {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 @media (min-width: 1200px) {
   .sponsors .card {
     padding: 0;
