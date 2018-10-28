@@ -45,7 +45,7 @@ class Attendee extends Model
         array_walk($properties,function($value,$key) use ($self) {
             $self->$key = $value;
         });
-        $self = $this->where('attendeeId', $this->attendeeId)->first();
+        $self = $this->where('attendeeId', $this->attendeeId)->where('year','<>','2017')->first();
         
         if(empty($self))
         {   $self = $this;

@@ -93,7 +93,7 @@
     <div>
 
         <div class="switch">
-            <input :id="id" class="cmn-toggle cmn-toggle-round-flat" type="checkbox" :checked="checked"  v-model="registered">
+            <input  :id="id" class="cmn-toggle cmn-toggle-round-flat" type="checkbox"  :checked="checked" v-model="registered">
             <label :for="id"></label>
         </div>
     </div>
@@ -101,11 +101,14 @@
 <script>
     import axios from 'axios'
 
+
     export default {
         props: ["id", "attendee", "checked"],
         data() {
             return {
-                registered: false
+                registered:{},
+
+
             }
         },
         watch:{
@@ -114,8 +117,11 @@
                 this.register(state,this.id)
             }
         },
-        mounted(){
+        beforeMount(){
 
+        },
+        mounted(){
+            console.log(this.id, this.checked)
         },
         methods: {
 

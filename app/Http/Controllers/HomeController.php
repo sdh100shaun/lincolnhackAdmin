@@ -6,7 +6,7 @@ use Lincolnhack\Model\Attendee;
 
 class HomeController extends Controller
 {
-    private $userId;
+
     /**
      * @var Attendee
      */
@@ -31,7 +31,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $attendees = $this->attendee->all();
+        $attendees = $this->attendee->where('year','<>','2017')->get();
         return view('home',['attendees'=>$attendees]);
     }
 }
