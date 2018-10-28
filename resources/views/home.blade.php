@@ -25,7 +25,7 @@
                     <th>email</th>
                     <th>Dietary requirements</th>
                     <th>Contact</th>
-                    <th>Registered</th>
+                    <th>Confirmed & Registered</th>
                 </tr>
                 </thead>
 
@@ -37,7 +37,17 @@
                         <td class="lastname">{{$attendee->attendeeId}}</td>
                         <td>{{$attendee->dietaryRequirements}}</td>
                         <td>{{$attendee->getAttribute('attendee-contact')}}</td>
-                        <td><register id="cmn-toggle-{{$attendee->_id}}" attendee="{{$attendee->_id}}"></register></td>
+                        @if($attendee->registered)
+                            <?php $registered = "checked" ?>
+                            @else
+                            <?php $registered = false ?>
+                         @endif
+
+                        <td>
+                            <register id="cmn-toggle-{{$attendee->_id}}" attendee="{{$attendee->_id}}" checked="{{$registered}}"></register>
+                            <p>{{$registered}}</p>
+                        </td>
+
                     </tr>
                 @endforeach
                 </form>
