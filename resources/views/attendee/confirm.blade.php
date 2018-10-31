@@ -25,7 +25,9 @@
     </div>
     <div class="container-fluid">
         <div class="row">
+
             <div class="col-sm-12 col-md-12 text-center">
+
 
                 @if (count($errors) > 0)
                     <div class="alert alert-danger">
