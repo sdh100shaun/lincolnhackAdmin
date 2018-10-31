@@ -7,9 +7,7 @@
                 <hr/>
                 <p class="text-center">We are really looking forward to you joining the hack - we hope you are too.
                 </p>
-                <p class="text-center">This is a place where you can confirm your tickets find out a bit more info and
-                    reach out to us if there is
-                    anything you need to know prior to the event.</p>
+                <p class="text-center">Here you can confirm your tickets, find out a bit more info and reach out to us if there is anything you need to know prior to the event.</p>
             </div>
         </div>
         <div class="row">
