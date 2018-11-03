@@ -30,6 +30,7 @@ class TshirtController
     
     public function index()
     {
-        return response()->json($this->attendeeRepository->getAll());
+        $year=2018;
+        return response()->json($this->attendeeRepository->whereYear('created_at', '=', $year)->get());
     }
 }

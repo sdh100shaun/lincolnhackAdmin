@@ -69,7 +69,7 @@
                                        type="email" placeholder="Your email" class="form-control input-md"
                                        required="required">
                                 <span class="help-block">We will sign you up to hackbot with this email <a href="https://www.digitallincoln.co.uk/join/"> Sign up to Digital Lincoln Slack</a> and
-                                            meet Hackbot in our Lincolnhack channel</a>.You will need to register your team there.</span>
+                                            meet Hackbot in our Lincolnhack channel</a>. You will need to register your team there.</span>
                             </div>
                         </div>
                         <!-- Text input-->

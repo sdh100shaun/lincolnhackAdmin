@@ -45,5 +45,10 @@ class AttendeeRepository
     {
         return $this->makeModel()->all();
     }
+
+    public function whereYear()
+    {
+        return $this->makeModel()->whereYear('created_on', date('Y'));
+    }
     
 }

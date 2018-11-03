@@ -32,6 +32,6 @@ class HomeController extends Controller
     public function index()
     {
         $attendees = $this->attendee->where('year','<>','2017')->get();
-        return view('home',['attendees'=>$attendees]);
+        return view('home',['attendees'=>$attendees, 'noAttendees'=>count($attendees)]);
     }
 }
