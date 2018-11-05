@@ -22,8 +22,7 @@
         <div class="row">
             <div class="col-sm-6">
 
-                <p>Khaos Control Was Created By Mike Cockfield, Who Had A Vision Of Delivering Powerful, High-Quality, Feature-Rich Business Solutions That Enabled Businesses To Unlock Their Potential.
-                   Mike Cockfield
+                <p>Khaos Control was created by Mike Cockfield, who had a vision of delivering powerful, high-quality, feature-rich business solutions that enabled businesses to unlock their potential.
                    Khaos Control Solutions, the company behind Khaos Control, was founded in 2000. Initially Mike forged ahead on his own, developing, selling and supporting the software himself. However, it was not long before Mike was recruiting and his first hire is still with the company today; Ben Nolan (2nd Line Support Manager).
 
                    The vision of delivering powerful, high-quality, feature-rich business solutions has remained at the core of the company’s values and has been our guide in the development of Khaos Control as a Multi-Channel Retail, Order and Inventory Management solution, for both Business to Business (B2B) and Business to Consumer (B2C).
@@ -33,11 +32,12 @@
             <div class="col-sm-5 col-sm-offset-1">
                 <h5 class="khaos"> The Khaos Control Challenge </h5>
 
-                <p>The great people at Khaos control have sponsored Lincolnhack since it's inception
-                 always attending and offering great challenges like "It's the end of the world as we know it"
-                last year, enticing hackers to thing of hacks for a time when the end of the world arrives.</p>
-                <p>The Khaos control challenge this year will be announced soon.</p>
-                
+                <p>Khaos Control have generously supported LincolnHack since our beginning.  Last year, their challenge “It’s the end of the world as we know it” inspired hackers to provide a solution to the end of their world. A challenge which gave birth to the infamous Lemon battery!</p>
+                <p>Sticking with a similar theme, this year they invite you to: </p>
+                <blockquote><strong>"Build a Chaos Recovery Machine"</strong>,
+           Develop a solution to help mitigate the effects of a disaster of your choosing! Disasters could include natural ones (earth quakes etc); Man made ones (the global financial collapse?); or maybe how to recover from a political upset...
+              </blockquote>
+                <p> Prize to be announced shortly - but expect good things as Khaos Control never disappoint</p>
             </div>
         </div>
         <div class="row">

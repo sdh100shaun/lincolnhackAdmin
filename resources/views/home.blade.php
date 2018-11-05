@@ -11,9 +11,10 @@
 
     <div class="row" id="attendees">
         <div class="col-md-offset-1 col-md-8">
-
-            <h2>Attendees</h2>
-
+            <div>
+            <h2>Attendees </h2>
+            <p>    <span> {{$noAttendees}} have confirmed.</span></p>
+            </div>
         </div>
         <div class="container" >
 
@@ -54,6 +55,14 @@
                 </tbody>
             </table>
         </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-1">
+            <h2>Tickets</h2>
+            @include('partials.tickets')
+        </div>
+
     </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-1">

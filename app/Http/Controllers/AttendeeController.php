@@ -134,7 +134,6 @@ class AttendeeController extends Controller
             
 
             return view('attendee.confirm',["attendee"=>$attendee, 'type'=>'silver']);
-
         }
         return json_encode($attendee);
     }
