@@ -55,6 +55,14 @@
                 </tbody>
             </table>
         </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-1">
+            <h2>Tickets</h2>
+            @include('partials.tickets')
+        </div>
+
     </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-1">
