@@ -7,9 +7,11 @@
                 <hr/>
                 <p class="text-center">We are really looking forward to you joining the hack - we hope you are too.
                 </p>
+
                 <p class="text-center">This is a place where you can confirm your tickets find out a bit more info and
                     reach out to us if there is
                     anything you need to know prior to the event.</p>
+
             </div>
         </div>
         <div class="row">
@@ -20,6 +22,7 @@
                     tickets please enter the details for each person.</p>
                 <p class="text-center">This is your confirmation of attendance. It is important to complete this
                     otherwise we may not be able to register you.</p>
+
             </div>
         </div>
     </div>
@@ -44,10 +47,40 @@
                     <p>T-Shirt: {{$attendee->tshirt}}</p>
                     <p>Dietary requirements: {{$attendee->dietaryRequirements}}</p>
                 </div>
+
             </div>
         </div>
         <hr/>
     </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12 text-center">
+
+
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <a href="#" class="close" data-dismiss="alert">&times;</a>
+                        <ul class="list-unstyled">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <div class="text-center">
+                    <p> Thanks for confirming.</p>
+                    <p>Signed up. {{$attendee->firstName}}</p>
+                    <p>Confirmed : {{$attendee->attendeeId}}</p>
+                    <p>T-Shirt: {{$attendee->tshirt}}</p>
+                    <p>Dietary requirements: {{$attendee->dietaryRequirements}}</p>
+                </div>
+            </div>
+        </div>
+        <hr/>
+    </div>
+
     <div class="row">
         <div class="container-fluid attendee-location">
             <div class="row">
