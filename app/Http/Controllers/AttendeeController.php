@@ -131,7 +131,6 @@ class AttendeeController extends Controller
     {
         if(auth()->guest())
         {
-            
             return view('attendee.confirm',["attendee"=>$attendee, 'type'=>'silver']);
         }
         return json_encode($attendee);

@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home.index');
+    return view('home.home');
 });
 Route::get('/hackers', 'HackerController@index');
 

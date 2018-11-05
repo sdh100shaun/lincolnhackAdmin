@@ -68,8 +68,17 @@
                                 <input id="attendeeId" value="{{old("attendeeId")}}" name="attendeeId"
                                        type="email" placeholder="Your email" class="form-control input-md"
                                        required="required">
+<<<<<<< HEAD
                                 <span class="help-block">We will sign you up to hackbot with this email <a href="https://www.digitallincoln.co.uk/join/"> Sign up to Digital Lincoln Slack</a> and
                                             meet Hackbot in our Lincolnhack channel</a>. You will need to register your team there.</span>
+=======
+
+
+                                <span class="help-block">We will sign you up to hackbot with this email. Sign up to  <a href="https://www.digitallincoln.co.uk/join/">Digital Lincoln Slack</a> and register your team with Hackbot in the LincolnHack channel. If you have any problems please contact us.
+                                            If you're not signed up on the day we will sign you up to the Digital Lincoln Slack.</span>
+
+
+>>>>>>> master
                             </div>
                         </div>
                         <!-- Text input-->
