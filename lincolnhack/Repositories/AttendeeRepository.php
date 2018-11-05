@@ -45,5 +45,10 @@ class AttendeeRepository
     {
         return $this->makeModel()->all();
     }
+
+    public function whereYear()
+    {
+        return $this->makeModel()->where('year','<>', "2017")->get();
+    }
     
 }

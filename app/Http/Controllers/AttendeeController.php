@@ -67,7 +67,7 @@ class AttendeeController extends Controller
      */
     public function index()
     {
-        return view('attendee.index',["tshirtsizes"=>$this->tshirt->all()]);
+        return view('attendee.attendee',["tshirtsizes"=>$this->tshirt->all(),'type'=>'silver']);
     }
 
     /**
@@ -132,7 +132,8 @@ class AttendeeController extends Controller
         if(auth()->guest())
         {
             
-            return view('attendee.confirm',["attendee"=>$attendee]);
+
+            return view('attendee.confirm',["attendee"=>$attendee, 'type'=>'silver']);
         }
         return json_encode($attendee);
     }

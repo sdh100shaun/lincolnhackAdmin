@@ -85339,7 +85339,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     props: ["id", "attendee", "checked"],
     data: function data() {
         return {
-            registered: false
+            registered: {}
+
         };
     },
 
@@ -85349,7 +85350,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.register(state, this.id);
         }
     },
-    mounted: function mounted() {},
+    beforeMount: function beforeMount() {},
+    mounted: function mounted() {
+        console.log(this.id, this.checked);
+    },
 
     methods: {
         register: function register(state, id) {

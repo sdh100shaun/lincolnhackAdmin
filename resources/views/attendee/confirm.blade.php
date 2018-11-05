@@ -1,145 +1,107 @@
-@extends('layouts.form')
-@include('partials.header')
-@section('content')
-    <div class="wrapper wrapper--grey wrapper--no-margin">
-        <div class="container">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Lincoln Hack Attendee</div>
+@include('partials.head')
+<div class="container-fluid sponsor-page">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <h1 class="text-center"><strong>Information for Hackers </strong></h1>
+                <hr/>
+                <p class="text-center">We are really looking forward to you joining the hack - we hope you are too.
+                </p>
 
-                    <div class="panel-body attendee-confirm">
-                        <p> Thanks for signing up. {{$attendee->firstName}}</p>
-                        <p>Confirmed : {{$attendee->attendeeId}}</p>
-                        <p>T-Shirt: {{$attendee->tshirt}}</p>
-                        <p>Dietary requirements: {{$attendee->dietaryRequirements}}</p>
-                    </div>
-                </div>
+                <p class="text-center">This is a place where you can confirm your tickets find out a bit more info and
+                    reach out to us if there is
+                    anything you need to know prior to the event.</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <h2 class="text-center"><strong>Attendee Details</strong></h2>
+                <hr/>
+                <p class="text-center">Each attendee will need to fill out this information. If you have booked multiple
+                    tickets please enter the details for each person.</p>
+                <p class="text-center">This is your confirmation of attendance. It is important to complete this
+                    otherwise we may not be able to register you.</p>
+
             </div>
         </div>
     </div>
-    </div>
-    <div class="parallax parallax--boole">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center">
 
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <a href="#" class="close" data-dismiss="alert">&times;</a>
+                        <ul class="list-unstyled">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <div class="text-center">
+                    <p> Thanks for confirming.</p>
+                    <p>Signed up. {{$attendee->firstName}}</p>
+                    <p>Confirmed : {{$attendee->attendeeId}}</p>
+                    <p>T-Shirt: {{$attendee->tshirt}}</p>
+                    <p>Dietary requirements: {{$attendee->dietaryRequirements}}</p>
+                </div>
+
+            </div>
+        </div>
+        <hr/>
     </div>
-    <div class="wrapper wrapper--no-margin">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3 class="h h--1 xs-center">How to find us</h3>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12 text-center">
+
+
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <a href="#" class="close" data-dismiss="alert">&times;</a>
+                        <ul class="list-unstyled">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <div class="text-center">
+                    <p> Thanks for confirming.</p>
+                    <p>Signed up. {{$attendee->firstName}}</p>
+                    <p>Confirmed : {{$attendee->attendeeId}}</p>
+                    <p>T-Shirt: {{$attendee->tshirt}}</p>
+                    <p>Dietary requirements: {{$attendee->dietaryRequirements}}</p>
                 </div>
             </div>
+        </div>
+        <hr/>
+    </div>
+
+    <div class="row">
+        <div class="container-fluid attendee-location">
             <div class="row">
-                <div class="col-sm-12" id="map" style="height: 400px"></div>
+                <div class="col-sm-12">
+                    <h2 class="text-center">How to find us.</h2>
+                </div>
+                <div class="col-sm-12" id="map" style="height: 400px; border:none;"></div>
             </div>
             <div class="row">
                 <div class="col-sm-12 attendee-location">
-                    <img src="images/lsip-white.png" alt="Lincoln Science and Innovation Park"/> <span>
+                    <br/>
+                    <img src="../../images/lsip-white.png" alt="Lincoln Science and Innovation Park"/> <span>
                             Boole Technology Centre,
                             Beevor St,
                             Lincoln,
                             LN6 7DJ</span>
+                    <br/>
+                    <span>&nbsp;Contact us at hello@lincolnhack.org or @techlincs</span>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <div class="parallax">
-
-    </div>
-    <div class="wrapper wrapper--grey wrapper--no-margin">
-        <div class="container">
-            <div class="row">
-                <h3 class="h h--1 xs-center">Schedule</h3>
-                <p class="xs-center">Subject to change...</p>
-                <div class="col-sm-5">
-                    <table class="table">
-                        <tbody>
-                        <tr>
-                            <td colspan="2" style="border-top: none">
-                                <h5 class="h h--5">Saturday, May 20th</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>10:00</b></td>
-                            <td>Registration</td>
-                        </tr>
-                        <tr>
-                            <td><b>11:00</b></td>
-                            <td>Welcome Presentation</td>
-                        </tr>
-                        <tr>
-                            <td><b>12:00</b></td>
-                            <td>Hacking begins</td>
-                        </tr>
-                        <tr>
-                            <td><b>13:00</b></td>
-                            <td>Lunch</td>
-                        </tr>
-                        <tr>
-                            <td><b>18:30</b></td>
-                            <td>Evening meal and Drinks</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-sm-5 col-sm-offset-2">
-                    <table class="table">
-                        <tbody>
-                        <tr>
-                            <td colspan="2" style="border-top: none">
-                                <h5 class="h h--5">Sunday, May 21st</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>8:30</b></td>
-                            <td>Breakfast</td>
-                        </tr>
-                        <tr>
-                            <td><b>9:30</b></td>
-                            <td>Morning Briefing</td>
-                        </tr>
-                        <tr>
-                            <td><b>12:00</b></td>
-                            <td>Hacking Ends &amp; Lunch</td>
-                        </tr>
-                        <tr>
-                            <td><b>13:00</b></td>
-                            <td>Hack demonstrations</td>
-                        </tr>
-                        <tr>
-                            <td><b>16:45</b></td>
-                            <td>Awards Ceremony</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="parallax parallax--boole">
-
-    </div>
-    <div class="wrapper wrapper--no-margin wrapper--grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3 class="h h--1 xs-center">Contact us</h3>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-3 col-sm-offset-2 center">
-                    Slack: <a href="https://lincolnhack.slack.com">LincolnHack</a>
-                </div>
-                <div class="col-sm-3 center">
-                    Twitter: <a href="https://twitter.com/techlincs">@techlincs</a>
-                </div>
-                <div class="col-sm-3 center">
-                    Email: <a href="mailto:hello@lincolnhack.org">hello@lincolnhack.org</a>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
     <script>
         // initialize the map
@@ -149,11 +111,61 @@
 
         // load a tile layer
         L.tileLayer('https://api.mapbox.com/styles/v1/sdh100shaun/cj10vkv6300552rnjnss2nwc4/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2RoMTAwc2hhdW4iLCJhIjoibnRxYmNfMCJ9.wTlIV3WF0NboEok9OPhzWQ',
-                {
-                    maxZoom: 17,
-                    minZoom: 9
-                }).addTo(map);
+            {
+                maxZoom: 17,
+                minZoom: 9
+            }).addTo(map);
 
     </script>
-@endsection
+</div>
+<div class="container-fluid what">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="text-center">Challenges.</h2>
+            <hr/>
+            <p class="text-center"> Our Gold sponsors each set a challenge, check them out.</p>
 
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col-md-4 col-md-offset-0 col-md-push-4 col-sm-10 col-sm-offset-1">
+
+            <ul class="list-unstyled sponsor-list">
+                <li><a href="../../sponsors/gold/khaoscontrol"><img
+                                src="/images/assets/sponsors/KC_Square_black_text.svg" alt="Khaos Control"/></a></li>
+                <li>><a href="../../sponsors/gold/epixmedia"><img src="../../images/assets/sponsors/epix-logo.svg"
+                                                                  alt="Expix Media"/></a>
+                </li>
+                <li><a href="../../sponsors/gold/scholarpack"><img src="../../images/assets/sponsors/scholarpack.svg"
+                                                                   alt="Recap.io"/></a>
+                </li>
+                <li><a href="../../sponsors/gold/recap"><img src="../../images/assets/sponsors/recap-io.svg"
+                                                             alt="Recap.io"/></a>
+                </li>
+
+            </ul>
+
+
+            <p> Also please check out our <a href="../../sponsors/silver/cooperpress">Silver sponsors</a> , without
+                which the event would not happen.</p>
+            <div class="flex-container text-center">
+                <div class="flex-item">
+                    <img width="150px" src="/images/assets/sponsors/streetsheaver.svg" alt="Streets Heaver"/>
+                </div>
+                <div class="flex-item"><img width="150px" src="../../images/assets/sponsors/selenity.svg"
+                                            alt="Selenity"/>
+                </div>
+                <div class="flex-item"><img width="150px" src="../../images/assets/sponsors/cooperpress.svg"
+                                            alt="Cooper Press"/>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@include('partials.footer')

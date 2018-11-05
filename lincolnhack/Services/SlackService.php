@@ -55,6 +55,7 @@ class SlackService extends AbstractService
     
         if($this->lastRequestCode == 200)
         {
+
             return $api_response;
             
         }

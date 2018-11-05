@@ -11,9 +11,10 @@
 
     <div class="row" id="attendees">
         <div class="col-md-offset-1 col-md-8">
-
-            <h2>Attendees</h2>
-
+            <div>
+            <h2>Attendees </h2>
+            <p>    <span> {{$noAttendees}} have confirmed.</span></p>
+            </div>
         </div>
         <div class="container" >
 
@@ -25,7 +26,7 @@
                     <th>email</th>
                     <th>Dietary requirements</th>
                     <th>Contact</th>
-                    <th>Registered</th>
+                    <th>Confirmed & Registered</th>
                 </tr>
                 </thead>
 
@@ -37,13 +38,31 @@
                         <td class="lastname">{{$attendee->attendeeId}}</td>
                         <td>{{$attendee->dietaryRequirements}}</td>
                         <td>{{$attendee->getAttribute('attendee-contact')}}</td>
-                        <td><register id="cmn-toggle-{{$attendee->_id}}" attendee="{{$attendee->_id}}"></register></td>
+                        @if($attendee->registered)
+                            <?php $registered = "checked" ?>
+                            @else
+                            <?php $registered = false ?>
+                         @endif
+
+                        <td>
+                            <register id="cmn-toggle-{{$attendee->_id}}" attendee="{{$attendee->_id}}" checked="{{$registered}}"></register>
+                            <p>{{$registered}}</p>
+                        </td>
+
                     </tr>
                 @endforeach
                 </form>
                 </tbody>
             </table>
         </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-1">
+            <h2>Tickets</h2>
+            @include('partials.tickets')
+        </div>
+
     </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-1">
