@@ -37,7 +37,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-
         $attendees = $this->attendee->where('year', '<>', '2017')->get();
         $tickets = $this->matchTickets($this->tickets->all(), $attendees);
         return view('home', ['attendees' => $attendees, 'noAttendees' => count($attendees), 'tickets' => $tickets]);
@@ -62,6 +61,5 @@ class HomeController extends Controller
             }
         }
         return $tickets;
-
     }
 }
