@@ -35,8 +35,13 @@
 
                 <p>The people at ScholarPack are super techy, they know stuff. They are often seen chatting about things
                     like robotics, agile methodologies, python and programming in general, they are always
-                    up for some fun and lively discussion. We are super excited to see what they challenge you to do </p>
-                <p>The ScholarPack  challenge this year will be announced soon.</p>
+                    up for some fun and lively discussion. We are super excited about their challenge. </p>
+                <p>The ScholarPack  challenge this year will be:</p>
+                <blockquote>
+                    <strong>Schools of the futures</strong>
+                        <p>Increasingly schools are being pushed financially. They are looking to streamline internal communications and processes, whilst parents are expecting increasing engagement. Produce something to allow schools to
+                            make better use of technology to engage with parents, teachers and/or pupils</p>
+                </blockquote>
 
             </div>
         </div>
@@ -62,8 +67,7 @@
                 <div class="row">
                     <div class="col-md-9 col-md-offset-3 col-sm-11 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                         <div class="speech-bubble">
-                            <p class="text-center" id="answer">Challenge prizes yet to be announced but expect good
-                                things</p>
+                            <p class="text-center" id="answer">Prize will be a selection of boardgames.</p>
                         </div>
                     </div>
                 </div>
