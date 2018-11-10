@@ -89,28 +89,7 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12 col-md-12 text-center">
 
-                @if (count($errors) > 0)
-                    <div class="alert alert-danger">
-                        <a href="#" class="close" data-dismiss="alert">&times;</a>
-                        <ul class="list-unstyled">
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-                <div class="text-center">
-                    <p> Thanks for confirming.</p>
-                    <p>Signed up. {{$attendee->firstName}}</p>
-                    <p>Confirmed : {{$attendee->attendeeId}}</p>
-                    <p>T-Shirt: {{$attendee->tshirt}}</p>
-                    <p>Dietary requirements: {{$attendee->dietaryRequirements}}</p>
-
-                </div>
-
-            </div>
         </div>
         <hr/>
     </div>
