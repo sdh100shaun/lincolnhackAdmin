@@ -95,7 +95,7 @@
                     <img src="../../images/lincoln-hack-imp.png" alt="lincolnhack" />
                 </div>
                 <div class="title m-b-md">
-                    <countdown date="Nov 11, 2017 12:00 GMT"></countdown>
+                    <countdown date="Nov 11, 2018 12:00 GMT"></countdown>
                 </div>
             </div>
         </div>
