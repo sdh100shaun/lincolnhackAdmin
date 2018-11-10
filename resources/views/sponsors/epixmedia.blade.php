@@ -36,8 +36,13 @@
                     setting challenges such as "The utterly useless hack". So they are sure to provide hackers
                     with a great challenge.
                 </p>
-                <p>The Epix media challenge this year will be announced soon.</p>
-
+                <p>The Epix media challenge this year will be:</p>
+                <blockquote>
+                    <strong>
+                        The power of the collective</strong>
+                    <p>The internet is the greatest tool we've ever had for communication: to share ideas and experiences. It allows people to collaborate, acting as a collective to get things done.
+                        We want you to build something which harnesses the power of the collective to achieve a purpose of your choosing. How you interpret this is up to you!</p>
+                </blockquote>
             </div>
         </div>
         <div class="row">
@@ -60,7 +65,7 @@
                 <div class="row">
                     <div class="col-md-9 col-md-offset-3 col-sm-11 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                         <div class="speech-bubble">
-                            <p class="text-center" id="answer">Challenge prizes yet to be announced but expect good things</p>
+                            <p class="text-center" id="answer">Prize will be Firebox mystery box</p>
                         </div>
                     </div>
                 </div>

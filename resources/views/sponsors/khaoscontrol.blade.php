@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-md-9 col-md-offset-3 col-sm-11 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                         <div class="speech-bubble">
-                            <p class="text-center" id="answer">Challenge prizes yet to be announced but expect good things</p>
+                            <p class="text-center" id="answer">Prize will Raspberry PI Zero W plus accessories and sensors</p>
                         </div>
                     </div>
                 </div>
