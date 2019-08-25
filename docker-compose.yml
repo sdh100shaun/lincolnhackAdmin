@@ -4,13 +4,18 @@ services:
   nginx:
     image: nginx:latest
     ports:
-      - "80:80"
+      - 8000:8000
     volumes:
       - .:/app
       - ./docker/nginx/site.conf:/etc/nginx/conf.d/site.conf
-    links:
-      - php
+    tty: true
+    environment:
+      SERVICE_NAME: app
+      SERVICE_TAGS: dev
 
+    working_dir: /var/www
+    networks:
+      - app-network
 
   php:
     build: docker/php
@@ -21,4 +26,10 @@ services:
     environment:
       PHP_XDEBUG_ENABLED: 1 # Set 1 to enable.
       XDEBUG_CONFIG: remote_host=${HOST_IP}
+    networks:
+      - app-network
 
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
