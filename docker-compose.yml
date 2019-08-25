@@ -1,0 +1,24 @@
+version: '2'
+services:
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - .:/app
+      - ./docker/nginx/site.conf:/etc/nginx/conf.d/site.conf
+    links:
+      - php
+
+
+  php:
+    build: docker/php
+    image: php-lincolnhack:latest
+    restart: always
+    volumes:
+      - .:/app
+    environment:
+      PHP_XDEBUG_ENABLED: 1 # Set 1 to enable.
+      XDEBUG_CONFIG: remote_host=${HOST_IP}
+
