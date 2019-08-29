@@ -202,7 +202,7 @@
 
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="/images/assets/marker-mosaic.png" class="img-responsive" alt="Mosaic Digital Hub" />
+                        <img src="/images/assets/marker.png" class="img-responsive" alt="Mosaic Digital Hub" />
                     </div>
                     <div class="col-sm-8">
 
