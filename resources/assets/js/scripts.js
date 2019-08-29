@@ -90,7 +90,7 @@ function faqQuestionSetup(){
         switch(questionRef){
 
             case "1":
-                answer = "On site parking is available. Where possible, please car share. Pay and Display parking is available across the street.";
+                answer = "Where possible, please car share. Pay and Display parking is available across the street.";
                 break;
 
             case "2":
