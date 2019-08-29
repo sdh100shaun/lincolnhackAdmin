@@ -194,7 +194,7 @@ function faqQuestionSetup() {
                 break;
 
             case "8":
-                answer = "TBA - all catering is provided by Sam Owen of Salted Orange. The same great chef from last year.";
+                answer = "TBA - all catering is provided rest assured you will be well fed.";
                 break;
 
             default:

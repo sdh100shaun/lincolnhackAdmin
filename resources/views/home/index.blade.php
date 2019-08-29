@@ -148,12 +148,12 @@
 
                 <div class="row">
                     <h2 class="text-center"><strong>When</strong> is LincolnHack?</h2>
-                    <img src="/images/assets/date.png" class="img-responsive" alt="10th & 11th November 2018">
+                    <img src="/images/assets/date-2019.png" class="img-responsive" alt="10th & 11th November 2018">
                 </div>
 
                 <div class="row">
                     <div class="col-md-4 col-md-offset-2 col-sm-6">
-                        <h4>Saturday 10th</h4>
+                        <h4>Saturday 16th</h4>
                         <ul class="list-unstyled">
                             <li class='highlighted first'><span>09:00</span>LincolnHack Starts</li>
                             <li><span>10:00</span>Registration</li>
@@ -165,7 +165,7 @@
                     </div>
 
                     <div class="col-md-4 col-sm-6">
-                        <h4>Sunday 11th</h4>
+                        <h4>Sunday 17th</h4>
                         <ul class="list-unstyled">
                             <li class='highlighted first'><span>08:30</span>Breakfast</li>
                             <li><span>09:30</span>Morning Briefing</li>
@@ -210,18 +210,14 @@
                 </div>
             </div>
         </div>
-        <div class="container where-suffix">
-            <div class="row">
-                <p></p>
-            </div>
-        </div>
+
         <div class="map" id="map"></div>
 
         <script>
             function initMap() {
-                var coords = {lat: 53.227579, lng: -0.556979};
+                var coords = {lat: 53.229873, lng:-0.5402789};
                 var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 15,
+                    zoom: 18.49,
                     streetViewControl: false, // hide the yellow Street View pegman
                     draggable: true,
                     center: coords,
@@ -401,17 +397,12 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li><a href="../../sponsors/gold/khaoscontrol"><img src="/images/assets/sponsors/KC_Square_black_text.svg" alt="Khaos Control" /></a> </li>
-                                <li><a href="../../sponsors/gold/epixmedia"><img src="../../images/assets/sponsors/epix-logo.svg" alt="Expix Media" /></a>
-                                </li>
-                                <li><a href="../../sponsors/gold/scholarpack"><img src="../../images/assets/sponsors/scholarpack.svg" alt="Recap.io" /></a>
-                                </li>
-                                <li><a href="../../sponsors/gold/recap"><img src="../../images/assets/sponsors/recap-io.svg" width="85%" alt="Recap.io" /></a>
-                                </li>
+
+                                <li>Sponsors announced shortly</li>
 
                             </ul>
 
-                            <h4>Click a logo to see sponsor challenges.</h4>
+
                         </div>
                     </div>
 
@@ -422,11 +413,7 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li><a href="../../sponsors/silver/StreetsHeaver#streetsheaver"><img width="150px" src="/images/assets/sponsors/streetsheaver.svg" alt="Streets Heaver" /></a> </li>
-                                <li><a href="../../sponsors/silver/Selenity#selenity"><img width="150px" src="../../images/assets/sponsors/selenity.svg" alt="Selenity" /></a>
-                                </li>
-                                <li><a href="../../sponsors/silver/cooperpress#cooperpress"><img width="150px" src="../../images/assets/sponsors/cooperpress.svg" alt="Cooper Press" /></a>
-                                </li>
+                                <li>Sponsors announced shortly</li>
 
                             </ul>
 
@@ -442,12 +429,7 @@
 
                         <div class="body">
                         <ul class="list-unstyled">
-                            <li><a href="../../partners"><img width="150px" src="/images/assets/sponsors/lsip.svg" alt="" /></a> </li>
-                            <li><a href="../../partners"><img width="150px" src="../../images/assets/sponsors/bl.svg" alt="" /></a>
-                            </li>
-                            <li><a href="../../partners"><img width="150px" class="uni" src="../../images/assets/sponsors/soc.svg" alt="" /></a>
-                            </li>
-
+                            <li>Partners announced shortly</li>
 
                         </ul>
 
