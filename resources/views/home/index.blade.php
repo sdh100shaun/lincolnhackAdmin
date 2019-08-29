@@ -467,8 +467,35 @@
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/dark-v10',
-            zoom: 13,
-            center: [-0.5385762, 53.2299944]
+            zoom: 17,
+            center: [-0.537969,53.229946]
+        });
+        map.on('load', function() {
+            map.loadImage('/images/assets/map-pin.png', function(error, image) {
+                if (error) throw error;
+                map.addImage('imp', image);
+                map.addLayer({
+                    "id": "points",
+                    "type": "symbol",
+                    "source": {
+                        "type": "geojson",
+                        "data": {
+                            "type": "FeatureCollection",
+                            "features": [{
+                                "type": "Feature",
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-0.537772,53.230069]
+                                }
+                            }]
+                        }
+                    },
+                    "layout": {
+                        "icon-image": "imp",
+                        "icon-size": 1.5
+                    }
+                });
+            });
         });
     </script>
 @endsection
