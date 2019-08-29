@@ -148,7 +148,7 @@
 
                 <div class="row">
                     <h2 class="text-center"><strong>When</strong> is LincolnHack?</h2>
-                    <img src="/images/assets/date-2019.png" class="img-responsive" alt="10th & 11th November 2018">
+                    <img src="/images/assets/date-2019a.png" class="img-responsive" alt="10th & 11th November 2018">
                 </div>
 
                 <div class="row">
@@ -213,139 +213,9 @@
 
         <div class="map" id="map"></div>
 
-        <script>
-            function initMap() {
-                var coords = {lat: 53.229873, lng:-0.5402789};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 18.49,
-                    streetViewControl: false, // hide the yellow Street View pegman
-                    draggable: true,
-                    center: coords,
-                    styles: [{
-                        "featureType": "all",
-                        "elementType": "labels.text.fill",
-                        "stylers": [{"saturation": 36}, {"color": "#000000"}, {"lightness": 40}]
-                    }, {
-                        "featureType": "all",
-                        "elementType": "labels.text.stroke",
-                        "stylers": [{"visibility": "on"}, {"color": "#000000"}, {"lightness": 16}]
-                    }, {
-                        "featureType": "all",
-                        "elementType": "labels.icon",
-                        "stylers": [{"visibility": "off"}]
-                    }, {
-                        "featureType": "administrative",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"color": "#000000"}, {"lightness": 20}]
-                    }, {
-                        "featureType": "administrative",
-                        "elementType": "geometry.stroke",
-                        "stylers": [{"color": "#000000"}, {"lightness": 17}, {"weight": 1.2}]
-                    }, {
-                        "featureType": "administrative",
-                        "elementType": "labels",
-                        "stylers": [{"visibility": "off"}]
-                    }, {
-                        "featureType": "administrative.country",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "simplified"}]
-                    }, {
-                        "featureType": "administrative.country",
-                        "elementType": "geometry",
-                        "stylers": [{"visibility": "simplified"}]
-                    }, {
-                        "featureType": "administrative.country",
-                        "elementType": "labels.text",
-                        "stylers": [{"visibility": "simplified"}]
-                    }, {
-                        "featureType": "administrative.province",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "off"}]
-                    }, {
-                        "featureType": "administrative.locality",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "simplified"}, {"saturation": "-100"}, {"lightness": "30"}]
-                    }, {
-                        "featureType": "administrative.neighborhood",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "off"}]
-                    }, {
-                        "featureType": "administrative.land_parcel",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "off"}]
-                    }, {
-                        "featureType": "landscape",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "simplified"}, {"gamma": "0.00"}, {"lightness": "74"}]
-                    }, {
-                        "featureType": "landscape",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#000000"}, {"lightness": 20}]
-                    }, {
-                        "featureType": "landscape.man_made",
-                        "elementType": "all",
-                        "stylers": [{"lightness": "3"}]
-                    }, {
-                        "featureType": "poi",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "off"}]
-                    }, {
-                        "featureType": "poi",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#000000"}, {"lightness": 21}]
-                    }, {
-                        "featureType": "road",
-                        "elementType": "geometry",
-                        "stylers": [{"visibility": "simplified"}]
-                    }, {
-                        "featureType": "road.highway",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"color": "#000000"}, {"lightness": 17}]
-                    }, {
-                        "featureType": "road.highway",
-                        "elementType": "geometry.stroke",
-                        "stylers": [{"color": "#000000"}, {"lightness": 29}, {"weight": 0.2}]
-                    }, {
-                        "featureType": "road.arterial",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#000000"}, {"lightness": 18}]
-                    }, {
-                        "featureType": "road.local",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#000000"}, {"lightness": 16}]
-                    }, {
-                        "featureType": "transit",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#000000"}, {"lightness": 19}]
-                    }, {
-                        "featureType": "water",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#000000"}, {"lightness": 17}]
-                    }],
-                    mapTypeControl: false,
-                    mapTypeControlOptions: {
-                        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-                        position: google.maps.ControlPosition.TOP_CENTER
-                    },
-                    zoomControl: true,
-                    zoomControlOptions: {position: google.maps.ControlPosition.TOP_RIGHT},
-                    scaleControl: true,
-                    streetViewControl: false,
-                    streetViewControlOptions: {position: google.maps.ControlPosition.RIGHT_TOP},
-                    fullscreenControl: false
-                });
-                var marker = new google.maps.Marker({
-                    zIndex: 100,
-                    position: coords,
-                    map: map,
-                    draggable: false,
-                    animation: google.maps.Animation.DROP,
-                    title: 'Boole Technology Centre',
-                    icon: '/images/assets/map-pin.png'
 
-                });
-            }
-        </script>
+
+
 
         <div class="container-fluid subscribe" id="subscribe">
             <div class="container">
@@ -588,8 +458,17 @@
 
         </div>
     </div>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7C_xfL1ftPNavF8PQ9Qvd702D_yEzb1E&callback=initMap"></script>
+
 
    @include('partials.scripts')
+    <script>
+
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2RoMTAwIiwiYSI6ImNqMGxpY2g3aTAwMDQzMnFxamQ0NTRkZXQifQ.ouosJmF_k6Y2ZRf_mfSn7A';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v10',
+            zoom: 13,
+            center: [-0.5385762, 53.2299944]
+        });
+    </script>
 @endsection

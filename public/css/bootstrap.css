@@ -6192,7 +6192,7 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   opacity: 1;
   /* Firefox */
 }
-.subscribe input:-ms-input-placeholder {
+.subscribe input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5);
   opacity: 1;
   /* Firefox */
@@ -6487,6 +6487,7 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   .friends-grid {
     -webkit-column-count: 1;
     /* Chrome, Safari, Opera */
+    -moz-column-count: 1;
     /* Firefox */
     column-count: 1;
     margin-bottom: 15em;
