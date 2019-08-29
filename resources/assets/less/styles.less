@@ -489,28 +489,43 @@ header {
   width: 100%;
   height: 100%;
 }
+.where-prefix{
+
+  h2 {
+    color: #000;
+    font-size: @font-size-h1 + 12;
+    margin-bottom: 40px;
+    font-weight: 600;
+    strong {
+      font-weight: 600;
+    }
+
+
+  }
+  p {
+    color: #555555;
+    font-size: @font-size-base + 2;
+    font-weight: 300;
+    line-height: 30px;
+    margin-top: 10px;
+
+  }
+
+}
+.where-suffix{
+
+
+  padding-bottom: 130px;
+}
 
 .where {
   padding-top: 40px;
   padding-bottom: 230px;
-  background: #14031F url('/images/assets/boole-technology-centre.png') no-repeat 0% 250%;
+  background-image:linear-gradient(#000, #000), url('/images/assets/mosiac.jpg');
+  background-size:100% 100%, cover;
+  background-blend-mode: saturation;
 
-  h2 {
-    color: #fff;
-    font-size: @font-size-h1 + 12;
-    margin-bottom: 40px;
-    font-weight: 400;
-    strong {
-      font-weight: 600;
-    }
-  }
 
-  p {
-    color: #fff;
-    font-size: @font-size-base + 2;
-    font-weight: 300;
-    line-height: 30px;
-  }
 }
 
 #map {

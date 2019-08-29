@@ -185,30 +185,36 @@
             </div>
         </div>
         </div>
-
+        <div class="container where-prefix">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center"><strong>Where</strong> is LincolnHack?</h2>
+                </div>
+                <div class="col-md-12">
+                    <p>A brand new £1.8 million co-working space called Mosaic, located in Thomas Parker House on Silver Street right in the heart of Lincoln city centre.<br />
+                        Developed collaboratively by the digital community, working together with Lincolnshire Co-op and Lincolnshire County Council this is a great space and Lincolnhack is proud to be the first major digital event the hub will host. The location is situated within a short walking distance of the Lincoln transport hub. </p>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid where" id="where">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center"><strong>Where</strong> is LincolnHack?</h2>
-                    </div>
-                </div>
+
 
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="/images/assets/marker.png" alt="Boole Technology Centre" class="img-responsive">
+                        <img src="/images/assets/marker-mosaic.png" class="img-responsive" alt="Mosaic Digital Hub" />
                     </div>
                     <div class="col-sm-8">
-                        <p> LincolnHack is being hosted in the Boole Technology Centre, within the grounds of Lincoln
-                            Science and Innovation Park.
-                            The Boole Technology Centre is named after George Boole, who was born in Lincoln in 1815.
-                            This self-taught son of a Boot Maker revolutionised mathematics. In doing so, he established
-                            the rules of binary code and became the grandfather of the digital age.</p>
+
                     </div>
                 </div>
             </div>
         </div>
-
+        <div class="container where-suffix">
+            <div class="row">
+                <p></p>
+            </div>
+        </div>
         <div class="map" id="map"></div>
 
         <script>
