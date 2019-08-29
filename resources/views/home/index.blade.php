@@ -541,7 +541,7 @@
                 <div class="col-md-8">
                     <p class="text-center">LincolnHack follows the standard code of conduct as written by <a
                                 href="http://hackcodeofconduct.org">hackcodeofconduct.org</a>. LincolnHack is a fun event -
-                        help us to keep it fun by behaving appropriately<br>Copyright LincolnHack 2018. LincolnHack is
+                        help us to keep it fun by behaving appropriately<br>Copyright LincolnHack 2019. LincolnHack is
                         run by members of Digital Lincoln</p>
                 </div>
             </div>
