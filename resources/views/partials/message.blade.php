@@ -1,5 +1,4 @@
-@if($message)
     <div class="message xs-center">
-        <p><strong>{{$message}}</strong> </p>
+        <p>Lincolnhack returns on November 16th -17th 2019 - more details soon   </p>
     </div>
-@endif
+{{$message}}

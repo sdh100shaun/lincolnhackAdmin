@@ -148,12 +148,12 @@
 
                 <div class="row">
                     <h2 class="text-center"><strong>When</strong> is LincolnHack?</h2>
-                    <img src="/images/assets/date.png" class="img-responsive" alt="10th & 11th November 2018">
-                </div>
+                	<h2 style="text-align:center">November 16th & 17th 2019</h2>
+		</div>
 
                 <div class="row">
                     <div class="col-md-4 col-md-offset-2 col-sm-6">
-                        <h4>Saturday 10th</h4>
+                        <h4>Saturday 16th</h4>
                         <ul class="list-unstyled">
                             <li class='highlighted first'><span>09:00</span>LincolnHack Starts</li>
                             <li><span>10:00</span>Registration</li>
@@ -165,7 +165,7 @@
                     </div>
 
                     <div class="col-md-4 col-sm-6">
-                        <h4>Sunday 11th</h4>
+                        <h4>Sunday 17th</h4>
                         <ul class="list-unstyled">
                             <li class='highlighted first'><span>08:30</span>Breakfast</li>
                             <li><span>09:30</span>Morning Briefing</li>
@@ -186,164 +186,6 @@
         </div>
         </div>
 
-        <div class="container-fluid where" id="where">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center"><strong>Where</strong> is LincolnHack?</h2>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-4">
-                        <img src="/images/assets/marker.png" alt="Boole Technology Centre" class="img-responsive">
-                    </div>
-                    <div class="col-sm-8">
-                        <p> LincolnHack is being hosted in the Boole Technology Centre, within the grounds of Lincoln
-                            Science and Innovation Park.
-                            The Boole Technology Centre is named after George Boole, who was born in Lincoln in 1815.
-                            This self-taught son of a Boot Maker revolutionised mathematics. In doing so, he established
-                            the rules of binary code and became the grandfather of the digital age.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="map" id="map"></div>
-
-        <script>
-            function initMap() {
-                var coords = {lat: 53.227579, lng: -0.556979};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 15,
-                    streetViewControl: false, // hide the yellow Street View pegman
-                    draggable: true,
-                    center: coords,
-                    styles: [{
-                        "featureType": "all",
-                        "elementType": "labels.text.fill",
-                        "stylers": [{"saturation": 36}, {"color": "#000000"}, {"lightness": 40}]
-                    }, {
-                        "featureType": "all",
-                        "elementType": "labels.text.stroke",
-                        "stylers": [{"visibility": "on"}, {"color": "#000000"}, {"lightness": 16}]
-                    }, {
-                        "featureType": "all",
-                        "elementType": "labels.icon",
-                        "stylers": [{"visibility": "off"}]
-                    }, {
-                        "featureType": "administrative",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"color": "#000000"}, {"lightness": 20}]
-                    }, {
-                        "featureType": "administrative",
-                        "elementType": "geometry.stroke",
-                        "stylers": [{"color": "#000000"}, {"lightness": 17}, {"weight": 1.2}]
-                    }, {
-                        "featureType": "administrative",
-                        "elementType": "labels",
-                        "stylers": [{"visibility": "off"}]
-                    }, {
-                        "featureType": "administrative.country",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "simplified"}]
-                    }, {
-                        "featureType": "administrative.country",
-                        "elementType": "geometry",
-                        "stylers": [{"visibility": "simplified"}]
-                    }, {
-                        "featureType": "administrative.country",
-                        "elementType": "labels.text",
-                        "stylers": [{"visibility": "simplified"}]
-                    }, {
-                        "featureType": "administrative.province",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "off"}]
-                    }, {
-                        "featureType": "administrative.locality",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "simplified"}, {"saturation": "-100"}, {"lightness": "30"}]
-                    }, {
-                        "featureType": "administrative.neighborhood",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "off"}]
-                    }, {
-                        "featureType": "administrative.land_parcel",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "off"}]
-                    }, {
-                        "featureType": "landscape",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "simplified"}, {"gamma": "0.00"}, {"lightness": "74"}]
-                    }, {
-                        "featureType": "landscape",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#000000"}, {"lightness": 20}]
-                    }, {
-                        "featureType": "landscape.man_made",
-                        "elementType": "all",
-                        "stylers": [{"lightness": "3"}]
-                    }, {
-                        "featureType": "poi",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "off"}]
-                    }, {
-                        "featureType": "poi",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#000000"}, {"lightness": 21}]
-                    }, {
-                        "featureType": "road",
-                        "elementType": "geometry",
-                        "stylers": [{"visibility": "simplified"}]
-                    }, {
-                        "featureType": "road.highway",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"color": "#000000"}, {"lightness": 17}]
-                    }, {
-                        "featureType": "road.highway",
-                        "elementType": "geometry.stroke",
-                        "stylers": [{"color": "#000000"}, {"lightness": 29}, {"weight": 0.2}]
-                    }, {
-                        "featureType": "road.arterial",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#000000"}, {"lightness": 18}]
-                    }, {
-                        "featureType": "road.local",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#000000"}, {"lightness": 16}]
-                    }, {
-                        "featureType": "transit",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#000000"}, {"lightness": 19}]
-                    }, {
-                        "featureType": "water",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#000000"}, {"lightness": 17}]
-                    }],
-                    mapTypeControl: false,
-                    mapTypeControlOptions: {
-                        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-                        position: google.maps.ControlPosition.TOP_CENTER
-                    },
-                    zoomControl: true,
-                    zoomControlOptions: {position: google.maps.ControlPosition.TOP_RIGHT},
-                    scaleControl: true,
-                    streetViewControl: false,
-                    streetViewControlOptions: {position: google.maps.ControlPosition.RIGHT_TOP},
-                    fullscreenControl: false
-                });
-                var marker = new google.maps.Marker({
-                    zIndex: 100,
-                    position: coords,
-                    map: map,
-                    draggable: false,
-                    animation: google.maps.Animation.DROP,
-                    title: 'Boole Technology Centre',
-                    icon: '/images/assets/map-pin.png'
-
-                });
-            }
-        </script>
 
         <div class="container-fluid subscribe" id="subscribe">
             <div class="container">
@@ -382,7 +224,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="text-center"> LincolnHack <strong>Sponsors</strong></h2>
-                        <h3 class="text-center">LincolnHack would not be possible without our sponsors,<br>View our sponsor challenges and information.</h3>
+                        <h3 class="text-center">LincolnHack would not be possible without our sponsors,<br>We will announce our sponsors soon§</h3>
                     </div>
                 </div>
 
@@ -395,17 +237,11 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li><a href="../../sponsors/gold/khaoscontrol"><img src="/images/assets/sponsors/KC_Square_black_text.svg" alt="Khaos Control" /></a> </li>
-                                <li><a href="../../sponsors/gold/epixmedia"><img src="../../images/assets/sponsors/epix-logo.svg" alt="Expix Media" /></a>
-                                </li>
-                                <li><a href="../../sponsors/gold/scholarpack"><img src="../../images/assets/sponsors/scholarpack.svg" alt="Recap.io" /></a>
-                                </li>
-                                <li><a href="../../sponsors/gold/recap"><img src="../../images/assets/sponsors/recap-io.svg" width="85%" alt="Recap.io" /></a>
-                                </li>
+                                <li> Announcing soon </li>
 
                             </ul>
 
-                            <h4>Click a logo to see sponsor challenges.</h4>
+                            <h4>Contact us to sponsor
                         </div>
                     </div>
 
@@ -416,11 +252,7 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li><a href="../../sponsors/silver/StreetsHeaver#streetsheaver"><img width="150px" src="/images/assets/sponsors/streetsheaver.svg" alt="Streets Heaver" /></a> </li>
-                                <li><a href="../../sponsors/silver/Selenity#selenity"><img width="150px" src="../../images/assets/sponsors/selenity.svg" alt="Selenity" /></a>
-                                </li>
-                                <li><a href="../../sponsors/silver/cooperpress#cooperpress"><img width="150px" src="../../images/assets/sponsors/cooperpress.svg" alt="Cooper Press" /></a>
-                                </li>
+                                <li> Announcing soon</li>
 
                             </ul>
 
@@ -436,11 +268,7 @@
 
                         <div class="body">
                         <ul class="list-unstyled">
-                            <li><a href="../../partners"><img width="150px" src="/images/assets/sponsors/lsip.svg" alt="" /></a> </li>
-                            <li><a href="../../partners"><img width="150px" src="../../images/assets/sponsors/bl.svg" alt="" /></a>
-                            </li>
-                            <li><a href="../../partners"><img width="150px" class="uni" src="../../images/assets/sponsors/soc.svg" alt="" /></a>
-                            </li>
+                            <li>Announcing soon</li>
 
 
                         </ul>
@@ -572,26 +400,25 @@
                     <h2 class="modal-title">Get LincolnHack Tickets</h2>
                 </div>
                 <div class="modal-body">
-                    <div id="eventbrite-widget-container-50209435774"></div>
+                    <div id="eventbrite-widget-container-69858062345"></div>
 
-                    <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+<script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
-                    <script type="text/javascript">
-                        var callback = function() {
-                            $('.close').click();
-                        };
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
 
-                        window.EBWidgets.createWidget({
-                            // Required
-                            widgetType: 'checkout',
-                            eventId: '50209435774',
-                            iframeContainerId: 'eventbrite-widget-container-50209435774',
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '69858062345',
+        iframeContainerId: 'eventbrite-widget-container-69858062345',
 
-                            // Optional
-                            iframeContainerHeight: 425,
-                            onOrderComplete: callback
-                        });
-                    </script>
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });</script>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
