@@ -113,7 +113,7 @@
                             <div class="video-control play"></div>
                             <video class="embed-responsive-item" poster="/images/assets/video-start.png" preload="auto"
                                    autostart="0" loop="loop">
-                                <source src="/videos/lincolnhack.mp4" type="video/mp4">
+                                <source src="/videos/Lincolnhack-teaser.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
