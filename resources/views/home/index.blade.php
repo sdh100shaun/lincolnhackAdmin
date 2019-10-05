@@ -430,27 +430,33 @@
                     <h2 class="modal-title">Get LincolnHack Tickets</h2>
                 </div>
                 <div class="modal-body">
-                    <div id="eventbrite-widget-container-50209435774"></div>
+                    <div id="eventbrite-widget-container-69858062345"></div>
 
                     <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
                     <script type="text/javascript">
-                        var callback = function() {
-                            $('.close').click();
+                        var exampleCallback = function() {
+                            console.log('Order complete!');
                         };
 
                         window.EBWidgets.createWidget({
                             // Required
                             widgetType: 'checkout',
-                            eventId: '50209435774',
-                            iframeContainerId: 'eventbrite-widget-container-50209435774',
+                            eventId: '69858062345',
+                            iframeContainerId: 'eventbrite-widget-container-69858062345',
 
                             // Optional
-                            iframeContainerHeight: 425,
-                            onOrderComplete: callback
-                        });
-                    </script>
+                            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                        });</script>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
