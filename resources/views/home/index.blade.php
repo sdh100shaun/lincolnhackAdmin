@@ -151,6 +151,7 @@
                     <img src="/images/assets/date-2019a.png" class="img-responsive" alt="10th & 11th November 2018">
                 </div>
 
+
                 <div class="row">
                     <div class="col-md-4 col-md-offset-2 col-sm-6">
                         <h4>Saturday 16th</h4>
@@ -185,6 +186,7 @@
             </div>
         </div>
         </div>
+
         <div class="container where-prefix">
             <div class="row">
                 <div class="col-md-12">
@@ -212,11 +214,6 @@
         </div>
 
         <div class="map" id="map"></div>
-
-
-
-
-
         <div class="container-fluid subscribe" id="subscribe">
             <div class="container">
                 <div class="row">
@@ -254,7 +251,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="text-center"> LincolnHack <strong>Sponsors</strong></h2>
-                        <h3 class="text-center">LincolnHack would not be possible without our sponsors,<br>View our sponsor challenges and information.</h3>
+                        <h3 class="text-center">LincolnHack would not be possible without our sponsors,<br>We will announce our sponsors soon§</h3>
                     </div>
                 </div>
 
@@ -268,11 +265,10 @@
                         <div class="body">
                             <ul class="list-unstyled">
 
+
                                 <li>Sponsors announced shortly</li>
 
                             </ul>
-
-
                         </div>
                     </div>
 
@@ -283,7 +279,9 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
+
                                 <li>Sponsors announced shortly</li>
+
 
                             </ul>
 
@@ -300,6 +298,7 @@
                         <div class="body">
                         <ul class="list-unstyled">
                             <li>Partners announced shortly</li>
+
 
                         </ul>
 
@@ -431,6 +430,7 @@
                 </div>
                 <div class="modal-body">
                     <div id="eventbrite-widget-container-69858062345"></div>
+
 
                     <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
