@@ -30,3 +30,7 @@ Route::resource('attendee', 'AttendeeController', ['except' => [
     'destroy'
 ]]);
 
+Route::resource('winners', 'WinnersController', ['except' => [
+    'destroy'
+]]);
+

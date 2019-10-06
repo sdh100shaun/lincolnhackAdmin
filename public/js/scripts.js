@@ -166,7 +166,7 @@ function faqQuestionSetup() {
         switch (questionRef) {
 
             case "1":
-                answer = "On site parking is available. Where possible, please car share. Pay and Display parking is available across the street.";
+                answer = "Where possible, please car share. Pay and Display parking is available across the street.";
                 break;
 
             case "2":
@@ -194,7 +194,7 @@ function faqQuestionSetup() {
                 break;
 
             case "8":
-                answer = "TBA - all catering is provided by Sam Owen of Salted Orange. The same great chef from last year.";
+                answer = "TBA - all catering is provided rest assured you will be well fed.";
                 break;
 
             default:
@@ -291,6 +291,43 @@ function highlight() {
         highlightedElement.next('li').addClass('highlighted');
     }
 }
+function initMap() {
+
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2RoMTAwIiwiYSI6ImNqMGxpY2g3aTAwMDQzMnFxamQ0NTRkZXQifQ.ouosJmF_k6Y2ZRf_mfSn7A';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        zoom: 17,
+        center: [-0.537969, 53.229946]
+    });
+    map.on('load', function () {
+        map.loadImage('/images/assets/map-pin.png', function (error, image) {
+            if (error) throw error;
+            map.addImage('imp', image);
+            map.addLayer({
+                "id": "points",
+                "type": "symbol",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "FeatureCollection",
+                        "features": [{
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-0.537772, 53.230069]
+                            }
+                        }]
+                    }
+                },
+                "layout": {
+                    "icon-image": "imp",
+                    "icon-size": 1.5
+                }
+            });
+        });
+    });
+}
 
 $(function () {
 
@@ -301,6 +338,7 @@ $(function () {
     faqQuestionSetup();
 
     videoPlay();
+    initMap();
     // setupTicker();
 });
 

@@ -1,0 +1,35 @@
+version: '2'
+services:
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+      - ./docker/nginx/site.conf:/etc/nginx/conf.d/site.conf
+    tty: true
+    environment:
+      SERVICE_NAME: app
+      SERVICE_TAGS: dev
+
+    working_dir: /var/www
+    networks:
+      - app-network
+
+  php:
+    build: docker/php
+    image: php-lincolnhack:latest
+    restart: always
+    volumes:
+      - .:/app
+    environment:
+      PHP_XDEBUG_ENABLED: 1 # Set 1 to enable.
+      XDEBUG_CONFIG: remote_host=${HOST_IP}
+    networks:
+      - app-network
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge

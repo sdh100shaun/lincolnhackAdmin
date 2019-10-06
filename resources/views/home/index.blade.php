@@ -113,7 +113,7 @@
                             <div class="video-control play"></div>
                             <video class="embed-responsive-item" poster="/images/assets/video-start.png" preload="auto"
                                    autostart="0" loop="loop">
-                                <source src="/videos/lincolnhack.mp4" type="video/mp4">
+                                <source src="/videos/Lincolnhack-teaser.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -148,8 +148,9 @@
 
                 <div class="row">
                     <h2 class="text-center"><strong>When</strong> is LincolnHack?</h2>
-                	<h2 style="text-align:center">November 16th & 17th 2019</h2>
-		</div>
+                    <img src="/images/assets/date-2019a.png" class="img-responsive" alt="10th & 11th November 2018">
+                </div>
+
 
                 <div class="row">
                     <div class="col-md-4 col-md-offset-2 col-sm-6">
@@ -186,7 +187,33 @@
         </div>
         </div>
 
+        <div class="container where-prefix">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center"><strong>Where</strong> is LincolnHack?</h2>
+                </div>
+                <div class="col-md-12">
+                    <p>A brand new £1.8 million co-working space called Mosaic, located in Thomas Parker House on Silver Street right in the heart of Lincoln city centre.<br />
+                        Developed collaboratively by the digital community, working together with Lincolnshire Co-op and Lincolnshire County Council this is a great space and Lincolnhack is proud to be the first major digital event the hub will host. The location is situated within a short walking distance of the Lincoln transport hub. </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid where" id="where">
+            <div class="container">
 
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="/images/assets/marker.png" class="img-responsive" alt="Mosaic Digital Hub" />
+                    </div>
+                    <div class="col-sm-8">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map" id="map"></div>
         <div class="container-fluid subscribe" id="subscribe">
             <div class="container">
                 <div class="row">
@@ -237,11 +264,11 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li> Announcing soon </li>
+
+
+                                <li>Sponsors announced shortly</li>
 
                             </ul>
-
-                            <h4>Contact us to sponsor
                         </div>
                     </div>
 
@@ -252,7 +279,9 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li> Announcing soon</li>
+
+                                <li>Sponsors announced shortly</li>
+
 
                             </ul>
 
@@ -268,7 +297,7 @@
 
                         <div class="body">
                         <ul class="list-unstyled">
-                            <li>Announcing soon</li>
+                            <li>Partners announced shortly</li>
 
 
                         </ul>
@@ -381,7 +410,7 @@
                 <div class="col-md-8">
                     <p class="text-center">LincolnHack follows the standard code of conduct as written by <a
                                 href="http://hackcodeofconduct.org">hackcodeofconduct.org</a>. LincolnHack is a fun event -
-                        help us to keep it fun by behaving appropriately<br>Copyright LincolnHack 2018. LincolnHack is
+                        help us to keep it fun by behaving appropriately<br>Copyright LincolnHack 2019. LincolnHack is
                         run by members of Digital Lincoln</p>
                 </div>
             </div>
@@ -402,23 +431,24 @@
                 <div class="modal-body">
                     <div id="eventbrite-widget-container-69858062345"></div>
 
-<script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
-<script type="text/javascript">
-    var exampleCallback = function() {
-        console.log('Order complete!');
-    };
+                    <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
-    window.EBWidgets.createWidget({
-        // Required
-        widgetType: 'checkout',
-        eventId: '69858062345',
-        iframeContainerId: 'eventbrite-widget-container-69858062345',
+                    <script type="text/javascript">
+                        var exampleCallback = function() {
+                            console.log('Order complete!');
+                        };
 
-        // Optional
-        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-    });</script>
+                        window.EBWidgets.createWidget({
+                            // Required
+                            widgetType: 'checkout',
+                            eventId: '69858062345',
+                            iframeContainerId: 'eventbrite-widget-container-69858062345',
+
+                            // Optional
+                            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                        });</script>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -427,8 +457,14 @@
 
         </div>
     </div>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7C_xfL1ftPNavF8PQ9Qvd702D_yEzb1E&callback=initMap"></script>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
    @include('partials.scripts')
 @endsection

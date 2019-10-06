@@ -6048,25 +6048,32 @@ header > div > .navbar-header button:hover span:nth-child(3) {
   width: 100%;
   height: 100%;
 }
-.where {
-  padding-top: 40px;
-  padding-bottom: 230px;
-  background: #14031F url('/images/assets/boole-technology-centre.png') no-repeat 0% 250%;
-}
-.where h2 {
-  color: #fff;
+.where-prefix h2 {
+  color: #000;
   font-size: 48px;
   margin-bottom: 40px;
-  font-weight: 400;
-}
-.where h2 strong {
   font-weight: 600;
 }
-.where p {
-  color: #fff;
+.where-prefix h2 strong {
+  font-weight: 600;
+}
+.where-prefix p {
+  color: #555555;
   font-size: 16px;
   font-weight: 300;
   line-height: 30px;
+  margin-top: 10px;
+}
+.where-suffix {
+  padding-bottom: 130px;
+}
+.where {
+  padding-top: 40px;
+  padding-bottom: 230px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)), url('/images/assets/mosiac.jpg');
+  background-image: linear-gradient(#000, #000), url('/images/assets/mosiac.jpg');
+  background-size: 100% 100%, cover;
+  background-blend-mode: saturation;
 }
 #map {
   height: 440px;

@@ -12,11 +12,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Lincoln Hack 2018 </title>
+    <title> Lincoln Hack 2019 </title>
 
     <meta name="description" content="LincolnHack is a free 24 hour coding competition where teams of up to four people compete for fantastic prizes" />
 
-    <meta property="og:title" content="Lincoln Hack 2018 "/>
+    <meta property="og:title" content="Lincoln Hack 2019 "/>
 
     <meta property="og:description" content="LincolnHack is a free 24 hour coding competition where teams of up to four people compete for fantastic prizes"/>
 
@@ -37,7 +37,6 @@
 <body>
 
 @yield('content')
-
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
