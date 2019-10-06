@@ -1,4 +1,4 @@
     <div class="message xs-center">
-        <p>Lincolnhack returns on November 16th -17th 2019 - more details soon   </p>
+        <p>Tickets available now ... Sponsor announcements soon. </p>
     </div>
 {{$message}}
