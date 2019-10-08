@@ -36,7 +36,7 @@ class SponsorController extends Controller
         try {
             $viewName = $type;
 
-            if($type === $this->sponsor::SPONSOR_TYPE_GOLD)
+            if($type === $this->sponsor::SPONSOR_TYPE_GOLD )
             {
                 $sponsorDetails = $this->sponsor->findByName(strtolower($name));
                 $viewName = $name;

@@ -270,10 +270,11 @@
                         <div class="body">
                             <ul class="list-unstyled">
 
+                                        <li><a href="../../sponsors/gold/khaoscontrol"><img src="/images/assets/sponsors/KC_Square_black_text.svg" alt="learn more about Khaos Control" /></a> </li>
 
-                                <li>Sponsors announced shortly</li>
 
                             </ul>
+
                         </div>
                     </div>
 

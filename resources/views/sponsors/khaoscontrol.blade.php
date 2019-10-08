@@ -25,17 +25,20 @@
                 <p>Khaos Control was created by Mike Cockfield, who had a vision of delivering powerful, high-quality, feature-rich business solutions that enabled businesses to unlock their potential.
                    Khaos Control Solutions, the company behind Khaos Control, was founded in 2000. Initially Mike forged ahead on his own, developing, selling and supporting the software himself. However, it was not long before Mike was recruiting and his first hire is still with the company today; Ben Nolan (2nd Line Support Manager).
 
-                   The vision of delivering powerful, high-quality, feature-rich business solutions has remained at the core of the company’s values and has been our guide in the development of Khaos Control as a Multi-Channel Retail, Order and Inventory Management solution, for both Business to Business (B2B) and Business to Consumer (B2C).
+                   The vision of delivering powerful, high-quality, feature-rich business solutions has remained at the core of the company’s values and has been the guide in the development of Khaos Control as a Multi-Channel Retail, Order and Inventory Management solution, for both Business to Business (B2B) and Business to Consumer (B2C).
 
-              Growth has been rapid and consistent and we’re now on our fourth set of offices here in Grantham, having moved into our newly refurbished premises in October 2011 in order to accommodate the 40+ full-time employees that are now part of the Khaos Family</p></div>
+                    Khaos Control Solutions have been helping businesses of all sizes manage and streamline their core processes. From stock control, multichannel order processing to integrated ICAEW accredited accounting khaos deliver solutions that help your business.
 
-            <div class="col-sm-5 col-sm-offset-1">
+                    They have three products, which will allow you to elevate and scale your business: Khaos Control (KC), a Windows-based ERP application; Khaos Control Cloud (KCC), a browser-based ERP application; and Khaos Control Hybrid, which brings together KC, KCC & powerful eCommerce into one seamless solution.
+
+                </p>
+            </div>
+                    <div class="col-sm-5 col-sm-offset-1">
                 <h5 class="khaos"> The Khaos Control Challenge </h5>
 
-                <p>Khaos Control have generously supported LincolnHack since our beginning.  Last year, their challenge “It’s the end of the world as we know it” inspired hackers to provide a solution to the end of their world. A challenge which gave birth to the infamous Lemon battery!</p>
+                <p>Khaos Control have generously supported LincolnHack since our beginning.  Last year, their challenge "Build a Chaos Recovery Machine" inspired hackers to provide a solution to find a recovery system to combat the chaos around us.</p>
                 <p>Sticking with a similar theme, this year they invite you to: </p>
-                <blockquote><strong>"Build a Chaos Recovery Machine"</strong>,
-           Develop a solution to help mitigate the effects of a disaster of your choosing! Disasters could include natural ones (earth quakes etc); Man made ones (the global financial collapse?); or maybe how to recover from a political upset...
+                <blockquote><strong>Challenge announced soon</strong>,
               </blockquote>
                 <p> Prize to be announced shortly - but expect good things as Khaos Control never disappoint</p>
             </div>
@@ -62,7 +65,7 @@
                 <div class="row">
                     <div class="col-md-9 col-md-offset-3 col-sm-11 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                         <div class="speech-bubble">
-                            <p class="text-center" id="answer">Prize will Raspberry PI Zero W plus accessories and sensors</p>
+                            <p class="text-center" id="answer">Prizes to be announced</p>
                         </div>
                     </div>
                 </div>
