@@ -193,8 +193,12 @@
                     <h2 class="text-center"><strong>Where</strong> is LincolnHack?</h2>
                 </div>
                 <div class="col-md-12">
-                    <p>A brand new £1.8 million co-working space called Mosaic, located in Thomas Parker House on Silver Street right in the heart of Lincoln city centre.<br />
-                        Developed collaboratively by the digital community, working together with Lincolnshire Co-op and Lincolnshire County Council this is a great space and Lincolnhack is proud to be the first major digital event the hub will host. The location is situated within a short walking distance of the Lincoln transport hub. </p>
+                    <p>A brand new £1.8 million co-working space called Mosaic, located in Thomas Parker House on Silver
+                        Street right in the heart of Lincoln city centre.<br/>
+                        Developed collaboratively by the digital community, working together with Lincolnshire Co-op and
+                        Lincolnshire County Council this is a great space and Lincolnhack is proud to be the first major
+                        digital event the hub will host. The location is situated within a short walking distance of the
+                        Lincoln transport hub. </p>
                 </div>
             </div>
         </div>
@@ -204,7 +208,7 @@
 
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="/images/assets/marker.png" class="img-responsive" alt="Mosaic Digital Hub" />
+                        <img src="/images/assets/marker.png" class="img-responsive" alt="Mosaic Digital Hub"/>
                     </div>
                     <div class="col-sm-8">
 
@@ -251,7 +255,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="text-center"> LincolnHack <strong>Sponsors</strong></h2>
-                        <h3 class="text-center">LincolnHack would not be possible without our sponsors,<br>We will announce our sponsors soon§</h3>
+                        <h3 class="text-center">LincolnHack would not be possible without our sponsors,<br>We will
+                            announce our sponsors soon§</h3>
                     </div>
                 </div>
 
@@ -287,7 +292,6 @@
                             </ul>
 
 
-
                         </div>
                     </div>
 
@@ -297,20 +301,21 @@
                         </div>
 
                         <div class="body">
-                        <ul class="list-unstyled">
-                            <li>Partners announced shortly</li>
+                            <ul class="list-unstyled">
+                                <li>Partners announced shortly</li>
 
 
-                        </ul>
+                            </ul>
 
 
-
-                    </div>
+                        </div>
                     </div>
 
                 </div>
-                <h4 class="friends">Also a big thanks for their support to the <a href="../../partners#friends" >friends of Lincolnhack</a></h4>
-                <h4 class="friends">Want to sponsor there is still time contact us at  <a href="mailto:hello@lincolnhack.org" >hello@lincolnhack.org</a></h4>
+                <h4 class="friends">Also a big thanks for their support to the <a href="../../partners#friends">friends
+                        of Lincolnhack</a></h4>
+                <h4 class="friends">Want to sponsor there is still time contact us at <a
+                            href="mailto:hello@lincolnhack.org">hello@lincolnhack.org</a></h4>
 
             </div>
         </div>
@@ -410,7 +415,8 @@
                 </div>
                 <div class="col-md-8">
                     <p class="text-center">LincolnHack follows the standard code of conduct as written by <a
-                                href="http://hackcodeofconduct.org">hackcodeofconduct.org</a>. LincolnHack is a fun event -
+                                href="http://hackcodeofconduct.org">hackcodeofconduct.org</a>. LincolnHack is a fun
+                        event -
                         help us to keep it fun by behaving appropriately<br>Copyright LincolnHack 2019. LincolnHack is
                         run by members of Digital Lincoln</p>
                 </div>
@@ -436,7 +442,7 @@
                     <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
                     <script type="text/javascript">
-                        var exampleCallback = function() {
+                        var exampleCallback = function () {
                             console.log('Order complete!');
                         };
 
@@ -458,14 +464,7 @@
 
         </div>
     </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
 
 
-   @include('partials.scripts')
+    @include('partials.scripts')
 @endsection
