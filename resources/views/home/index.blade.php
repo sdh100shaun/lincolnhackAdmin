@@ -256,7 +256,7 @@
                     <div class="col-md-12">
                         <h2 class="text-center"> LincolnHack <strong>Sponsors</strong></h2>
                         <h3 class="text-center">LincolnHack would not be possible without our sponsors,<br>We will
-                            announce our sponsors soon§</h3>
+                            announce our sponsors soon</h3>
                     </div>
                 </div>
 

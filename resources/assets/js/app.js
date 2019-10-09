@@ -5,6 +5,8 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+import { ValidationProvider, ValidationObserver } from 'vee-validate/dist/vee-validate.full'
+
 require('./bootstrap');
 
 
@@ -15,6 +17,8 @@ Vue.component('announcer',require('./components/announcer.vue'));
 Vue.component('register',require('./components/register.vue'));
 Vue.component('teams',require('./components/teams.vue'));
 Vue.component('chat',require('./components/teams.vue'));
+Vue.component('attendance', require('./components/attendance.vue'));
+
 const app = new Vue({
     el: '#app',
     data:{
