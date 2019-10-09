@@ -272,6 +272,7 @@
 
                                         <li><a href="../../sponsors/gold/khaoscontrol"><img src="/images/assets/sponsors/KC_Square_black_text.svg" alt="learn more about Khaos Control" /></a> </li>
 
+                                <li><a href="../../sponsors/gold/epixmedia"><img src="/images/assets/sponsors/epix-logo.svg" alt="learn more about Epix Medial" /></a> </li>
 
                             </ul>
 
