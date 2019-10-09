@@ -7,6 +7,12 @@
 
 import { ValidationProvider, ValidationObserver } from 'vee-validate/dist/vee-validate.full'
 
+// Pulling in all validation rules in because I'm being lazy
+
+// Use the provider immediately
+Vue.component('ValidationProvider', ValidationProvider)
+Vue.component('ValidationObserver', ValidationObserver)
+
 require('./bootstrap');
 
 
