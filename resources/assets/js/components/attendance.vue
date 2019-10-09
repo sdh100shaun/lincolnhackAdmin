@@ -61,9 +61,9 @@
 
     </div>
 </template>
-import axios from 'axios'
 
 <script>
+	import axios from 'axios'
 	export default {
 		name: "attendance",
 		data () {
