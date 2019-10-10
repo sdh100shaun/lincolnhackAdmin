@@ -33,6 +33,12 @@
 
     <link rel="home" href="2018.lincolnhack.org" />
     <link rel="stylesheet" href="../../css/bootstrap.css?v={{$cssVersion}}">
+    <!-- Scripts -->
+    <script>
+        window.Laravel = {!! json_encode([
+            'csrfToken' => csrf_token(),
+        ]) !!};
+    </script>
 </head>
 <body>
 
