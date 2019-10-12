@@ -1,13 +1,7 @@
 <template>
     <div>
         <div v-if="!showThanks">
-            <div class="important text-center">
-                <p><strong>We're looking forward meeting you at the hack!</strong></p>
-
-                <p>Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person.<br><strong>This is your confirmation of attendance.</strong> Without this information we may not be able to register you.</p>
-            </div>
-            <hr>
-            <div class="columns">
+            <div class="row">
                 <div class="col-md-4 col-md-offset-0 col-md-push-4 col-sm-10 col-sm-offset-1">
                     <div>
                         <ValidationObserver ref="observer" v-slot="{ invalid }"  @submit.prevent="submit()">
@@ -17,9 +11,7 @@
                                     <label class="label" v-if="field.type !== 'checkbox'">{{field.label}} <small v-if="field.subLabel">{{field.subLabel}}</small></label>
                                     <input  v-if="field.type === 'input'" class="form-control" type="text" :placeholder="field.placeholder" v-model="field.value" >
                                     <textarea v-if="field.type === 'textarea'" class="form-control" :placeholder="field.placeholder" v-model="field.value"></textarea>
-                                    <label>
-                                        <input type="checkbox" v-model="field.value"> {{field.name}}
-                                    </label>
+
                                     <select v-model="field.value" class="form-control" v-if="field.type === 'select'" >
                                         <option v-for="option in field.options" :key="option">{{option}}</option>
                                     </select>
@@ -31,7 +23,7 @@
                             <div class="checkbox">
                                 <ValidationProvider rules="required" name="accept-terms-and-conditions" v-slot="{ errors }">
                                         <label>
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="accept-terms-and-conditions" value="">
                                             I agree to the <a href="https://hackcodeofconduct.org/" target="_blank">Code of Conduct</a>
                                         </label>
                                         <p class="help-block text-warning">{{  removeHyphens(errors[0]) }}</p>
@@ -197,6 +189,7 @@
 <style scoped>
     label {
         text-transform: uppercase;
+        color: #0B0111;
     }
     label small {
         color: #2c3e50;

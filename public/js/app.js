@@ -4337,14 +4337,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "attendance",
@@ -9469,7 +9461,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nlabel[data-v-bb8e7080] {\n    text-transform: uppercase;\n}\nlabel small[data-v-bb8e7080] {\n    color: #2c3e50;\n    font-size: 0.85rem;\n    text-transform: lowercase;\n}\n.info[data-v-bb8e7080] {\n    color: #2c3e50;\n    font-size: 0.75rem;\n    font-style: italic;\n}\nfieldset[data-v-bb8e7080] {\n    margin: 1rem 0;\n    border: 1px dotted #cccccc;\n    font-size: 0.85rem;\n    font-weight: bold;\n    padding: 1rem;\n}\n.important p[data-v-bb8e7080] {\n    margin-bottom: 1rem;\n}\n", ""]);
+exports.push([module.i, "\nlabel[data-v-bb8e7080] {\n    text-transform: uppercase;\n    color: #0B0111;\n}\nlabel small[data-v-bb8e7080] {\n    color: #2c3e50;\n    font-size: 0.85rem;\n    text-transform: lowercase;\n}\n.info[data-v-bb8e7080] {\n    color: #2c3e50;\n    font-size: 0.75rem;\n    font-style: italic;\n}\nfieldset[data-v-bb8e7080] {\n    margin: 1rem 0;\n    border: 1px dotted #cccccc;\n    font-size: 0.85rem;\n    font-weight: bold;\n    padding: 1rem;\n}\n.important p[data-v-bb8e7080] {\n    margin-bottom: 1rem;\n}\n", ""]);
 
 // exports
 
@@ -89109,11 +89101,7 @@ var render = function() {
   return _c("div", [
     !_vm.showThanks
       ? _c("div", [
-          _vm._m(0),
-          _vm._v(" "),
-          _c("hr"),
-          _vm._v(" "),
-          _c("div", { staticClass: "columns" }, [
+          _c("div", { staticClass: "row" }, [
             _c(
               "div",
               {
@@ -89267,91 +89255,6 @@ var render = function() {
                                                       })
                                                     : _vm._e(),
                                                   _vm._v(" "),
-                                                  _c("label", [
-                                                    _c("input", {
-                                                      directives: [
-                                                        {
-                                                          name: "model",
-                                                          rawName: "v-model",
-                                                          value: field.value,
-                                                          expression:
-                                                            "field.value"
-                                                        }
-                                                      ],
-                                                      attrs: {
-                                                        type: "checkbox"
-                                                      },
-                                                      domProps: {
-                                                        checked: Array.isArray(
-                                                          field.value
-                                                        )
-                                                          ? _vm._i(
-                                                              field.value,
-                                                              null
-                                                            ) > -1
-                                                          : field.value
-                                                      },
-                                                      on: {
-                                                        change: function(
-                                                          $event
-                                                        ) {
-                                                          var $$a = field.value,
-                                                            $$el =
-                                                              $event.target,
-                                                            $$c = $$el.checked
-                                                              ? true
-                                                              : false
-                                                          if (
-                                                            Array.isArray($$a)
-                                                          ) {
-                                                            var $$v = null,
-                                                              $$i = _vm._i(
-                                                                $$a,
-                                                                $$v
-                                                              )
-                                                            if ($$el.checked) {
-                                                              $$i < 0 &&
-                                                                _vm.$set(
-                                                                  field,
-                                                                  "value",
-                                                                  $$a.concat([
-                                                                    $$v
-                                                                  ])
-                                                                )
-                                                            } else {
-                                                              $$i > -1 &&
-                                                                _vm.$set(
-                                                                  field,
-                                                                  "value",
-                                                                  $$a
-                                                                    .slice(
-                                                                      0,
-                                                                      $$i
-                                                                    )
-                                                                    .concat(
-                                                                      $$a.slice(
-                                                                        $$i + 1
-                                                                      )
-                                                                    )
-                                                                )
-                                                            }
-                                                          } else {
-                                                            _vm.$set(
-                                                              field,
-                                                              "value",
-                                                              $$c
-                                                            )
-                                                          }
-                                                        }
-                                                      }
-                                                    }),
-                                                    _vm._v(
-                                                      " " +
-                                                        _vm._s(field.name) +
-                                                        "\n                                "
-                                                    )
-                                                  ]),
-                                                  _vm._v(" "),
                                                   field.type === "select"
                                                     ? _c(
                                                         "select",
@@ -89479,7 +89382,12 @@ var render = function() {
                                               return [
                                                 _c("label", [
                                                   _c("input", {
-                                                    attrs: { type: "checkbox" }
+                                                    attrs: {
+                                                      type: "checkbox",
+                                                      name:
+                                                        "accept-terms-and-conditions",
+                                                      value: ""
+                                                    }
                                                   }),
                                                   _vm._v(
                                                     "\n                                        I agree to the "
@@ -89530,11 +89438,11 @@ var render = function() {
                         ],
                         null,
                         false,
-                        2712888650
+                        3260949020
                       )
                     }),
                     _vm._v(" "),
-                    _vm._m(1),
+                    _vm._m(0),
                     _vm._v(" "),
                     _c("p", [
                       _c(
@@ -89570,29 +89478,10 @@ var render = function() {
             )
           ])
         ])
-      : _c("div", [_vm._m(2)])
+      : _c("div", [_vm._m(1)])
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "important text-center" }, [
-      _c("p", [
-        _c("strong", [_vm._v("We're looking forward meeting you at the hack!")])
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person."
-        ),
-        _c("br"),
-        _c("strong", [_vm._v("This is your confirmation of attendance.")]),
-        _vm._v(" Without this information we may not be able to register you.")
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
