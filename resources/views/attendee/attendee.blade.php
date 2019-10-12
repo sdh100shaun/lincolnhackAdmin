@@ -1,5 +1,7 @@
-@include('partials.head')
+@extends('layouts.form')
 
+
+@section('content')
 
 <div class="container-fluid sponsor-page">
     <div class="container-fluid ">
@@ -28,7 +30,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 col-md-12">
-                <attendance />
+                <attendance/>
             </div>
         </div>
         <hr/>
@@ -99,5 +101,5 @@
         </div>
     </div>
 </div>
-
 @include('partials.footer')
+@endsection

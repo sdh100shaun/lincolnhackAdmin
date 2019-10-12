@@ -16,6 +16,12 @@
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <!-- Scripts -->
 
+    <!-- Scripts -->
+    <script>
+        window.Laravel = {!! json_encode([
+            'csrfToken' => csrf_token(),
+        ]) !!};
+    </script>
 </head>
 <body>
     <div id="app">
@@ -24,5 +30,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+
 </body>
 </html>

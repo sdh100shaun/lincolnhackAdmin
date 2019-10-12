@@ -5,7 +5,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-import { ValidationProvider, ValidationObserver } from 'vee-validate/dist/vee-validate.full'
+
+require("./bootstrap.js");
+import { ValidationProvider, ValidationObserver } from 'vee-validate'
 
 // Pulling in all validation rules in because I'm being lazy
 
@@ -13,17 +15,14 @@ import { ValidationProvider, ValidationObserver } from 'vee-validate/dist/vee-va
 Vue.component('ValidationProvider', ValidationProvider);
 Vue.component('ValidationObserver', ValidationObserver);
 
-require('./bootstrap');
-
-
-Vue.component('tshirt', require('./components/tshirt.vue'));
-Vue.component('countdown',require('./components/countdown.vue'));
-Vue.component('messages',require('./components/messages.vue'));
-Vue.component('announcer',require('./components/announcer.vue'));
-Vue.component('register',require('./components/register.vue'));
-Vue.component('teams',require('./components/teams.vue'));
-Vue.component('chat',require('./components/teams.vue'));
-Vue.component('attendance', require('./components/attendance.vue'));
+Vue.component('tshirt', require('./components/tshirt.vue').default);
+Vue.component('countdown',require('./components/countdown.vue').default);
+Vue.component('messages',require('./components/messages.vue').default);
+Vue.component('announcer',require('./components/announcer.vue').default);
+Vue.component('register',require('./components/register.vue').default);
+Vue.component('teams',require('./components/teams.vue').default);
+Vue.component('chat',require('./components/teams.vue').default);
+Vue.component('attendance',require('./components/attendance.vue').default);
 
 const app = new Vue({
     el: '#app',
