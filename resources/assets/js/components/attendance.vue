@@ -8,7 +8,7 @@
             </div>
             <hr>
             <div class="columns">
-                <div class="column is-4 is-offset-4">
+                <div class="col-md-4 col-md-offset-0 col-md-push-4 col-sm-10 col-sm-offset-1">
                     <div>
                         <ValidationObserver ref="observer" v-slot="{ invalid }"  @submit.prevent="submit()">
 
