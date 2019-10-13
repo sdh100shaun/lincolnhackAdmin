@@ -23,7 +23,7 @@
                             <div class="checkbox">
                                 <ValidationProvider rules="required" name="accept-terms-and-conditions" v-slot="{ errors }">
                                         <label>
-                                            <input type="checkbox" name="accept-terms-and-conditions" value="">
+                                            <input type="checkbox" name="accept-terms-and-conditions" value="1" v-model="terms">
                                             I agree to the <a href="https://hackcodeofconduct.org/" target="_blank">Code of Conduct</a>
                                         </label>
                                         <p class="help-block text-warning">{{  removeHyphens(errors[0]) }}</p>
@@ -62,6 +62,7 @@
 		name: "attendance",
 		data () {
 			return {
+			    terms: "",
 				showThanks: false,
 				submissionURL: null,
 				registerForm: [
@@ -166,6 +167,7 @@
 			},
 			async submit () {
 				const isValid = await this.$refs.observer.validate()
+
 				if (isValid) {
 					const formData = {}
 					for (let item of this.registerForm) {
@@ -193,12 +195,10 @@
     }
     label small {
         color: #2c3e50;
-        font-size: 0.85rem;
         text-transform: lowercase;
     }
     .info {
         color: #2c3e50;
-        font-size: 0.75rem;
         font-style: italic;
     }
     fieldset {
@@ -210,5 +210,9 @@
     }
     .important p {
         margin-bottom: 1rem;
+    }
+    .text-warning {
+        color: #761c19;
+        font-weight: bold;
     }
 </style>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+@php $cssVersion =1 @endphp
 <html lang="{{ config('app.locale') }}">
 <head>
     <meta charset="utf-8">
@@ -11,6 +12,8 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
+    <link rel="home" href="2019.lincolnhack.org" />
+    <link rel="stylesheet" href="../../css/bootstrap.css?v={{$cssVersion}}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
@@ -24,11 +27,10 @@
     </script>
 </head>
 <body>
-    <div id="app">
-        @yield('content')
-    </div>
 
-    <!-- Scripts -->
+    @yield('content')
+
+<!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 
 </body>

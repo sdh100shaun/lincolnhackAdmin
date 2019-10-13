@@ -67,7 +67,7 @@ class AttendeeController extends Controller
      */
     public function index()
     {
-        return view('attendee.attendee',["tshirtsizes"=>$this->tshirt->all(),'type'=>'silver']);
+        return view('attendee.attendee',["tshirtsizes"=>$this->tshirt->all(),'type'=>'gold']);
     }
 
     /**

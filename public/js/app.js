@@ -4342,6 +4342,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   name: "attendance",
   data: function data() {
     return {
+      terms: "",
       showThanks: false,
       submissionURL: null,
       registerForm: [{
@@ -9461,7 +9462,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nlabel[data-v-bb8e7080] {\n    text-transform: uppercase;\n    color: #0B0111;\n}\nlabel small[data-v-bb8e7080] {\n    color: #2c3e50;\n    font-size: 0.85rem;\n    text-transform: lowercase;\n}\n.info[data-v-bb8e7080] {\n    color: #2c3e50;\n    font-size: 0.75rem;\n    font-style: italic;\n}\nfieldset[data-v-bb8e7080] {\n    margin: 1rem 0;\n    border: 1px dotted #cccccc;\n    font-size: 0.85rem;\n    font-weight: bold;\n    padding: 1rem;\n}\n.important p[data-v-bb8e7080] {\n    margin-bottom: 1rem;\n}\n", ""]);
+exports.push([module.i, "\nlabel[data-v-bb8e7080] {\n    text-transform: uppercase;\n    color: #0B0111;\n}\nlabel small[data-v-bb8e7080] {\n    color: #2c3e50;\n    text-transform: lowercase;\n}\n.info[data-v-bb8e7080] {\n    color: #2c3e50;\n    font-style: italic;\n}\nfieldset[data-v-bb8e7080] {\n    margin: 1rem 0;\n    border: 1px dotted #cccccc;\n    font-size: 0.85rem;\n    font-weight: bold;\n    padding: 1rem;\n}\n.important p[data-v-bb8e7080] {\n    margin-bottom: 1rem;\n}\n.text-warning[data-v-bb8e7080] {\n    color: #761c19;\n    font-weight: bold;\n}\n", ""]);
 
 // exports
 
@@ -89382,11 +89383,64 @@ var render = function() {
                                               return [
                                                 _c("label", [
                                                   _c("input", {
+                                                    directives: [
+                                                      {
+                                                        name: "model",
+                                                        rawName: "v-model",
+                                                        value: _vm.terms,
+                                                        expression: "terms"
+                                                      }
+                                                    ],
                                                     attrs: {
                                                       type: "checkbox",
                                                       name:
                                                         "accept-terms-and-conditions",
-                                                      value: ""
+                                                      value: "1"
+                                                    },
+                                                    domProps: {
+                                                      checked: Array.isArray(
+                                                        _vm.terms
+                                                      )
+                                                        ? _vm._i(
+                                                            _vm.terms,
+                                                            "1"
+                                                          ) > -1
+                                                        : _vm.terms
+                                                    },
+                                                    on: {
+                                                      change: function($event) {
+                                                        var $$a = _vm.terms,
+                                                          $$el = $event.target,
+                                                          $$c = $$el.checked
+                                                            ? true
+                                                            : false
+                                                        if (
+                                                          Array.isArray($$a)
+                                                        ) {
+                                                          var $$v = "1",
+                                                            $$i = _vm._i(
+                                                              $$a,
+                                                              $$v
+                                                            )
+                                                          if ($$el.checked) {
+                                                            $$i < 0 &&
+                                                              (_vm.terms = $$a.concat(
+                                                                [$$v]
+                                                              ))
+                                                          } else {
+                                                            $$i > -1 &&
+                                                              (_vm.terms = $$a
+                                                                .slice(0, $$i)
+                                                                .concat(
+                                                                  $$a.slice(
+                                                                    $$i + 1
+                                                                  )
+                                                                ))
+                                                          }
+                                                        } else {
+                                                          _vm.terms = $$c
+                                                        }
+                                                      }
                                                     }
                                                   }),
                                                   _vm._v(
@@ -89438,7 +89492,7 @@ var render = function() {
                         ],
                         null,
                         false,
-                        3260949020
+                        962321479
                       )
                     }),
                     _vm._v(" "),

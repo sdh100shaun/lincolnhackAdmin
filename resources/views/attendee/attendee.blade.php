@@ -1,9 +1,8 @@
 @extends('layouts.form')
 
-
 @section('content')
-
-<div class="container-fluid sponsor-page">
+@include('partials.header')
+<div class="container-fluid sponsor-page" id="app">
     <div class="container-fluid ">
         <div class="row">
             <div class="col-sm-12 col-md-12">

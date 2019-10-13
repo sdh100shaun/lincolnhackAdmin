@@ -31,7 +31,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="home" href="2018.lincolnhack.org" />
+    <link rel="home" href="2019.lincolnhack.org" />
     <link rel="stylesheet" href="../../css/bootstrap.css?v={{$cssVersion}}">
     <!-- Scripts -->
     <script>
