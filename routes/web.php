@@ -17,7 +17,7 @@ Route::get('/', function () {
 Route::get('/hackers', 'HackerController@index');
 
 Route::get('/sponsors/{type}/{name}', 'SponsorController@index')->name('sponsors')
-->where(['name' => 'khaoscontrol|epixmedia', 'type'=>'silver|gold']);
+->where(['name' => 'khaoscontrol|epixmedia|cooperpress', 'type'=>'silver|gold']);
 Route::get('/partners', 'PartnersController@index');
 
 Auth::routes();

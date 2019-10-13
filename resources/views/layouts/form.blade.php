@@ -14,7 +14,7 @@
     <!-- Styles -->
     <link rel="home" href="2019.lincolnhack.org" />
     <link rel="stylesheet" href="../../css/bootstrap.css?v={{$cssVersion}}">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <!-- Scripts -->

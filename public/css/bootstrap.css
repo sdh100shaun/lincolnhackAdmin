@@ -6557,6 +6557,7 @@ footer img {
 .attendee-location img {
   height: 4em;
   width: auto;
+  padding: 0.4em;
 }
 .sponsor-list {
   flex-direction: column;

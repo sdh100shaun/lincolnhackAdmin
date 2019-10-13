@@ -54,6 +54,6 @@
     ga('send', 'pageview');
 
 </script>
-<link rel="stylesheet" href="css/app.css">
+
 </body>
 </html>

@@ -44,6 +44,8 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 attendee-location">
+                    <img src="/images/assets/mosiac.svg" alt="Mosaic digital hub" class=""/>
+                    <br />Mosaic Digital Hub, Thomas Parker House , Silver Street , Lincoln LN2 1JZ
                     <br/>
                     <span>&nbsp;Contact us at hello@lincolnhack.org or @techlincs</span>
                 </div>
@@ -72,12 +74,7 @@
                 <li>><a href="../../sponsors/gold/epixmedia"><img src="../../images/assets/sponsors/epix-logo.svg"
                                                                   alt="Expix Media"/></a>
                 </li>
-                <li><a href="../../sponsors/gold/scholarpack"><img src="../../images/assets/sponsors/scholarpack.svg"
-                                                                   alt="Recap.io"/></a>
-                </li>
-                <li><a href="../../sponsors/gold/recap"><img src="../../images/assets/sponsors/recap-io.svg"
-                                                             alt="Recap.io"/></a>
-                </li>
+
 
             </ul>
 
@@ -85,13 +82,8 @@
             <p> Also please check out our <a href="../../sponsors/silver/cooperpress">Silver sponsors</a> , without
                 which the event would not happen.</p>
             <div class="flex-container text-center">
-                <div class="flex-item">
-                    <img width="150px" src="/images/assets/sponsors/streetsheaver.svg" alt="Streets Heaver"/>
-                </div>
-                <div class="flex-item"><img width="150px" src="../../images/assets/sponsors/selenity.svg"
-                                            alt="Selenity"/>
-                </div>
-                <div class="flex-item"><img width="150px" src="../../images/assets/sponsors/cooperpress.svg"
+
+                <div class="flex-item"><img width="350px" src="../../images/assets/sponsors/cooperpress.svg"
                                             alt="Cooper Press"/>
                 </div>
 
@@ -101,4 +93,5 @@
     </div>
 </div>
 @include('partials.footer')
+@include('partials.scripts')
 @endsection
