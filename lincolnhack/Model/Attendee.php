@@ -57,5 +57,19 @@ class Attendee extends Model
         }
         return $self;
     }
-    
+
+    public function addYear(array $data)
+    {
+        $data['year'] == '2019';
+        return $data;
+    }
+
+
+    public function setAttendeeId($email)
+    {
+        $this->attendeeId = $email;
+    }
+
+
+
 }
