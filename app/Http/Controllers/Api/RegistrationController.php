@@ -45,4 +45,6 @@ class RegistrationController extends Controller
         $attendee->save();
         return response()->json(array("registered"=>$state));
     }
+
+
 }
