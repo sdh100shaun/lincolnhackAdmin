@@ -64,18 +64,25 @@
 			return {
 			    terms: "",
 				showThanks: false,
-				submissionURL: null,
+				submissionURL: "/api/attend",
 				registerForm: [
 					{
-						label: 'Name',
-						name: 'name',
+						label: 'First Name',
+						name: 'firstName',
 						type: 'input',
 						value: null,
 						rules: 'required'
 					},
+                    {
+                        label: 'Last Name',
+                        name: 'lastName',
+                        type: 'input',
+                        value: null,
+                        rules: 'required'
+                    },
 					{
 						label: 'email',
-						name: 'email',
+						name: 'attendeeId',
 						type: 'input',
 						value: null,
 						rules: 'required|email',
