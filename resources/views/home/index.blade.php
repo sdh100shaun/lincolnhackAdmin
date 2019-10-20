@@ -296,6 +296,7 @@
 
                                 <li><a href="../../sponsors/silver/mosaic"><img src="/images/assets/sponsors/mosaic.svg" alt="learn more about Mosaic Digital Hub" /></a> </li>
 
+                                <li><a href="../../sponsors/silver/reaper"><img src="/images/assets/sponsors/reaperlogo.svg" alt="learn more about Reaper Miniatures" /></a> </li>
 
                             </ul>
 
