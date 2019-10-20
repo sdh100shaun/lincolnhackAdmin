@@ -311,12 +311,12 @@
 
                         <div class="body">
                             <ul class="list-unstyled">
-                                <li><a href="../../partners/wit"><img src="/images/assets/sponsors/wit-lincs.svg" alt="learn more about Women in Technology Lincoln" /></a> </li>
+                                <li><a href="../../partners#witlincs"><img src="/images/assets/sponsors/wit-lincs.svg" alt="learn more about Women in Technology Lincoln" /></a> </li>
 
-                                <li><a href="../../partners/businesslincolnshire"><img src="/images/assets/sponsors/bl.svg" alt="learn more about Business Lincolnshire " /></a> </li>
+                                <li><a href="../../partners#businesslincolnshire"><img src="/images/assets/sponsors/bl.svg" alt="learn more about Business Lincolnshire " /></a> </li>
 
 
-                                <li><a href="https://www.lincolnsciencepark.co.uk/"><img src="/images/assets/sponsors/lsip.svg" alt="learn more about Lincoln Science and Innovation park " /></a> </li>
+                                <li><a href="../../partners#lsip"><img src="/images/assets/sponsors/lsip.svg" alt="learn more about Lincoln Science and Innovation park " /></a> </li>
 
 
                             </ul>

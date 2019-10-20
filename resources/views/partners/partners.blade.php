@@ -10,8 +10,27 @@
     </div>
 
 
+    <div class="row " id="witlincs">
 
-    <div class="row ">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <a href="#"><img width="350px" src="/images/assets/sponsors/wit-lincs.svg" alt=""/></a>
+
+
+            </div>
+            <div class="col-sm-5 col-sm-offset-1">
+                <p>Women in Tech Lincoln has always been very supportive of Lincolnhack
+                </p>
+                <p>Women in tech and Digital Lincoln work together to promote the inclusion of women in Lincolnshire technology businesses.</p>
+                <p>Lincoln Hack encourages all to attend regardless of gender identity it is a great place for learning and engaging with the local technical community.</p>
+                <p></p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row " id="lsip">
+        <hr/>
         <div class="col-sm-12">
             <div class="col-sm-6">
                 <a href="#"><img width="250px" src="/images/assets/sponsors/lsip.svg" alt=""/></a>
@@ -32,7 +51,7 @@
 
     </div>
 
-    <div class="row ">
+    <div class="row" id="businesslincolnshire">
         <hr/>
         <div class="col-sm-12">
             <div class="col-sm-6">
@@ -55,25 +74,7 @@
 
     </div>
 
-    <div class="row ">
-        <hr/>
-        <div class="col-sm-12">
-            <div class="col-sm-6">
-                <a href="#"><img class="uni" width="350px" src="/images/assets/sponsors/soc.svg" alt=""/></a>
 
-
-            </div>
-            <div class="col-sm-5 col-sm-offset-1">
-                <p>The University of Lincoln Computer Science department has always been very supportive of Lincolnhack
-                </p>
-                <p>Their technical staff have provided support behind the scenes as well as promoting the event to the Computer Science students, Engineering students and the wider Science and Arts colleges and faculties.</p>
-                <p>Lincoln Hack encourages students to attend it is a great place for learning and engaging with the local technical community.</p>
-                <p><a href="https://www.lincoln.ac.uk/home/socs/">https://www.lincoln.ac.uk/home/socs/</a></p>
-            </div>
-        </div>
-
-
-    </div>
 
 
     <div class="row" id="friends">
@@ -90,13 +91,6 @@
                 <a href="https://cursor.co.uk"><img src="../../images/assets/cursor.png" alt="Cursor"/></a>
                 <a href="https://phpminds.org"><img src="../../images/assets/phpminds.svg"
                                                     alt="PHPMinds Usergroup"/></a>
-                <a href="https://hack24.co.uk"><img src="../../images/assets/hack-24-logo.png"
-                                                    alt="Hack24 Hackathon"/></a>
-                <a href="https://rebelrecruiters.co.uk"><img src="../../images/assets/rebel.svg"
-                                                             alt="Rebel Recruiters "/></a>
-
-                <a href="https://littlewarden.com"><img src="../../images/assets/Little-warden-logo.svg"
-                                                             alt="Little Warden "/></a>
 
 
             </div>
