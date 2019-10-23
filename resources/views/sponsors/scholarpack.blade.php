@@ -39,8 +39,7 @@
                 <p>The ScholarPack  challenge this year will be:</p>
                 <blockquote>
                     <strong>Schools of the futures</strong>
-                        <p>Increasingly schools are being pushed financially. They are looking to streamline internal communications and processes, whilst parents are expecting increasing engagement. Produce something to allow schools to
-                            make better use of technology to engage with parents, teachers and/or pupils</p>
+                        <p>announced soon</p>
                 </blockquote>
 
             </div>
