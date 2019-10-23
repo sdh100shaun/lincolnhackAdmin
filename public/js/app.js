@@ -4345,12 +4345,16 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "attendance",
   data: function data() {
     return {
-      showThanks: false,
+      formState: 'showForm',
       submissionURL: null,
       registerForm: [{
         label: 'Name',
@@ -4516,9 +4520,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               case 24:
                 axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(this.submissionURL, formData).then(function (response) {
-                  _this.showThanks = true;
+                  _this.formState = 'showThanks';
                 })["catch"](function (error) {
-                  console.log(error);
+                  _this.formState = 'showError';
                 });
                 _context.next = 28;
                 break;
@@ -89107,7 +89111,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    !_vm.showThanks
+    _vm.formState == "showForm"
       ? _c("div", [
           _vm._m(0),
           _vm._v(" "),
@@ -89329,7 +89333,7 @@ var render = function() {
                                                   _vm._v(
                                                     " " +
                                                       _vm._s(field.name) +
-                                                      "\n                                "
+                                                      "\n                                    "
                                                   )
                                                 ]),
                                                 _vm._v(" "),
@@ -89458,7 +89462,7 @@ var render = function() {
                                                   attrs: { type: "checkbox" }
                                                 }),
                                                 _vm._v(
-                                                  "\n                                        I agree to the "
+                                                  "\n                                            I agree to the "
                                                 ),
                                                 _c(
                                                   "a",
@@ -89506,7 +89510,7 @@ var render = function() {
                       ],
                       null,
                       false,
-                      2712888650
+                      2137976394
                     )
                   }),
                   _vm._v(" "),
@@ -89545,7 +89549,11 @@ var render = function() {
             ])
           ])
         ])
-      : _c("div", [_vm._m(2)])
+      : _vm._e(),
+    _vm._v(" "),
+    (_vm.formState = "showThanks") ? _c("div", [_vm._m(2)]) : _vm._e(),
+    _vm._v(" "),
+    (_vm.formState = "showError") ? _c("div", [_vm._m(3)]) : _vm._e()
   ])
 }
 var staticRenderFns = [
@@ -89579,11 +89587,11 @@ var staticRenderFns = [
         ),
         _c("br"),
         _vm._v(
-          "\n                            Information is shared on a need to know basis (eg - the Chef will need to know of allergies)"
+          "\n                                Information is shared on a need to know basis (eg - the Chef will need to know of allergies)"
         ),
         _c("br"),
         _vm._v(
-          "\n                            If you have any questions, please "
+          "\n                                If you have any questions, please "
         ),
         _c("a", { attrs: { href: "mailto:hello@lincolnhack.org" } }, [
           _vm._v("contact us.")
@@ -89598,6 +89606,18 @@ var staticRenderFns = [
     return _c("p", { staticClass: "text-center" }, [
       _c("strong", [
         _vm._v("Thanks - We look forward to meeting you on 16th November!")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-center" }, [
+      _c("strong", [
+        _vm._v(
+          "This email has already been registered - - We look forward to meeting you on 16th November!"
+        )
       ])
     ])
   }
