@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-if="!showThanks">
+        <div v-if="formState == 'showForm'">
             <div class="important text-center">
                 <p><strong>We're looking forward meeting you at the hack!</strong></p>
 
@@ -55,9 +55,13 @@
             </div>
         </div>
 
-        <div v-else>
+        <div v-if="formState = 'showThanks'">
             <p class="text-center"><strong>Thanks - We look forward to meeting you on 16th November!</strong></p>
         </div>
+
+		<div v-if="formState = 'showError'">
+            <p class="text-center"><strong>This email has already been registered - - We look forward to meeting you on 16th November!</strong></p>
+		</div>
 
     </div>
 </template>
@@ -68,7 +72,7 @@
 		name: "attendance",
 		data () {
 			return {
-				showThanks: false,
+				formState: 'showForm',
 				submissionURL: null,
 				registerForm: [
 					{
@@ -179,10 +183,10 @@
 					}
 					axios.post(this.submissionURL, formData)
 						.then((response) => {
-							this.showThanks = true
+							this.formState = 'showThanks'
 						})
 						.catch((error) => {
-							console.log(error)
+							this.formState = 'showError'
 						})
 				} else {
 					alert('Oops! Missing some information - please check form')
