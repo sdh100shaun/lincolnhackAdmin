@@ -38,8 +38,8 @@
                     up for some fun and lively discussion. We are super excited about their challenge. </p>
                 <p>The ScholarPack  challenge this year will be:</p>
                 <blockquote>
-                    <strong>Schools of the futures</strong>
-                        <p>announced soon</p>
+                    <strong>announced soon</strong>
+                        <p></p>
                 </blockquote>
 
             </div>
