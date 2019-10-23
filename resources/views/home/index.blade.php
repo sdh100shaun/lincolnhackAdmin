@@ -294,9 +294,9 @@
 
                                 <li><a href="../../sponsors/silver/cooperpress"><img src="/images/assets/sponsors/cooperpress.svg" alt="learn more about CooperPress" /></a> </li>
 
-                                <li><a href="../../sponsors/silver/mosaic"><img src="/images/assets/sponsors/mosaic.svg" alt="learn more about Mosaic Digital Hub" /></a> </li>
+                                <li><a href="../../sponsors/silver/businesslincolnshire"><img src="/images/assets/sponsors/bl.svg" alt="learn more about Business Lincolnshire " /></a> </li>
 
-                                <li><a href="../../sponsors/silver/reaper"><img src="/images/assets/sponsors/reaperlogo.svg" alt="learn more about Reaper Miniatures" /></a> </li>
+                                <li><a href="../../sponsors/silver/reapermini"><img src="/images/assets/sponsors/reaperlogo.svg" alt="learn more about Reaper Miniatures" /></a> </li>
 
                             </ul>
 
@@ -313,8 +313,7 @@
                             <ul class="list-unstyled">
                                 <li><a href="../../partners#witlincs"><img src="/images/assets/sponsors/wit-lincs.svg" alt="learn more about Women in Technology Lincoln" /></a> </li>
 
-                                <li><a href="../../partners#businesslincolnshire"><img src="/images/assets/sponsors/bl.svg" alt="learn more about Business Lincolnshire " /></a> </li>
-
+                                <li><a href="../../partners#mosaic"><img src="/images/assets/sponsors/mosaic.svg" alt="learn more about Mosaic Digital Hub" /><br/> and Lincolnshire Coop </a> </li>
 
                                 <li><a href="../../partners#lsip"><img src="/images/assets/sponsors/lsip.svg" alt="learn more about Lincoln Science and Innovation park " /></a> </li>
 

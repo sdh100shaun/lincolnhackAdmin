@@ -51,22 +51,23 @@
 
     </div>
 
-    <div class="row" id="businesslincolnshire">
+    <div class="row" id="mosaic">
         <hr/>
         <div class="col-sm-12">
             <div class="col-sm-6">
-                <a href="https://www.businesslincolnshire.com/"><img width="250px" src="/images/assets/sponsors/bl.svg" alt=""/></a>
+                <a href="https://www.mosaiclincoln.co.uk/"><img width="250px" src="/images/assets/sponsors/mosaic.svg" alt=""/></a>
 
 
             </div>
             <div class="col-sm-5 col-sm-offset-1">
                 <p>
-                    Business Lincolnshire are proud supporters of Digital Lincoln and Lincolnhack.
+                    Mosaic has been developed collaboratively by the digital community in Lincoln, working together with Lincolnshire Co-op and Lincolnshire County Council. We really wanted to bring different digital and tech businesses together under one roof to develop, innovate and collaborate – we can’t wait to see what happens!
+
+                    There are lots of benefits from working at Mosaic, from flexible working space to private offices, all designed with growing tech and digital businesses in mind. Mosaic is located in the heart of Lincoln city centre at the extensively refurbished Thomas Parker House on Free School Lane.
                 </p>
 
-                    Their Digital Support programme is designed to help small and medium sized businesses to develop their use of digital technology. The Business Lincolnshire Growth Hub aims to recognise the growing contribution that the digital sector is making to the region’s economy.</p>
 
-                <p><a href="https://www.businesslincolnshire.com">https://www.businesslincolnshire.com</a></p>
+                <p><a href="https://www.mosaiclincoln.co.uk/">https://www.mosaiclincoln.co.uk/</a></p>
 
             </div>
         </div>

@@ -6317,6 +6317,19 @@ header > div > .navbar-header button:hover span:nth-child(3) {
 .sponsor-page h5.scholar {
   color: #3382ff;
 }
+.sponsor-page h5.wealthkernel {
+  color: #000000;
+}
+.sponsor-page h5.streetsheaver {
+  color: #B18DC1;
+}
+.sponsor-page h5.rebel {
+  color: #DF2B5A;
+}
+.sponsor-page img.streetsheaver-logo {
+  width: 2em;
+  margin: auto;
+}
 .partner-page .col-sm-6 {
   text-align: center;
 }
