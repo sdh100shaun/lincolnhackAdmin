@@ -11,7 +11,7 @@
             <div class="col-sm-12">
                 <div class="center-block sponsor-page">
 
-                    <img width="95%" src="../../images/assets/sponsors/epix-logo.svg" alt="Epix Media" />
+                    <img width="95%" src="../../images/assets/sponsors/wealthkernel.svg" alt="WealthKernel" />
                 </div>
             <hr />
             </div>
@@ -22,24 +22,19 @@
         <div class="row">
             <div class="col-sm-6">
 
-                <p>Epix Media are a crack unit of awarding-winning creatives that work together across a range of specialisms. As a result, they craft beautiful and bespoke creative campaigns. Basically, they produce results that you will love!
-
-                They are all about relationships at Epix. The team will keep you up-to-date at every stage of a project. They encourage all kinds of questions (no matter how silly you think they are). They always meet deadlines, more often than not delivering ahead of schedule.
-                If you need creativity then call Epix Media.</p>
+                <p>WealthKernel provide core technology, compliance solutions, market access and custody services to businesses in a modular and convenient manner. We are replacing the traditional, bloated and sluggish infrastructure by utilizing the latest technology whichis  implemented and distributed via our RESTful APIs. We treat the various financial services on our platform as building blocks, which our partners can mix and match to create a digital experience specifically tailored to their needs.</p>
+                <p>Our goal is to provide the technology that businesses need to develop a financial offering that allows everyday people the opportunity to get started with investing.We believe that these types of services that encourage financial wellbeing should be easily accessible to everyone, not just a select few.
+                </p>
             </div>
 
             <div class="col-sm-5 col-sm-offset-1">
-                <h5 class="epix"> The Epix Media Challenge </h5>
+                <h5 class="wealthkernel"> The WealthKernel Challenge </h5>
 
-                <p>The great people at Epix Media have sponsored Lincolnhack since it's inception
-                 always attending, competing and they really know how to help make the hack fun, previously
-                    setting challenges such as "The utterly useless hack". So they are sure to provide hackers
-                    with a great challenge.
-                </p>
-                <p>The Epix media challenge this year will be:</p>
+
+                <p>The WealthKernel challenge this year will be:</p>
                 <blockquote>
                     <strong>
-                        announced soon</strong>
+                       announced soon</strong>
                     <p></p>
                 </blockquote>
             </div>
@@ -47,8 +42,8 @@
         <div class="row">
             <div class="col-sm-6">
 
-                <p><a href="https://www.epixmedia.co.uk">
-                        Find out more at http://www.epixmedia.co.uk
+                <p><a href="https://www.wealthkernel.com">
+                        Find out more at http://www.wealthkernel.com
                     </a></p>
             </div>
 

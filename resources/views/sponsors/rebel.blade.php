@@ -11,9 +11,9 @@
             <div class="col-sm-12">
                 <div class="center-block sponsor-page">
 
-                    <img width="95%" src="../../images/assets/sponsors/epix-logo.svg" alt="Epix Media" />
+                    <img width="95%" src="../../images/assets/sponsors/rebel.svg" alt="Rebel Recuitment" />
                 </div>
-            <hr />
+                <hr />
             </div>
         </div>
     </div>
@@ -22,21 +22,15 @@
         <div class="row">
             <div class="col-sm-6">
 
-                <p>Epix Media are a crack unit of awarding-winning creatives that work together across a range of specialisms. As a result, they craft beautiful and bespoke creative campaigns. Basically, they produce results that you will love!
-
-                They are all about relationships at Epix. The team will keep you up-to-date at every stage of a project. They encourage all kinds of questions (no matter how silly you think they are). They always meet deadlines, more often than not delivering ahead of schedule.
-                If you need creativity then call Epix Media.</p>
+                <p> A bunch of recruitment free-thinkers who had enough with the traditional recruitment agency mould, so they decided to break it.
+                    No short-cuts. No annoying sales calls. Just personable, detail-oriented, professional recruiters who build long-term relationships and deliver great results.</p>
             </div>
 
             <div class="col-sm-5 col-sm-offset-1">
-                <h5 class="epix"> The Epix Media Challenge </h5>
+                <h5 class="rebel"> The Rebel Recruiters Challenge </h5>
 
-                <p>The great people at Epix Media have sponsored Lincolnhack since it's inception
-                 always attending, competing and they really know how to help make the hack fun, previously
-                    setting challenges such as "The utterly useless hack". So they are sure to provide hackers
-                    with a great challenge.
-                </p>
-                <p>The Epix media challenge this year will be:</p>
+
+                <p>The Rebel Recruiters challenge this year will be:</p>
                 <blockquote>
                     <strong>
                         announced soon</strong>
@@ -47,8 +41,8 @@
         <div class="row">
             <div class="col-sm-6">
 
-                <p><a href="https://www.epixmedia.co.uk">
-                        Find out more at http://www.epixmedia.co.uk
+                <p><a href="https://www.rebelrecruiters.co.uk">
+                        Find out more at https://www.rebelrecruiters.co.uk
                     </a></p>
             </div>
 
@@ -72,4 +66,4 @@
         </div>
     </div>
 </div>
- @include('partials.footer')
+@include('partials.footer')
