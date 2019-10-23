@@ -11,7 +11,8 @@
             <div class="col-sm-12">
                 <div class="center-block sponsor-page">
 
-                    <img class="streetsheaver-logo" src="../../images/assets/sponsors/streetsheaver.svg" alt="Streets Heaver" />
+                    <span class="streetsheaver-logo"><img  src="../../images/assets/sponsors/streetsheaver.svg" alt="Streets Heaver" /></span>
+
                 </div>
                 <hr />
             </div>
