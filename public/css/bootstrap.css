@@ -6582,6 +6582,10 @@ footer img {
   width: auto;
   padding: 0.4em;
 }
+.attendee-form {
+  text-align: left;
+  margin: auto;
+}
 .sponsor-list {
   flex-direction: column;
 }

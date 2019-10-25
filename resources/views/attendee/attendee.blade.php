@@ -27,8 +27,8 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
+        <div class="row attendee-form">
+            <div class="col-sm-12 col-md-6 col-md-offset-3">
                 <attendance/>
             </div>
         </div>

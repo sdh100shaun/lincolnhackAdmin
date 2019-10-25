@@ -6,7 +6,7 @@
 
                 <p>Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person.<br><strong>This is your confirmation of attendance.</strong> Without this information we may not be able to register you.</p>
             </div>
-            <hr>
+            <hr />
             <div class="columns">
                 <div class="column is-4 is-offset-4">
                     <div>
