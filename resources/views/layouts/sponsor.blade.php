@@ -11,11 +11,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Lincoln Hack 2018 </title>
+    <title> Lincoln Hack 2019 </title>
 
     <meta name="description" content="LincolnHack is a free 24 hour coding competition where teams of up to four people compete for fantastic prizes" />
 
-    <meta property="og:title" content="Lincoln Hack 2018 "/>
+    <meta property="og:title" content="Lincoln Hack 2019 "/>
 
     <meta property="og:description" content="LincolnHack is a free 24 hour coding competition where teams of up to four people compete for fantastic prizes"/>
 
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <link rel="home" href="2018.lincolnhack.org" />
-    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css?v=2">
 </head>
 <body>
 

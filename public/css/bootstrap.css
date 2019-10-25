@@ -6176,6 +6176,7 @@ header > div > .navbar-header button:hover span:nth-child(3) {
 .sponsors .card {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  text-align: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -6220,6 +6221,10 @@ header > div > .navbar-header button:hover span:nth-child(3) {
 .sponsors .card.gold .header {
   background: linear-gradient(0deg, #dfb667 15%, #f9f3e8 100%);
 }
+.sponsors .card.gold li img.streetsheaver {
+  height: 8em;
+  width: auto;
+}
 .sponsors .card.gold .body li {
   background-size: 20px 20px;
 }
@@ -6243,6 +6248,10 @@ header > div > .navbar-header button:hover span:nth-child(3) {
 }
 .sponsors .card.partners .body li {
   background-size: 20px 20px;
+}
+.sponsors .card.partners .body li img {
+  width: 55%;
+  height: auto;
 }
 .sponsors .card.partners .body button {
   background: linear-gradient(0deg, #b14896 15%, #9d479b 100%);
@@ -6308,6 +6317,20 @@ header > div > .navbar-header button:hover span:nth-child(3) {
 }
 .sponsor-page h5.scholar {
   color: #3382ff;
+}
+.sponsor-page h5.wealthkernel {
+  color: #000000;
+}
+.sponsor-page h5.streetsheaver {
+  color: #B18DC1;
+}
+.sponsor-page h5.rebel {
+  color: #DF2B5A;
+}
+.sponsor-page span.streetsheaver-logo {
+  width: 50%;
+  margin: auto;
+  display: block;
 }
 .partner-page .col-sm-6 {
   text-align: center;

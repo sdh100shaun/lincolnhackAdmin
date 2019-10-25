@@ -1,8 +1,14 @@
 <template>
     <div>
-        <div v-if="!showThanks">
-            <div class="row">
-                <div class="col-md-4 col-md-offset-0 col-md-push-4 col-sm-10 col-sm-offset-1">
+        <div>
+            <div class="important text-center">
+                <p><strong>We're looking forward meeting you at the hack!</strong></p>
+
+                <p>Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person.<br><strong>This is your confirmation of attendance.</strong> Without this information we may not be able to register you.</p>
+            </div>
+            <hr>
+            <div class="columns">
+                <div class="column is-4 is-offset-4">
                     <div>
                         <ValidationObserver ref="observer" v-slot="{ invalid }"  @submit.prevent="submit()">
 
@@ -47,9 +53,13 @@
             </div>
         </div>
 
-        <div v-else>
+        <div v-if="formState = 'showThanks'">
             <p class="text-center"><strong>Thanks - We look forward to meeting you on 16th November!</strong></p>
         </div>
+
+		<div v-if="formState = 'showError'">
+            <p class="text-center"><strong>This email has already been registered - - We look forward to meeting you on 16th November!</strong></p>
+		</div>
 
     </div>
 </template>
@@ -62,9 +72,8 @@
 		name: "attendance",
 		data () {
 			return {
-			    terms: "",
-				showThanks: false,
-				submissionURL: "/api/attend",
+				formState: 'showForm',
+				submissionURL: null,
 				registerForm: [
 					{
 						label: 'First Name',
@@ -182,10 +191,10 @@
 					}
 					axios.post(this.submissionURL, formData)
 						.then((response) => {
-							this.showThanks = true
+							this.formState = 'showThanks'
 						})
 						.catch((error) => {
-							console.log(error)
+							this.formState = 'showError'
 						})
 				} else {
 					alert('Oops! Missing some information - please check form')
