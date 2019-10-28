@@ -73,7 +73,8 @@
 		data () {
 			return {
 				formState: 'showForm',
-				submissionURL: null,
+                terms: null,
+				submissionURL: '../../attendee',
 				registerForm: [
 					{
 						label: 'First Name',

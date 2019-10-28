@@ -4353,7 +4353,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   data: function data() {
     return {
       formState: 'showForm',
-      submissionURL: null,
+      terms: null,
+      submissionURL: '../../attendee',
       registerForm: [{
         label: 'First Name',
         name: 'firstName',
@@ -102678,9 +102679,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Volumes/Development/lincolnhack/lincolnhack-admin/resources/assets/js/app.js */"./resources/assets/js/app.js");
-__webpack_require__(/*! /Volumes/Development/lincolnhack/lincolnhack-admin/resources/assets/less/bootstrap.less */"./resources/assets/less/bootstrap.less");
-module.exports = __webpack_require__(/*! /Volumes/Development/lincolnhack/lincolnhack-admin/resources/assets/sass/app.scss */"./resources/assets/sass/app.scss");
+__webpack_require__(/*! /Volumes/Dev/Projects/personal/lincolnhackAdmin/resources/assets/js/app.js */"./resources/assets/js/app.js");
+__webpack_require__(/*! /Volumes/Dev/Projects/personal/lincolnhackAdmin/resources/assets/less/bootstrap.less */"./resources/assets/less/bootstrap.less");
+module.exports = __webpack_require__(/*! /Volumes/Dev/Projects/personal/lincolnhackAdmin/resources/assets/sass/app.scss */"./resources/assets/sass/app.scss");
 
 
 /***/ })

@@ -17,7 +17,7 @@ Route::get('/', function () {
 Route::get('/hackers', 'HackerController@index');
 
 Route::get('/sponsors/{type}/{name}', 'SponsorController@index')->name('sponsors')
-->where(['name' => 'khaoscontrol|epixmedia|cooperpress', 'type'=>'silver|gold']);
+->where(['name' => 'khaoscontrol|epixmedia|cooperpress|streetsheaver|wealthkernel|rebel|scholarpack', 'type'=>'silver|gold']);
 Route::get('/partners', 'PartnersController@index');
 
 Auth::routes();
@@ -29,6 +29,11 @@ Route::get('/countdown','CountdownController@index');
 Route::resource('attendee', 'AttendeeController', ['except' => [
     'destroy'
 ]]);
+
+Route::resource('attendee', 'AttendeeController', ['except' => [
+    'destroy'
+]]);
+Route::post('/attendee','Api\AttendController@save')->name('confirm');
 
 Route::resource('winners', 'WinnersController', ['except' => [
     'destroy'

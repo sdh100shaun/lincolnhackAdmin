@@ -69,13 +69,15 @@
         <div class="col-md-4 col-md-offset-0 col-md-push-4 col-sm-10 col-sm-offset-1">
 
             <ul class="list-unstyled sponsor-list">
-                <li><a href="../../sponsors/gold/khaoscontrol"><img
-                                src="/images/assets/sponsors/KC_Square_black_text.svg" alt="Khaos Control"/></a></li>
-                <li>><a href="../../sponsors/gold/epixmedia"><img src="../../images/assets/sponsors/epix-logo.svg"
-                                                                  alt="Expix Media"/></a>
-                </li>
+                @foreach($sponsors as $sponsor)
+                    <li><a href="../../sponsors/gold/{{$sponsor->name}}" title="{{$sponsor->name}}">
+                            <img class="img-responsive center-block"
+                                 src="../../images/assets/sponsors/{{$sponsor->name}}.svg" alt="{{$sponsor->name}}"
+                                 width="50%" height="50%"/>
+                        </a>
 
-
+                        </li>
+                @endforeach
             </ul>
 
 
