@@ -343,7 +343,7 @@ $(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Volumes/Development/lincolnhack/lincolnhack-admin/resources/assets/js/scripts.js */"./resources/assets/js/scripts.js");
+module.exports = __webpack_require__(/*! /Volumes/Dev/Projects/personal/lincolnhackAdmin/resources/assets/js/scripts.js */"./resources/assets/js/scripts.js");
 
 
 /***/ })

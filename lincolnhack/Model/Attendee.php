@@ -60,7 +60,7 @@ class Attendee extends Model
 
     public function addYear(array $data)
     {
-        $data['year'] == '2019';
+        $data['year'] = '2019';
         return $data;
     }
 
