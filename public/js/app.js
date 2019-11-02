@@ -4347,6 +4347,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "attendance",
@@ -89116,372 +89119,427 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", [
-      _vm._m(0),
-      _vm._v(" "),
-      _c("hr"),
-      _vm._v(" "),
-      _c("div", { staticClass: "columns" }, [
-        _c("div", { staticClass: "column is-4 is-offset-4" }, [
-          _c(
-            "div",
-            [
-              _c("ValidationObserver", {
-                ref: "observer",
-                on: {
-                  submit: function($event) {
-                    $event.preventDefault()
-                    return _vm.submit()
-                  }
-                },
-                scopedSlots: _vm._u([
-                  {
-                    key: "default",
-                    fn: function(ref) {
-                      var invalid = ref.invalid
-                      return [
-                        _vm._l(_vm.registerForm, function(field) {
-                          return _c(
-                            "div",
-                            {
-                              key: field.name,
-                              class: _vm.fieldClass(field.type)
-                            },
-                            [
-                              _c("ValidationProvider", {
-                                attrs: { rules: field.rules, name: field.name },
-                                scopedSlots: _vm._u(
+    _vm.formState === "showForm"
+      ? _c("div", [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("hr"),
+          _vm._v(" "),
+          _c("div", { staticClass: "columns" }, [
+            _c("div", { staticClass: "column is-4 is-offset-4" }, [
+              _c(
+                "div",
+                [
+                  _c("ValidationObserver", {
+                    ref: "observer",
+                    on: {
+                      submit: function($event) {
+                        $event.preventDefault()
+                        return _vm.submit()
+                      }
+                    },
+                    scopedSlots: _vm._u(
+                      [
+                        {
+                          key: "default",
+                          fn: function(ref) {
+                            var invalid = ref.invalid
+                            return [
+                              _vm._l(_vm.registerForm, function(field) {
+                                return _c(
+                                  "div",
+                                  {
+                                    key: field.name,
+                                    class: _vm.fieldClass(field.type)
+                                  },
                                   [
-                                    {
-                                      key: "default",
-                                      fn: function(ref) {
-                                        var errors = ref.errors
-                                        return [
-                                          field.type !== "checkbox"
-                                            ? _c(
-                                                "label",
-                                                { staticClass: "label" },
-                                                [
-                                                  _vm._v(
-                                                    _vm._s(field.label) + " "
-                                                  ),
-                                                  field.subLabel
-                                                    ? _c("small", [
+                                    _c("ValidationProvider", {
+                                      attrs: {
+                                        rules: field.rules,
+                                        name: field.name
+                                      },
+                                      scopedSlots: _vm._u(
+                                        [
+                                          {
+                                            key: "default",
+                                            fn: function(ref) {
+                                              var errors = ref.errors
+                                              return [
+                                                field.type !== "checkbox"
+                                                  ? _c(
+                                                      "label",
+                                                      { staticClass: "label" },
+                                                      [
                                                         _vm._v(
-                                                          _vm._s(field.subLabel)
+                                                          _vm._s(field.label) +
+                                                            " "
+                                                        ),
+                                                        field.subLabel
+                                                          ? _c("small", [
+                                                              _vm._v(
+                                                                _vm._s(
+                                                                  field.subLabel
+                                                                )
+                                                              )
+                                                            ])
+                                                          : _vm._e()
+                                                      ]
+                                                    )
+                                                  : _vm._e(),
+                                                _vm._v(" "),
+                                                field.type === "input"
+                                                  ? _c("input", {
+                                                      directives: [
+                                                        {
+                                                          name: "model",
+                                                          rawName: "v-model",
+                                                          value: field.value,
+                                                          expression:
+                                                            "field.value"
+                                                        }
+                                                      ],
+                                                      staticClass:
+                                                        "form-control",
+                                                      attrs: {
+                                                        type: "text",
+                                                        placeholder:
+                                                          field.placeholder
+                                                      },
+                                                      domProps: {
+                                                        value: field.value
+                                                      },
+                                                      on: {
+                                                        input: function(
+                                                          $event
+                                                        ) {
+                                                          if (
+                                                            $event.target
+                                                              .composing
+                                                          ) {
+                                                            return
+                                                          }
+                                                          _vm.$set(
+                                                            field,
+                                                            "value",
+                                                            $event.target.value
+                                                          )
+                                                        }
+                                                      }
+                                                    })
+                                                  : _vm._e(),
+                                                _vm._v(" "),
+                                                field.type === "textarea"
+                                                  ? _c("textarea", {
+                                                      directives: [
+                                                        {
+                                                          name: "model",
+                                                          rawName: "v-model",
+                                                          value: field.value,
+                                                          expression:
+                                                            "field.value"
+                                                        }
+                                                      ],
+                                                      staticClass:
+                                                        "form-control",
+                                                      attrs: {
+                                                        placeholder:
+                                                          field.placeholder
+                                                      },
+                                                      domProps: {
+                                                        value: field.value
+                                                      },
+                                                      on: {
+                                                        input: function(
+                                                          $event
+                                                        ) {
+                                                          if (
+                                                            $event.target
+                                                              .composing
+                                                          ) {
+                                                            return
+                                                          }
+                                                          _vm.$set(
+                                                            field,
+                                                            "value",
+                                                            $event.target.value
+                                                          )
+                                                        }
+                                                      }
+                                                    })
+                                                  : _vm._e(),
+                                                _vm._v(" "),
+                                                field.type === "select"
+                                                  ? _c(
+                                                      "select",
+                                                      {
+                                                        directives: [
+                                                          {
+                                                            name: "model",
+                                                            rawName: "v-model",
+                                                            value: field.value,
+                                                            expression:
+                                                              "field.value"
+                                                          }
+                                                        ],
+                                                        staticClass:
+                                                          "form-control",
+                                                        on: {
+                                                          change: function(
+                                                            $event
+                                                          ) {
+                                                            var $$selectedVal = Array.prototype.filter
+                                                              .call(
+                                                                $event.target
+                                                                  .options,
+                                                                function(o) {
+                                                                  return o.selected
+                                                                }
+                                                              )
+                                                              .map(function(o) {
+                                                                var val =
+                                                                  "_value" in o
+                                                                    ? o._value
+                                                                    : o.value
+                                                                return val
+                                                              })
+                                                            _vm.$set(
+                                                              field,
+                                                              "value",
+                                                              $event.target
+                                                                .multiple
+                                                                ? $$selectedVal
+                                                                : $$selectedVal[0]
+                                                            )
+                                                          }
+                                                        }
+                                                      },
+                                                      _vm._l(
+                                                        field.options,
+                                                        function(option) {
+                                                          return _c(
+                                                            "option",
+                                                            { key: option },
+                                                            [
+                                                              _vm._v(
+                                                                _vm._s(option)
+                                                              )
+                                                            ]
+                                                          )
+                                                        }
+                                                      ),
+                                                      0
+                                                    )
+                                                  : _vm._e(),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "p",
+                                                  {
+                                                    staticClass:
+                                                      "help-block text-warning"
+                                                  },
+                                                  [
+                                                    _vm._v(
+                                                      _vm._s(
+                                                        _vm.removeHyphens(
+                                                          errors[0]
                                                         )
-                                                      ])
-                                                    : _vm._e()
-                                                ]
-                                              )
-                                            : _vm._e(),
-                                          _vm._v(" "),
-                                          field.type === "input"
-                                            ? _c("input", {
-                                                directives: [
-                                                  {
-                                                    name: "model",
-                                                    rawName: "v-model",
-                                                    value: field.value,
-                                                    expression: "field.value"
-                                                  }
-                                                ],
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "text",
-                                                  placeholder: field.placeholder
-                                                },
-                                                domProps: {
-                                                  value: field.value
-                                                },
-                                                on: {
-                                                  input: function($event) {
-                                                    if (
-                                                      $event.target.composing
-                                                    ) {
-                                                      return
-                                                    }
-                                                    _vm.$set(
-                                                      field,
-                                                      "value",
-                                                      $event.target.value
+                                                      )
                                                     )
-                                                  }
-                                                }
-                                              })
-                                            : _vm._e(),
-                                          _vm._v(" "),
-                                          field.type === "textarea"
-                                            ? _c("textarea", {
-                                                directives: [
-                                                  {
-                                                    name: "model",
-                                                    rawName: "v-model",
-                                                    value: field.value,
-                                                    expression: "field.value"
-                                                  }
-                                                ],
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  placeholder: field.placeholder
-                                                },
-                                                domProps: {
-                                                  value: field.value
-                                                },
-                                                on: {
-                                                  input: function($event) {
-                                                    if (
-                                                      $event.target.composing
-                                                    ) {
-                                                      return
-                                                    }
-                                                    _vm.$set(
-                                                      field,
-                                                      "value",
-                                                      $event.target.value
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                field.info
+                                                  ? _c(
+                                                      "p",
+                                                      { staticClass: "info" },
+                                                      [
+                                                        _vm._v(
+                                                          _vm._s(field.info)
+                                                        )
+                                                      ]
                                                     )
-                                                  }
-                                                }
-                                              })
-                                            : _vm._e(),
-                                          _vm._v(" "),
-                                          field.type === "select"
-                                            ? _c(
-                                                "select",
-                                                {
+                                                  : _vm._e()
+                                              ]
+                                            }
+                                          }
+                                        ],
+                                        null,
+                                        true
+                                      )
+                                    })
+                                  ],
+                                  1
+                                )
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "checkbox" },
+                                [
+                                  _c("ValidationProvider", {
+                                    attrs: {
+                                      rules: "required",
+                                      name: "accept-terms-and-conditions"
+                                    },
+                                    scopedSlots: _vm._u(
+                                      [
+                                        {
+                                          key: "default",
+                                          fn: function(ref) {
+                                            var errors = ref.errors
+                                            return [
+                                              _c("label", [
+                                                _c("input", {
                                                   directives: [
                                                     {
                                                       name: "model",
                                                       rawName: "v-model",
-                                                      value: field.value,
-                                                      expression: "field.value"
+                                                      value: _vm.terms,
+                                                      expression: "terms"
                                                     }
                                                   ],
-                                                  staticClass: "form-control",
+                                                  attrs: {
+                                                    type: "checkbox",
+                                                    name:
+                                                      "accept-terms-and-conditions",
+                                                    value: "1"
+                                                  },
+                                                  domProps: {
+                                                    checked: Array.isArray(
+                                                      _vm.terms
+                                                    )
+                                                      ? _vm._i(_vm.terms, "1") >
+                                                        -1
+                                                      : _vm.terms
+                                                  },
                                                   on: {
                                                     change: function($event) {
-                                                      var $$selectedVal = Array.prototype.filter
-                                                        .call(
-                                                          $event.target.options,
-                                                          function(o) {
-                                                            return o.selected
-                                                          }
-                                                        )
-                                                        .map(function(o) {
-                                                          var val =
-                                                            "_value" in o
-                                                              ? o._value
-                                                              : o.value
-                                                          return val
-                                                        })
-                                                      _vm.$set(
-                                                        field,
-                                                        "value",
-                                                        $event.target.multiple
-                                                          ? $$selectedVal
-                                                          : $$selectedVal[0]
-                                                      )
+                                                      var $$a = _vm.terms,
+                                                        $$el = $event.target,
+                                                        $$c = $$el.checked
+                                                          ? true
+                                                          : false
+                                                      if (Array.isArray($$a)) {
+                                                        var $$v = "1",
+                                                          $$i = _vm._i($$a, $$v)
+                                                        if ($$el.checked) {
+                                                          $$i < 0 &&
+                                                            (_vm.terms = $$a.concat(
+                                                              [$$v]
+                                                            ))
+                                                        } else {
+                                                          $$i > -1 &&
+                                                            (_vm.terms = $$a
+                                                              .slice(0, $$i)
+                                                              .concat(
+                                                                $$a.slice(
+                                                                  $$i + 1
+                                                                )
+                                                              ))
+                                                        }
+                                                      } else {
+                                                        _vm.terms = $$c
+                                                      }
                                                     }
                                                   }
-                                                },
-                                                _vm._l(field.options, function(
-                                                  option
-                                                ) {
-                                                  return _c(
-                                                    "option",
-                                                    { key: option },
-                                                    [_vm._v(_vm._s(option))]
-                                                  )
                                                 }),
-                                                0
-                                              )
-                                            : _vm._e(),
-                                          _vm._v(" "),
-                                          _c(
-                                            "p",
-                                            {
-                                              staticClass:
-                                                "help-block text-warning"
-                                            },
-                                            [
-                                              _vm._v(
-                                                _vm._s(
-                                                  _vm.removeHyphens(errors[0])
+                                                _vm._v(
+                                                  "\n                                            I agree to the "
+                                                ),
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href:
+                                                        "https://hackcodeofconduct.org/",
+                                                      target: "_blank"
+                                                    }
+                                                  },
+                                                  [_vm._v("Code of Conduct")]
                                                 )
+                                              ]),
+                                              _vm._v(" "),
+                                              _c(
+                                                "p",
+                                                {
+                                                  staticClass:
+                                                    "help-block text-warning"
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    _vm._s(
+                                                      _vm.removeHyphens(
+                                                        errors[0]
+                                                      )
+                                                    )
+                                                  )
+                                                ]
                                               )
                                             ]
-                                          ),
-                                          _vm._v(" "),
-                                          field.info
-                                            ? _c("p", { staticClass: "info" }, [
-                                                _vm._v(_vm._s(field.info))
-                                              ])
-                                            : _vm._e()
-                                        ]
-                                      }
-                                    }
-                                  ],
-                                  null,
-                                  true
-                                )
-                              })
-                            ],
-                            1
-                          )
-                        }),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "checkbox" },
-                          [
-                            _c("ValidationProvider", {
-                              attrs: {
-                                rules: "required",
-                                name: "accept-terms-and-conditions"
-                              },
-                              scopedSlots: _vm._u(
-                                [
-                                  {
-                                    key: "default",
-                                    fn: function(ref) {
-                                      var errors = ref.errors
-                                      return [
-                                        _c("label", [
-                                          _c("input", {
-                                            directives: [
-                                              {
-                                                name: "model",
-                                                rawName: "v-model",
-                                                value: _vm.terms,
-                                                expression: "terms"
-                                              }
-                                            ],
-                                            attrs: {
-                                              type: "checkbox",
-                                              name:
-                                                "accept-terms-and-conditions",
-                                              value: "1"
-                                            },
-                                            domProps: {
-                                              checked: Array.isArray(_vm.terms)
-                                                ? _vm._i(_vm.terms, "1") > -1
-                                                : _vm.terms
-                                            },
-                                            on: {
-                                              change: function($event) {
-                                                var $$a = _vm.terms,
-                                                  $$el = $event.target,
-                                                  $$c = $$el.checked
-                                                    ? true
-                                                    : false
-                                                if (Array.isArray($$a)) {
-                                                  var $$v = "1",
-                                                    $$i = _vm._i($$a, $$v)
-                                                  if ($$el.checked) {
-                                                    $$i < 0 &&
-                                                      (_vm.terms = $$a.concat([
-                                                        $$v
-                                                      ]))
-                                                  } else {
-                                                    $$i > -1 &&
-                                                      (_vm.terms = $$a
-                                                        .slice(0, $$i)
-                                                        .concat(
-                                                          $$a.slice($$i + 1)
-                                                        ))
-                                                  }
-                                                } else {
-                                                  _vm.terms = $$c
-                                                }
-                                              }
-                                            }
-                                          }),
-                                          _vm._v(
-                                            "\n                                            I agree to the "
-                                          ),
-                                          _c(
-                                            "a",
-                                            {
-                                              attrs: {
-                                                href:
-                                                  "https://hackcodeofconduct.org/",
-                                                target: "_blank"
-                                              }
-                                            },
-                                            [_vm._v("Code of Conduct")]
-                                          )
-                                        ]),
-                                        _vm._v(" "),
-                                        _c(
-                                          "p",
-                                          {
-                                            staticClass:
-                                              "help-block text-warning"
-                                          },
-                                          [
-                                            _vm._v(
-                                              _vm._s(
-                                                _vm.removeHyphens(errors[0])
-                                              )
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    }
-                                  }
+                                          }
+                                        }
+                                      ],
+                                      null,
+                                      true
+                                    )
+                                  })
                                 ],
-                                null,
-                                true
+                                1
                               )
-                            })
-                          ],
-                          1
-                        )
-                      ]
-                    }
-                  }
-                ])
-              }),
-              _vm._v(" "),
-              _vm._m(1),
-              _vm._v(" "),
-              _c("p", [
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-primary",
-                    on: {
-                      click: function($event) {
-                        return _vm.submit()
-                      }
-                    }
-                  },
-                  [_vm._v("Submit")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-default",
-                    on: {
-                      click: function($event) {
-                        return _vm.cancel()
-                      }
-                    }
-                  },
-                  [_vm._v("Cancel")]
-                )
-              ])
-            ],
-            1
-          )
+                            ]
+                          }
+                        }
+                      ],
+                      null,
+                      false,
+                      2978543431
+                    )
+                  }),
+                  _vm._v(" "),
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("p", [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        on: {
+                          click: function($event) {
+                            return _vm.submit()
+                          }
+                        }
+                      },
+                      [_vm._v("Submit")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-default",
+                        on: {
+                          click: function($event) {
+                            return _vm.cancel()
+                          }
+                        }
+                      },
+                      [_vm._v("Cancel")]
+                    )
+                  ])
+                ],
+                1
+              )
+            ])
+          ])
         ])
-      ])
-    ]),
+      : _vm._e(),
     _vm._v(" "),
-    (_vm.formState = "showThanks") ? _c("div", [_vm._m(2)]) : _vm._e(),
+    _vm.formState === "showThanks"
+      ? _c("div", { staticClass: "alert alert-success" }, [_vm._m(2)])
+      : _vm._e(),
     _vm._v(" "),
-    (_vm.formState = "showError") ? _c("div", [_vm._m(3)]) : _vm._e()
+    _vm.formState === "showError"
+      ? _c("div", { staticClass: "alert alert-warning" }, [_vm._m(3)])
+      : _vm._e()
   ])
 }
 var staticRenderFns = [
@@ -89496,7 +89554,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person."
+          "Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person.Only one email can be registered."
         ),
         _c("br"),
         _c("strong", [_vm._v("This is your confirmation of attendance.")]),
@@ -89541,12 +89599,24 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("p", { staticClass: "text-center" }, [
-      _c("strong", [
+    return _c("span", { staticClass: "text-center" }, [
+      _c("p", [
+        _c("strong", [_vm._v("This email has already been registered ")])
+      ]),
+      _vm._v(" "),
+      _c("p", [
         _vm._v(
-          "This email has already been registered - - We look forward to meeting you on 16th November!"
+          " Each attendee must use their own email - any problems contact us. "
         )
-      ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "If your ticket was registered under another email please help us by telling us which in the additional information box."
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v(" We look forward to meeting you on 16th November!")])
     ])
   }
 ]
@@ -102679,9 +102749,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Volumes/Dev/Projects/personal/lincolnhackAdmin/resources/assets/js/app.js */"./resources/assets/js/app.js");
-__webpack_require__(/*! /Volumes/Dev/Projects/personal/lincolnhackAdmin/resources/assets/less/bootstrap.less */"./resources/assets/less/bootstrap.less");
-module.exports = __webpack_require__(/*! /Volumes/Dev/Projects/personal/lincolnhackAdmin/resources/assets/sass/app.scss */"./resources/assets/sass/app.scss");
+__webpack_require__(/*! /Volumes/Development/lincolnhack/lincolnhack-admin/resources/assets/js/app.js */"./resources/assets/js/app.js");
+__webpack_require__(/*! /Volumes/Development/lincolnhack/lincolnhack-admin/resources/assets/less/bootstrap.less */"./resources/assets/less/bootstrap.less");
+module.exports = __webpack_require__(/*! /Volumes/Development/lincolnhack/lincolnhack-admin/resources/assets/sass/app.scss */"./resources/assets/sass/app.scss");
 
 
 /***/ })

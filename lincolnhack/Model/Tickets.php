@@ -18,7 +18,12 @@ class Tickets extends Model
         return __CLASS__;
     }
 
-
+    public function hasTicket($email)
+    {
+        return $this->where('Email', $email)
+            ->where('year', '2019')
+            ->get();
+    }
 
 
 }

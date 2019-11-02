@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div>
+        <div v-if="formState === 'showForm'">
             <div class="important text-center">
                 <p><strong>We're looking forward meeting you at the hack!</strong></p>
 
-                <p>Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person.<br><strong>This is your confirmation of attendance.</strong> Without this information we may not be able to register you.</p>
+                <p>Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person.Only one email can be registered.<br><strong>This is your confirmation of attendance.</strong> Without this information we may not be able to register you.</p>
             </div>
             <hr />
             <div class="columns">
@@ -53,12 +53,15 @@
             </div>
         </div>
 
-        <div v-if="formState = 'showThanks'">
+        <div v-if="formState === 'showThanks'" class="alert alert-success">
             <p class="text-center"><strong>Thanks - We look forward to meeting you on 16th November!</strong></p>
         </div>
 
-		<div v-if="formState = 'showError'">
-            <p class="text-center"><strong>This email has already been registered - - We look forward to meeting you on 16th November!</strong></p>
+		<div v-if="formState === 'showError'" class="alert alert-warning">
+            <span  class="text-center"><p><strong>This email has already been registered </strong></p>
+            <p> Each attendee must use their own email - any problems contact us. </p>
+                <p>If your ticket was registered under another email please help us by telling us which in the additional information box.</p>
+                <p> We look forward to meeting you on 16th November!</p></span>
 		</div>
 
     </div>
