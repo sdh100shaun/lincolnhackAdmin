@@ -67,7 +67,7 @@ return [
         ],
         'mongodb' => [
             'driver'   => 'mongodb',
-            'dsn'     => env('DB_HOST', 'localhost'),
+            'dsn'     => env('DB_HOST', 'mongodb+srv://localhost'),
             'database' => env('DB_DATABASE'),
         ],
 
