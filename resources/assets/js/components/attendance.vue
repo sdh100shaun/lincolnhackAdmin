@@ -126,8 +126,8 @@
 							'Mediterranean Vegetable with Goats Cheese (V)',
 							'Mediterranean Vegetable without Goats Cheese (V)',
 							'BBQ Pulled Pork & Bourbon',
-							'Vegan - we will be in touch',
-							'Celiac / Gluten - we will be in touch'
+							'Vegan - may not be pie we will be in touch',
+							'Celiac / Gluten - may not be pie we will be in touch'
 						],
 						value: null,
 						rules: 'required'

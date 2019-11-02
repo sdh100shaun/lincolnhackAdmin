@@ -4390,7 +4390,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         subLabel: 'with optional mash, veg and gravy',
         name: 'pies',
         type: 'select',
-        options: ['Lincolnshire Ale', 'Beef & Vegetable', 'Steak, Kidney & Mushroom', 'Game and Madeira', 'Lamb and Rosemary', 'Chicken Leek and Mushroom', 'Mediterranean Vegetable with Goats Cheese (V)', 'Mediterranean Vegetable without Goats Cheese (V)', 'BBQ Pulled Pork & Bourbon', 'Vegan - we will be in touch', 'Celiac / Gluten - we will be in touch'],
+        options: ['Lincolnshire Ale', 'Beef & Vegetable', 'Steak, Kidney & Mushroom', 'Game and Madeira', 'Lamb and Rosemary', 'Chicken Leek and Mushroom', 'Mediterranean Vegetable with Goats Cheese (V)', 'Mediterranean Vegetable without Goats Cheese (V)', 'BBQ Pulled Pork & Bourbon', 'Vegan - may not be pie we will be in touch', 'Celiac / Gluten - may not be pie we will be in touch'],
         value: null,
         rules: 'required'
       }, {
