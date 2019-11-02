@@ -1,11 +1,6 @@
 <template>
     <div>
         <div v-if="formState === 'showForm'">
-            <div class="important text-center">
-                <p><strong>We're looking forward meeting you at the hack!</strong></p>
-
-                <p>Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person.Only one email can be registered.<br><strong>This is your confirmation of attendance.</strong> Without this information we may not be able to register you.</p>
-            </div>
             <hr />
             <div class="columns">
                 <div class="column is-4 is-offset-4">
@@ -99,7 +94,7 @@
 						type: 'input',
 						value: null,
 						rules: 'required|email',
-						info: 'We will use this email to sign you up to Digital Lincoln Slack so you can register your team with Hackbot in the LincolnHack channel. If you have any problems please contact us. If you\'re not signed up on the day we will help you.'
+						info: 'We will use this email to sign you up to Digital Lincoln Slack. If you have any problems please contact us. If you\'re not signed up on the day we will help you.'
 					},
 					{
 						label: 'Emergency Contact Name',

@@ -4345,11 +4345,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "attendance",
@@ -4376,7 +4371,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         type: 'input',
         value: null,
         rules: 'required|email',
-        info: 'We will use this email to sign you up to Digital Lincoln Slack so you can register your team with Hackbot in the LincolnHack channel. If you have any problems please contact us. If you\'re not signed up on the day we will help you.'
+        info: 'We will use this email to sign you up to Digital Lincoln Slack. If you have any problems please contact us. If you\'re not signed up on the day we will help you.'
       }, {
         label: 'Emergency Contact Name',
         name: 'emergency-name',
@@ -89121,8 +89116,6 @@ var render = function() {
   return _c("div", [
     _vm.formState === "showForm"
       ? _c("div", [
-          _vm._m(0),
-          _vm._v(" "),
           _c("hr"),
           _vm._v(" "),
           _c("div", { staticClass: "columns" }, [
@@ -89496,7 +89489,7 @@ var render = function() {
                     )
                   }),
                   _vm._v(" "),
-                  _vm._m(1),
+                  _vm._m(0),
                   _vm._v(" "),
                   _c("p", [
                     _c(
@@ -89534,34 +89527,15 @@ var render = function() {
       : _vm._e(),
     _vm._v(" "),
     _vm.formState === "showThanks"
-      ? _c("div", { staticClass: "alert alert-success" }, [_vm._m(2)])
+      ? _c("div", { staticClass: "alert alert-success" }, [_vm._m(1)])
       : _vm._e(),
     _vm._v(" "),
     _vm.formState === "showError"
-      ? _c("div", { staticClass: "alert alert-warning" }, [_vm._m(3)])
+      ? _c("div", { staticClass: "alert alert-warning" }, [_vm._m(2)])
       : _vm._e()
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "important text-center" }, [
-      _c("p", [
-        _c("strong", [_vm._v("We're looking forward meeting you at the hack!")])
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person.Only one email can be registered."
-        ),
-        _c("br"),
-        _c("strong", [_vm._v("This is your confirmation of attendance.")]),
-        _vm._v(" Without this information we may not be able to register you.")
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

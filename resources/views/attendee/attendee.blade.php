@@ -8,21 +8,14 @@
             <div class="col-sm-12 col-md-12">
                 <h1 class="text-center"><strong>Information for Hackers </strong></h1>
                 <hr/>
-                <p class="text-center">We are really looking forward to you joining the hack - we hope you are too.
+                <p class="text-center">We're looking forward to the hack, we hope you are too.
                 </p>
-                <p class="text-center">This is a place where you can confirm your tickets find out a bit more info and
-                    reach out to us if there is
-                    anything you need to know prior to the event.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-12">
-                <h2 class="text-center"><strong>Attendee Details</strong></h2>
-                <hr/>
-                <p class="text-center">Each attendee will need to fill out this information. If you have booked multiple
-                    tickets please enter the details for each person.</p>
-                <p class="text-center">This is your confirmation of attendance. It is important to complete this
-                    otherwise we may not be able to register you.</p>
+                <p class="text-center">Each attendee will need to fill out this form. If you've booked tickets on behalf of other people,
+                    please fill in their details. </p><p class="text-center">This form is confirmation of your attendance. Without this information we may not be able to register you!</p>
             </div>
         </div>
     </div>
