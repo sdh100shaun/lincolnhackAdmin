@@ -38,3 +38,7 @@ mix.webpackConfig({
         ]
     }
 });
+
+module.exports = {
+    mode: 'production'
+}

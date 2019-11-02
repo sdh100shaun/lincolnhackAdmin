@@ -1,12 +1,12 @@
 <template>
     <div>
-        <div v-if="formState == 'showForm'">
+        <div v-if="formState === 'showForm'">
             <div class="important text-center">
                 <p><strong>We're looking forward meeting you at the hack!</strong></p>
 
-                <p>Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person.<br><strong>This is your confirmation of attendance.</strong> Without this information we may not be able to register you.</p>
+                <p>Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person.Only one email can be registered.<br><strong>This is your confirmation of attendance.</strong> Without this information we may not be able to register you.</p>
             </div>
-            <hr>
+            <hr />
             <div class="columns">
                 <div class="column is-4 is-offset-4">
                     <div>
@@ -17,9 +17,7 @@
                                     <label class="label" v-if="field.type !== 'checkbox'">{{field.label}} <small v-if="field.subLabel">{{field.subLabel}}</small></label>
                                     <input  v-if="field.type === 'input'" class="form-control" type="text" :placeholder="field.placeholder" v-model="field.value" >
                                     <textarea v-if="field.type === 'textarea'" class="form-control" :placeholder="field.placeholder" v-model="field.value"></textarea>
-                                    <label>
-                                        <input type="checkbox" v-model="field.value"> {{field.name}}
-                                    </label>
+
                                     <select v-model="field.value" class="form-control" v-if="field.type === 'select'" >
                                         <option v-for="option in field.options" :key="option">{{option}}</option>
                                     </select>
@@ -31,7 +29,7 @@
                             <div class="checkbox">
                                 <ValidationProvider rules="required" name="accept-terms-and-conditions" v-slot="{ errors }">
                                         <label>
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="accept-terms-and-conditions" value="1" v-model="terms">
                                             I agree to the <a href="https://hackcodeofconduct.org/" target="_blank">Code of Conduct</a>
                                         </label>
                                         <p class="help-block text-warning">{{  removeHyphens(errors[0]) }}</p>
@@ -55,12 +53,15 @@
             </div>
         </div>
 
-        <div v-if="formState = 'showThanks'">
+        <div v-if="formState === 'showThanks'" class="alert alert-success">
             <p class="text-center"><strong>Thanks - We look forward to meeting you on 16th November!</strong></p>
         </div>
 
-		<div v-if="formState = 'showError'">
-            <p class="text-center"><strong>This email has already been registered - - We look forward to meeting you on 16th November!</strong></p>
+		<div v-if="formState === 'showError'" class="alert alert-warning">
+            <span  class="text-center"><p><strong>This email has already been registered </strong></p>
+            <p> Each attendee must use their own email - any problems contact us. </p>
+                <p>If your ticket was registered under another email please help us by telling us which in the additional information box.</p>
+                <p> We look forward to meeting you on 16th November!</p></span>
 		</div>
 
     </div>
@@ -68,23 +69,33 @@
 
 <script>
 	import axios from 'axios'
+
+
 	export default {
 		name: "attendance",
 		data () {
 			return {
 				formState: 'showForm',
-				submissionURL: null,
+                terms: null,
+				submissionURL: '../../attendee',
 				registerForm: [
 					{
-						label: 'Name',
-						name: 'name',
+						label: 'First Name',
+						name: 'firstName',
 						type: 'input',
 						value: null,
 						rules: 'required'
 					},
+                    {
+                        label: 'Last Name',
+                        name: 'lastName',
+                        type: 'input',
+                        value: null,
+                        rules: 'required'
+                    },
 					{
 						label: 'email',
-						name: 'email',
+						name: 'attendeeId',
 						type: 'input',
 						value: null,
 						rules: 'required|email',
@@ -176,6 +187,7 @@
 			},
 			async submit () {
 				const isValid = await this.$refs.observer.validate()
+
 				if (isValid) {
 					const formData = {}
 					for (let item of this.registerForm) {
@@ -199,15 +211,14 @@
 <style scoped>
     label {
         text-transform: uppercase;
+        color: #0B0111;
     }
     label small {
         color: #2c3e50;
-        font-size: 0.85rem;
         text-transform: lowercase;
     }
     .info {
         color: #2c3e50;
-        font-size: 0.75rem;
         font-style: italic;
     }
     fieldset {
@@ -219,5 +230,9 @@
     }
     .important p {
         margin-bottom: 1rem;
+    }
+    .text-warning {
+        color: #761c19;
+        font-weight: bold;
     }
 </style>

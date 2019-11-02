@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Log;
 use Lincolnhack\Model\Attendee;
 use Lincolnhack\Model\Slack;
+use Lincolnhack\Model\Sponsor;
 use Lincolnhack\Model\Tshirt;
 
 class AttendeeController extends Controller
@@ -37,7 +38,11 @@ class AttendeeController extends Controller
      * @var Repository
      */
     private $config;
-    
+    /**
+     * @var Sponsor
+     */
+    private $sponsor;
+
     /**
      * AttendeeController constructor.
      * @param Attendee $attendee
@@ -46,7 +51,7 @@ class AttendeeController extends Controller
      * @param Repository $config
      * @internal param Client $client
      */
-    public function __construct(Attendee $attendee, Tshirt $tshirt, Client $slackClient, Repository $config)
+    public function __construct(Attendee $attendee, Tshirt $tshirt, Client $slackClient, Repository $config, Sponsor $sponsor)
     {
         $this->config = $config;
         $this->hackbot = $this->config->get('hackbot');
@@ -57,7 +62,8 @@ class AttendeeController extends Controller
         ]);
         $this->tshirt = $tshirt;
         $this->slackClient = $slackClient;
-       
+
+        $this->sponsor = $sponsor;
     }
     
     /**
@@ -67,7 +73,9 @@ class AttendeeController extends Controller
      */
     public function index()
     {
-        return view('attendee.attendee',["tshirtsizes"=>$this->tshirt->all(),'type'=>'silver']);
+
+        $sponsorDetails = $this->sponsor->findByType(Sponsor::SPONSOR_TYPE_GOLD);
+        return view('attendee.attendee',["tshirtsizes"=>$this->tshirt->all(),'type'=>array_random(['gold','silver']),'sponsors'=>$sponsorDetails]);
     }
 
     /**

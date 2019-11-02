@@ -4349,22 +4349,30 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "attendance",
   data: function data() {
     return {
       formState: 'showForm',
-      submissionURL: null,
+      terms: null,
+      submissionURL: '../../attendee',
       registerForm: [{
-        label: 'Name',
-        name: 'name',
+        label: 'First Name',
+        name: 'firstName',
+        type: 'input',
+        value: null,
+        rules: 'required'
+      }, {
+        label: 'Last Name',
+        name: 'lastName',
         type: 'input',
         value: null,
         rules: 'required'
       }, {
         label: 'email',
-        name: 'email',
+        name: 'attendeeId',
         type: 'input',
         value: null,
         rules: 'required|email',
@@ -9473,7 +9481,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nlabel[data-v-bb8e7080] {\n    text-transform: uppercase;\n}\nlabel small[data-v-bb8e7080] {\n    color: #2c3e50;\n    font-size: 0.85rem;\n    text-transform: lowercase;\n}\n.info[data-v-bb8e7080] {\n    color: #2c3e50;\n    font-size: 0.75rem;\n    font-style: italic;\n}\nfieldset[data-v-bb8e7080] {\n    margin: 1rem 0;\n    border: 1px dotted #cccccc;\n    font-size: 0.85rem;\n    font-weight: bold;\n    padding: 1rem;\n}\n.important p[data-v-bb8e7080] {\n    margin-bottom: 1rem;\n}\n", ""]);
+exports.push([module.i, "\nlabel[data-v-bb8e7080] {\n    text-transform: uppercase;\n    color: #0B0111;\n}\nlabel small[data-v-bb8e7080] {\n    color: #2c3e50;\n    text-transform: lowercase;\n}\n.info[data-v-bb8e7080] {\n    color: #2c3e50;\n    font-style: italic;\n}\nfieldset[data-v-bb8e7080] {\n    margin: 1rem 0;\n    border: 1px dotted #cccccc;\n    font-size: 0.85rem;\n    font-weight: bold;\n    padding: 1rem;\n}\n.important p[data-v-bb8e7080] {\n    margin-bottom: 1rem;\n}\n.text-warning[data-v-bb8e7080] {\n    color: #761c19;\n    font-weight: bold;\n}\n", ""]);
 
 // exports
 
@@ -89111,7 +89119,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm.formState == "showForm"
+    _vm.formState === "showForm"
       ? _c("div", [
           _vm._m(0),
           _vm._v(" "),
@@ -89260,83 +89268,6 @@ var render = function() {
                                                     })
                                                   : _vm._e(),
                                                 _vm._v(" "),
-                                                _c("label", [
-                                                  _c("input", {
-                                                    directives: [
-                                                      {
-                                                        name: "model",
-                                                        rawName: "v-model",
-                                                        value: field.value,
-                                                        expression:
-                                                          "field.value"
-                                                      }
-                                                    ],
-                                                    attrs: { type: "checkbox" },
-                                                    domProps: {
-                                                      checked: Array.isArray(
-                                                        field.value
-                                                      )
-                                                        ? _vm._i(
-                                                            field.value,
-                                                            null
-                                                          ) > -1
-                                                        : field.value
-                                                    },
-                                                    on: {
-                                                      change: function($event) {
-                                                        var $$a = field.value,
-                                                          $$el = $event.target,
-                                                          $$c = $$el.checked
-                                                            ? true
-                                                            : false
-                                                        if (
-                                                          Array.isArray($$a)
-                                                        ) {
-                                                          var $$v = null,
-                                                            $$i = _vm._i(
-                                                              $$a,
-                                                              $$v
-                                                            )
-                                                          if ($$el.checked) {
-                                                            $$i < 0 &&
-                                                              _vm.$set(
-                                                                field,
-                                                                "value",
-                                                                $$a.concat([
-                                                                  $$v
-                                                                ])
-                                                              )
-                                                          } else {
-                                                            $$i > -1 &&
-                                                              _vm.$set(
-                                                                field,
-                                                                "value",
-                                                                $$a
-                                                                  .slice(0, $$i)
-                                                                  .concat(
-                                                                    $$a.slice(
-                                                                      $$i + 1
-                                                                    )
-                                                                  )
-                                                              )
-                                                          }
-                                                        } else {
-                                                          _vm.$set(
-                                                            field,
-                                                            "value",
-                                                            $$c
-                                                          )
-                                                        }
-                                                      }
-                                                    }
-                                                  }),
-                                                  _vm._v(
-                                                    " " +
-                                                      _vm._s(field.name) +
-                                                      "\n                                    "
-                                                  )
-                                                ]),
-                                                _vm._v(" "),
                                                 field.type === "select"
                                                   ? _c(
                                                       "select",
@@ -89459,7 +89390,58 @@ var render = function() {
                                             return [
                                               _c("label", [
                                                 _c("input", {
-                                                  attrs: { type: "checkbox" }
+                                                  directives: [
+                                                    {
+                                                      name: "model",
+                                                      rawName: "v-model",
+                                                      value: _vm.terms,
+                                                      expression: "terms"
+                                                    }
+                                                  ],
+                                                  attrs: {
+                                                    type: "checkbox",
+                                                    name:
+                                                      "accept-terms-and-conditions",
+                                                    value: "1"
+                                                  },
+                                                  domProps: {
+                                                    checked: Array.isArray(
+                                                      _vm.terms
+                                                    )
+                                                      ? _vm._i(_vm.terms, "1") >
+                                                        -1
+                                                      : _vm.terms
+                                                  },
+                                                  on: {
+                                                    change: function($event) {
+                                                      var $$a = _vm.terms,
+                                                        $$el = $event.target,
+                                                        $$c = $$el.checked
+                                                          ? true
+                                                          : false
+                                                      if (Array.isArray($$a)) {
+                                                        var $$v = "1",
+                                                          $$i = _vm._i($$a, $$v)
+                                                        if ($$el.checked) {
+                                                          $$i < 0 &&
+                                                            (_vm.terms = $$a.concat(
+                                                              [$$v]
+                                                            ))
+                                                        } else {
+                                                          $$i > -1 &&
+                                                            (_vm.terms = $$a
+                                                              .slice(0, $$i)
+                                                              .concat(
+                                                                $$a.slice(
+                                                                  $$i + 1
+                                                                )
+                                                              ))
+                                                        }
+                                                      } else {
+                                                        _vm.terms = $$c
+                                                      }
+                                                    }
+                                                  }
                                                 }),
                                                 _vm._v(
                                                   "\n                                            I agree to the "
@@ -89510,7 +89492,7 @@ var render = function() {
                       ],
                       null,
                       false,
-                      2137976394
+                      2978543431
                     )
                   }),
                   _vm._v(" "),
@@ -89551,9 +89533,13 @@ var render = function() {
         ])
       : _vm._e(),
     _vm._v(" "),
-    (_vm.formState = "showThanks") ? _c("div", [_vm._m(2)]) : _vm._e(),
+    _vm.formState === "showThanks"
+      ? _c("div", { staticClass: "alert alert-success" }, [_vm._m(2)])
+      : _vm._e(),
     _vm._v(" "),
-    (_vm.formState = "showError") ? _c("div", [_vm._m(3)]) : _vm._e()
+    _vm.formState === "showError"
+      ? _c("div", { staticClass: "alert alert-warning" }, [_vm._m(3)])
+      : _vm._e()
   ])
 }
 var staticRenderFns = [
@@ -89568,7 +89554,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person."
+          "Prior to attendance, we need a bit of information from each attendee. If you have booked multiple tickets please enter the details for each person.Only one email can be registered."
         ),
         _c("br"),
         _c("strong", [_vm._v("This is your confirmation of attendance.")]),
@@ -89613,12 +89599,24 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("p", { staticClass: "text-center" }, [
-      _c("strong", [
+    return _c("span", { staticClass: "text-center" }, [
+      _c("p", [
+        _c("strong", [_vm._v("This email has already been registered ")])
+      ]),
+      _vm._v(" "),
+      _c("p", [
         _vm._v(
-          "This email has already been registered - - We look forward to meeting you on 16th November!"
+          " Each attendee must use their own email - any problems contact us. "
         )
-      ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "If your ticket was registered under another email please help us by telling us which in the additional information box."
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v(" We look forward to meeting you on 16th November!")])
     ])
   }
 ]
@@ -102123,22 +102121,19 @@ __webpack_require__.r(__webpack_exports__);
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
- // Pulling in all validation rules in because I'm being lazy
-// Use the provider immediately
+__webpack_require__(/*! ./bootstrap.js */ "./resources/assets/js/bootstrap.js");
+
 
 Vue.component('ValidationProvider', vee_validate_dist_vee_validate_full__WEBPACK_IMPORTED_MODULE_0__["ValidationProvider"]);
 Vue.component('ValidationObserver', vee_validate_dist_vee_validate_full__WEBPACK_IMPORTED_MODULE_0__["ValidationObserver"]);
-
-__webpack_require__(/*! ./bootstrap */ "./resources/assets/js/bootstrap.js");
-
-Vue.component('tshirt', __webpack_require__(/*! ./components/tshirt.vue */ "./resources/assets/js/components/tshirt.vue"));
-Vue.component('countdown', __webpack_require__(/*! ./components/countdown.vue */ "./resources/assets/js/components/countdown.vue"));
-Vue.component('messages', __webpack_require__(/*! ./components/messages.vue */ "./resources/assets/js/components/messages.vue"));
-Vue.component('announcer', __webpack_require__(/*! ./components/announcer.vue */ "./resources/assets/js/components/announcer.vue"));
-Vue.component('register', __webpack_require__(/*! ./components/register.vue */ "./resources/assets/js/components/register.vue"));
-Vue.component('teams', __webpack_require__(/*! ./components/teams.vue */ "./resources/assets/js/components/teams.vue"));
-Vue.component('chat', __webpack_require__(/*! ./components/teams.vue */ "./resources/assets/js/components/teams.vue"));
-Vue.component('attendance', __webpack_require__(/*! ./components/attendance.vue */ "./resources/assets/js/components/attendance.vue"));
+Vue.component('tshirt', __webpack_require__(/*! ./components/tshirt.vue */ "./resources/assets/js/components/tshirt.vue")["default"]);
+Vue.component('countdown', __webpack_require__(/*! ./components/countdown.vue */ "./resources/assets/js/components/countdown.vue")["default"]);
+Vue.component('messages', __webpack_require__(/*! ./components/messages.vue */ "./resources/assets/js/components/messages.vue")["default"]);
+Vue.component('announcer', __webpack_require__(/*! ./components/announcer.vue */ "./resources/assets/js/components/announcer.vue")["default"]);
+Vue.component('register', __webpack_require__(/*! ./components/register.vue */ "./resources/assets/js/components/register.vue")["default"]);
+Vue.component('teams', __webpack_require__(/*! ./components/teams.vue */ "./resources/assets/js/components/teams.vue")["default"]);
+Vue.component('chat', __webpack_require__(/*! ./components/teams.vue */ "./resources/assets/js/components/teams.vue")["default"]);
+Vue.component('attendance', __webpack_require__(/*! ./components/attendance.vue */ "./resources/assets/js/components/attendance.vue")["default"]);
 var app = new Vue({
   el: '#app',
   data: {

@@ -6176,6 +6176,7 @@ header > div > .navbar-header button:hover span:nth-child(3) {
 .sponsors .card {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  text-align: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -6579,6 +6580,11 @@ footer img {
 .attendee-location img {
   height: 4em;
   width: auto;
+  padding: 0.4em;
+}
+.attendee-form {
+  text-align: left;
+  margin: auto;
 }
 .sponsor-list {
   flex-direction: column;

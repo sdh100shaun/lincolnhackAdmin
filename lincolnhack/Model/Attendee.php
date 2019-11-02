@@ -45,17 +45,26 @@ class Attendee extends Model
         array_walk($properties,function($value,$key) use ($self) {
             $self->$key = $value;
         });
-        $self = $this->where('attendeeId', $this->attendeeId)->where('year','<>','2017')->first();
-        
-        if(empty($self))
-        {   $self = $this;
-            $this->save();
-        }
-        else
-        {
-            $self->isAlreadyRegistered = true;
-        }
+
+        $this->confirmed = true;
+        $this->save();
+
         return $self;
     }
-    
+
+
+    public function addYear(array $data)
+    {
+        $data['year'] = '2019';
+        return $data;
+    }
+
+
+    public function setAttendeeId($email)
+    {
+        $this->attendeeId = $email;
+    }
+
+
+
 }
