@@ -74,6 +74,26 @@
 
 
     </div>
+    <div class="row" id="bridgefibre">
+        <hr/>
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <a href="https://www.bridgefibre.co.uk/"><img width="250px" src="/images/assets/sponsors/bridgefibre.svg" alt=""/></a>
+
+
+            </div>
+            <div class="col-sm-5 col-sm-offset-1">
+                <p>
+                    Bridge Fibre provide excellent network services and have been very helpful for Lincolnhack - please check them out they are great. </p>
+
+
+                <p><a href="https://www.bridgefibre.co.uk/">https://www.bridgefibre.co.uk</a></p>
+
+            </div>
+        </div>
+
+
+    </div>
 
 
 

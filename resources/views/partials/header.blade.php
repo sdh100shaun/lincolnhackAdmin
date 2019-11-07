@@ -31,7 +31,7 @@
                 </li>
 
                 <li role="presentation" class="dropdown">
-                    <a  href="https://2019.lincolnhack.org#where">Where</a>
+                    <a href="https://2019.lincolnhack.org#where">Where</a>
                 </li>
 
                 <li role="presentation" class="dropdown">
