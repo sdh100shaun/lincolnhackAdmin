@@ -317,6 +317,8 @@
 
                                 <li><a href="../../partners#lsip"><img src="/images/assets/sponsors/lsip.svg" alt="learn more about Lincoln Science and Innovation park " /></a> </li>
 
+                                <li><a href="../../partners#bridgefibre"><img src="/images/assets/sponsors/bridgefibre.svg" alt="learn more about Bridge Fibre " /></a> </li>
+
 
                             </ul>
 
@@ -427,10 +429,10 @@
                     <div class="laptop-glow"></div>
                 </div>
                 <div class="col-md-8">
-                    <p class="text-center">LincolnHack follows the standard code of conduct as written by <a
-                                href="http://hackcodeofconduct.org">hackcodeofconduct.org</a>. LincolnHack is a fun
+                    <p class="text-center">LincolnHack follows and enforces a strict code of conduct (based on <a href="https://hackcodeofconduct.org/">https://hackcodeofconduct.org/</a>) and abides by Digital Lincoln's code of cduct <a
+                                href="https://www.digitallincoln.co.uk/code-of-conduct ">https://www.digitallincoln.co.uk/code-of-conduct </a>. LincolnHack is a fun
                         event -
-                        help us to keep it fun by behaving appropriately<br>Copyright LincolnHack 2019. LincolnHack is
+                         help us to keep it fun by behaving appropriately<br>Copyright LincolnHack 2019. LincolnHack is
                         run by members of Digital Lincoln</p>
                 </div>
             </div>
