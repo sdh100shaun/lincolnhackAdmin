@@ -38,7 +38,7 @@
                     are multi-platform apps operating on iOS, Android
                     and any modern browser enhancing the use,
                     and freedom of Compucare</p>
-                <p>Streets Heaver hire smart, innovative people with the right attitude and skills within software development, software testing, customer supportand  project management to  move their business forward. </p>
+                <p>Streets Heaver hire smart, innovative people with the right attitude and skills within software development, software testing, customer support and  project management to  move their business forward. </p>
             </div>
 
             <div class="col-sm-5 col-sm-offset-1">
