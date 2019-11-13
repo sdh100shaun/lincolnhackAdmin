@@ -57,7 +57,7 @@
                 <blockquote>
                     <strong>
                         How can modern day technology be used to help predict/prevent an epidemic?</strong>
-                    <p>Solve a real world problem using any form of machine learning or artificial intelligence.</p>
+                    <p></p>
                 </blockquote>
             </div>
         </div>
