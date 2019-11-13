@@ -37,10 +37,11 @@
                 <h5 class="khaos"> The Khaos Control Challenge </h5>
 
                 <p>Khaos Control have generously supported LincolnHack since our beginning.  Last year, their challenge "Build a Chaos Recovery Machine" inspired hackers to provide a solution to find a recovery system to combat the chaos around us.</p>
-                <p>Sticking with a similar theme, this year they invite you to: </p>
-                <blockquote><strong>Challenge announced soon</strong>,
+                <p>Sticking with a similar theme, this year they invite you to run with the idea: </p>
+                <blockquote><strong>It's the end of the world as we know it. </strong>
+                    <p>Use your creative ideas to design and develop something linked to the end of the world something helpful, predictive or just outright fun.</p>
               </blockquote>
-                <p> Prize to be announced shortly - but expect good things as Khaos Control never disappoint</p>
+                <p> Prizes: Each team member gets a Nintendo Mini NES</p>
             </div>
         </div>
         <div class="row">
@@ -65,7 +66,7 @@
                 <div class="row">
                     <div class="col-md-9 col-md-offset-3 col-sm-11 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                         <div class="speech-bubble">
-                            <p class="text-center" id="answer">Prizes to be announced</p>
+                            <p class="text-center" id="answer">Enter our challenge for a chance to <br />win a <strong>NINTENDO MINI NES</strong> !!!</p>
                         </div>
                     </div>
                 </div>
