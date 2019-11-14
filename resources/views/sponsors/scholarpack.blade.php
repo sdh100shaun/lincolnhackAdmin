@@ -38,8 +38,10 @@
                     up for some fun and lively discussion. We are super excited about their challenge. </p>
                 <p>The ScholarPack  challenge this year will be:</p>
                 <blockquote>
-                    <strong>announced soon</strong>
-                        <p></p>
+                    <strong>The Knowledge to Act</strong>
+                        <p>
+                            The core value of The Key Group, and the guiding principal of the Group companies (like ScholarPack) is The Knowledge to Act. As a group, we aim to give teachers, parents, governors, decision makers and school leaders the information and data they need to have The Knowledge to Act - to improve the operation of schools and the outcomes for Children.
+                            With this in mind, create something that would provide the user groups identified above with more knowledge to better allow them to take meaningful actions.</p>
                 </blockquote>
 
             </div>
@@ -66,7 +68,7 @@
                 <div class="row">
                     <div class="col-md-9 col-md-offset-3 col-sm-11 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                         <div class="speech-bubble">
-                            <p class="text-center" id="answer">to be confirmed</p>
+                            <p class="text-center" id="answer">Enter the challenge to win <br/><strong> Amazon Vouchers</strong></p>
                         </div>
                     </div>
                 </div>
