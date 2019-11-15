@@ -39,8 +39,8 @@
                 <p>The Epix media challenge this year will be:</p>
                 <blockquote>
                     <strong>
-                        announced soon</strong>
-                    <p></p>
+                        AI for good</strong>
+                    <p>Solve a real world problem using Artificial intelligence or Machine Learning</p>
                 </blockquote>
             </div>
         </div>
@@ -64,7 +64,7 @@
                 <div class="row">
                     <div class="col-md-9 col-md-offset-3 col-sm-11 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                         <div class="speech-bubble">
-                            <p class="text-center" id="answer">Prize will be revealed soon</p>
+                            <p class="text-center" id="answer">Enter our challenge for a chance to <br /><strong>Best of IOT !!! a selection of IOT devices</strong></p>
                         </div>
                     </div>
                 </div>

@@ -34,8 +34,8 @@
                 <p>The WealthKernel challenge this year will be:</p>
                 <blockquote>
                     <strong>
-                       announced soon</strong>
-                    <p></p>
+                       Pay 'n' Display</strong>
+                    <p>Using the data provided visualise what happens to money as it is invested.</p>
                 </blockquote>
             </div>
         </div>
@@ -59,7 +59,7 @@
                 <div class="row">
                     <div class="col-md-9 col-md-offset-3 col-sm-11 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                         <div class="speech-bubble">
-                            <p class="text-center" id="answer">Prize will be revealed soon</p>
+                            <p class="text-center" id="answer">Enter our challenge for a chance to <br /><strong>a google nest !!!</strong></p>
                         </div>
                     </div>
                 </div>
