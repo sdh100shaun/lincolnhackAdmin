@@ -48,7 +48,7 @@ class AttendeeRepository
 
     public function whereYear()
     {
-        return $this->makeModel()->where('year','<>', "2017")->get();
+        return $this->makeModel()->where('year','=', "2019")->get();
     }
     
 }

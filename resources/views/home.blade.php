@@ -59,11 +59,6 @@
 
     </div>
     <div class="row">
-        <div class="col-md-8 col-md-offset-1">
-            <h2>Tickets</h2>
-
-        </div>
-
     </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-1">
