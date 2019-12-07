@@ -30,7 +30,11 @@ class TshirtController
     
     public function index()
     {
-        $year=2018;
-        return response()->json($this->attendeeRepository->whereYear());
+        $year=2019;
+        $attendees = $this->attendeeRepository->whereYear();
+        foreach ($attendees as $attendee){
+            $attendee ->tshirt = $attendee["t-shirt"];
+        }
+        return response()->json($attendees);
     }
 }

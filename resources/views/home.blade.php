@@ -36,8 +36,9 @@
                     <tr>
                         <td class="firstname">{{$attendee->firstName}} {{$attendee->lastName}}</td>
                         <td class="lastname">{{$attendee->attendeeId}}</td>
-                        <td>{{$attendee->dietaryRequirements}}</td>
-                        <td>{{$attendee->getAttribute('attendee-contact')}}</td>
+                        <td>{{$attendee->allergies}}</td>
+                        <td>{{$attendee->getAttribute('emergency-name')}}<br />
+                        {{$attendee->getAttribute('emergency-contact-number')}}</td>
                         @if($attendee->registered)
                             <?php $registered = "checked" ?>
                             @else
@@ -58,11 +59,6 @@
 
     </div>
     <div class="row">
-        <div class="col-md-8 col-md-offset-1">
-            <h2>Tickets</h2>
-            @include('partials.tickets')
-        </div>
-
     </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-1">
